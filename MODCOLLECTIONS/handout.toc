@@ -1,0 +1,8 @@
+\contentsline {subsection}{Using Modify Collections}{3}{subsection*.3}
+\contentsline {paragraph}{Enter}{3}{paragraph*.4}
+\contentsline {paragraph}{Click}{3}{paragraph*.5}
+\contentsline {paragraph}{Double Click}{3}{paragraph*.6}
+\contentsline {paragraph}{Enter}{3}{paragraph*.7}
+\contentsline {paragraph}{Click}{4}{paragraph*.8}
+\contentsline {paragraph}{Click}{4}{paragraph*.9}
+\contentsfinish 

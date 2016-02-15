@@ -1,0 +1,138 @@
+Up to this point, you've seen how to search for orders on a patient.
+
+This section will discuss the functions which can be performed after orders have been found.\\
+
+\prettyimage{width=\textwidth}{graphics/search_by_patient.png}
+
+\section{Sorting the List}
+The orders are displayed in a table. Each row represents a specific \textsc{Orderable}. The columns provide details about the orders \eg{Collect Date, Accession Number, Priority, \etc}.
+
+\newthought{The table can} be sorted by clicking on any one of the \textit{column headers}.\marginnote[5\baselineskip]{Clicking on the word ``Status'' sorts the list by ``Status.''}\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (pif) at (4, 3.7) {\scshape{Column Headers}};
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/sorted.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw [-stealth, line width=3pt, teal400] (.5, 1.05) to[out=-90, in=180] (0.6,0.84);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\clearpage
+
+\vfill
+\warnblock{This section uses a lot of fancy Cerner terms. If needed, refer to the \boldcap{Glossary} for help.}
+
+\section{Orderable Status\label{sec:orderable_status}}
+
+\noindent
+Knowing the meaning of the \textsc{Orderable Status} in \gls{orv} will go a long way when it comes to troubleshooting issues you may run into.
+
+Cerner will not allow certain functions if the order status isn't correct. For example: you can't \gls{perform} results if the sample is not ``In-lab,'' or ``In Process.''
+
+\noindent
+\begin{table}
+    \begin{tabular}{p{0.2\textwidth} p{.74\textwidth}}
+        \boldcap{\large Status} & \boldcap{\large Meaning}\\
+        \hline
+        \textsc{\gls{scheduled}}   & The order is placed for the future. It doesn't have an \gls{accn}. \\
+        \textsc{\gls{dispatched}}  & The sample labels have printed, but the sample has not been collected yet.\\
+        \textsc{\gls{collected}}   & The sample has been collected, but it has not been received by the laboratory.\\
+        \textsc{\gls{intransit}}   & The sample has been put on a transfer list and is in-route to another site.\\
+        \textsc{\gls{inlab}}       & The sample has been received by the testing laboratory, but no results have been verified.\\
+        \textsc{\gls{inprocess}}   & The sample has been received by the testing laboratory, and partially resulted.\\
+        \textsc{\gls{completed}}   & All of the results on the orderable have been verified.\\
+        \textsc{\gls{canceled}}    & The order has been canceled.\\
+        \hline
+    \end{tabular}
+    \caption{ORV Order Statuses}
+    \label{table:orv_order_status}
+\end{table}
+
+\section{Viewing Results\label{sec:orv_viewing_results}}
+To view the results of an order, simply double click on its row in the order table.\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (sp) at (-1.6,2) {\scshape{Double Click}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.7\textwidth}{graphics/sorted}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, teal400] (sp) to[out=0, in=160] (0.0, 0.45);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\clearpage
+\newthought{The results} for the entire \gls{accn} will display in a pop-up window.\sidenote{If they don't, check the status of the order. If it's not \boldcap{Completed, In-Lab,} or \boldcap{In Process}, there aren't any results which can be viewed.}\\
+
+\prettyimage{width=\textwidth}{graphics/results.png}
+
+\newthought{Selecting an assay} and clicking \btn{graphics/previous_button} will show the previous results for that assay.\sidenote{\info{The first item in the \textsc{Previous Results} will always be the result selected. \textsc{One result means there is no previous.}}}
+
+\subsection{Viewing Corrections}
+
+When results are modified in Cerner, all of the original information is saved.
+
+\paragraph{Click} \btn{graphics/history}\\
+
+\prettyimage{width=\textwidth}{graphics/history_view}
+
+\newthought{This window will} show all the modifications which have been made to the result.
+
+\importantblock{The current result will appear at the bottom of this list. It is sorted from oldest to newest.}
+
+
+\section{Flowsheet Mode}
+\gls{orv} has two modes: Order List, and \gls{fs} mode. In the laboratory, Order List mode will be used a majority of the time. However, \gls{fs} can come in handy when inquiring about previous results, or when talking with Powercharts users.\\
+
+\prettyimage{width=\textwidth}{graphics/flowsheet.png}
+
+\newthought{How to get} to flowsheet mode.
+\marginnote[1\baselineskip]{\prettyimage{width=\linewidth}{graphics/flowsheet_instructions.png}}
+
+\paragraph{Click} \boldcap{Mode} on the menu bar.
+\paragraph{Click} \boldcap{Flowsheet}.
+
+\newthought{This guide is} getting long. It's best if we don't dive too deep into Flowsheet mode. It's there, play around with if you'd like.
+
+\important{Switch back to \textbf{Order List}  mode when you're finished.}
+\marginnote[1\baselineskip]{\prettyimage{width=\linewidth}{graphics/orderlist}}
+\paragraph{Click} \boldcap{Mode} on the menu bar.
+\paragraph{Click} \boldcap{Order List}.
+
+\section{View Comments}
+Any order which has attached comments will have an \includegraphics[height=1em]{graphics/comment_notify.png} icon in the ``Comments'' column.\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (pif) at (4, 3.7) {\scshape{Comments}};
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/sorted.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw [-stealth, line width=3pt, teal400] (.45, 1.05) to[out=-90, in=180] (0.8,0.34);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{Comments can} be viewed by clicking \textit{either} of the ``Comment'' icons on the toolbar.\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/orv_toolbar2}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw[deeppurple400, rounded corners, line width=3] (0.16, 0.1)rectangle (0.3, 0.98);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{Comments\sidenote{\textit{``Note and paperclip.''}}} will open the \textsc{Comments} window. From here you can see the \textsc{Order Comments} and \textsc{Order Notes}.
+
+\newthought{Comments Viewer\sidenote{\textit{``Note, paperclip and tiny glasses.''}}} opens the \textsc{Comment Viewer}. This will show all available comments for the order.
+
+It can also be kept open with \gls{orv} and will update as different orders are selected.
+

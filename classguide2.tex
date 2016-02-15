@@ -1,0 +1,695 @@
+\setcounter{page}{1}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, label={-}}
+
+\chapter{Quick reference}
+
+In order to find your information quicker, you can use this page to answer some of the questions.
+
+
+\bigskip
+\bigskip
+\answer{Your test patient's MRN\label{your_mrn}}
+
+\bigskip
+\answer{Accession Number (Blood)\label{blood_accession}}
+\answer{Accession Number (Bone Marrow)}
+\answer{Accession Number (Synovial)\label{synovial}}
+
+\bigskip
+\answer{Which container is the PTT on?\label{ptt_container}}
+\answer{Which \boldcap{Service Resource} is the \boldcap{PTT} routed to?\label{ptt_sr}}
+
+\bigskip
+\answer{What is the number of the list your PTT is on?\label{ptt_list}}
+\answer{What is the number of the list your CHABM is on?\label{bm_list}}
+
+\clearpage
+
+
+    \chapter{Getting Started}
+    \section{Opening the App-Bar}
+    \begin{itemize}
+        \item Open Presentation to \boldcap{Log In Instructions}
+        \item Pass Around Sign up Sheets.
+        \item Make Sure Everyone can Log-in.
+        \issues{
+            \item Not using \boldcap{User name for Password}
+            \item Multiple App-Bars open
+        }
+        \item Assign MRNS
+            \telltowrite{The MRN's}
+    \end{itemize}
+
+
+    \section{About the Class}
+    \begin{itemize}
+        \item \boldcap{Objectives}
+            \begin{itemize}
+                \item Course will cover most applications
+                \item Some Exceptions: Registration Order Entry, Collections Inquiry
+            \end{itemize}
+        \item \boldcap{Warnings}
+            \begin{itemize}
+                \item Leaving this class they will \boldcap{not} know Cerner.
+                \item They need to practice
+                \item Make sure they can get off bench time
+                \item Use the Manual
+                \item We can provide them with help
+            \end{itemize}
+    \end{itemize}
+    \section{Accession Numbers}
+        \begin{itemize}
+            \item Represents a single collection.
+                \begin{itemize}
+                    \item One number is given to all \boldcap{Like} specimen.\sidenote{Lav, Gold, Blue, Grn etc.}
+                    \item \boldcap{Unlike} specimen will be on separate accessions.\sidenote{Body Fluids, Urines, etc.}
+                    \item Microbiology samples will be on separate accession numbers.
+                \end{itemize}
+            \item Accessions are unique.\sidenote{Unlike Sunquest, they don't recycle.}
+            \item Based on the Julian Date
+        \end{itemize}
+        \begin{itemize}
+            \item Each Container has a Container ID.
+            \item Instruments will only run the tests assigned to a container.
+            \item It's important not to swap labels.
+        \end{itemize}
+    \subsection{Downtime Accessions}
+    \wip
+        \begin{itemize}
+            \item Julian Day's start at 400
+            \item No container ID
+            \item They basically work like Z Labels.
+        \end{itemize}
+
+\section{Routing}
+    % \subsection{Service Resources}
+        \begin{itemize}
+            \item Routing allows Cerner to Track Samples.
+            \item It works using \boldcap{Service Resources}\sidenote{The place where samples are performed.}
+        \end{itemize}
+        \turnto{part:routing}{sec:routing_maps}\marginnote{This reference is weird. Basically, it's the routing maps.}
+        \begin{itemize}
+            \item \boldcap{Service Resources} are locations within the lab where a tests are performed.\sidenote{Instrument or Bench.}
+            \item Each test is assigned (Routed to) a \boldcap{Service Resource}\sidenote{Usually, an instrument or bench.}
+            \item If it can't be performed in the hospitals lab it will be routed to another site.
+        \end{itemize}
+    \subsection{Hay's Example}
+        \begin{itemize}
+            \item \textit{Walk through Hays Example containers and their routing.}\sidenote{SMC is an going out of the lab.}
+            \item Each \boldcap{Service Resource} is assigned an \boldcap{In-Lab Location}
+            \item \textit{Show the routing}
+        \end{itemize}
+
+    \subsection{In-Lab Location}
+    \begin{itemize}
+        \item Each \textsc{Service Resource} has an \boldcap{In-Lab Location.}
+        \item This is where the sample needs to be \boldcap{Logged-in}\sidenote{Remember ``In-Lab'' means ``Received.'' This is where the sample needs to be received. }
+    \end{itemize}
+    \subsection{Analogy}
+        \begin{itemize}
+            \item Tube is addressed to an instrument
+            \item Mail is addressed to a person
+            \item Mail needs to be delivered to house, not person.
+            \item Sort of like tubs needs to be logged into the laboratory.
+            \item \boldcap{In-Lab is the most important thing to know}
+        \end{itemize}
+
+    \subsection{Workflow Example 1}
+        This should be pretty self explanatory.
+
+        \infoblock{Notice the SMC Sample is routed to \boldcap{SMC}}
+
+    \subsection{Workflow Example 2}
+        Very Similar to the previous example.
+
+        \infoblock{If the In-lab Location is out of network: Basically, all they need to know is that we send it to \boldcap{referrals}.}
+
+\switchto{Cerner}
+
+\chapter{Department Order Entry}
+    \section{Set Defaults}
+    \begin{itemize}
+        \item Tell them this is in the book for future reference.
+        \item \boldcap{Task}\faArrowRight\boldcap{Define Default Values}
+            \begin{itemize}
+                \item Select \boldcap{Patient Identifier} Field.
+                \item \boldcap{Never} Set \textsc{Client}.\sidenote{It limits searching.}
+                \item Label Printers. \boldcap{LEAVE BLANK FOR TODAY} but for go-live
+                    \begin{itemize}
+                        \item \boldcap{Label Printer} Where your labels will print. Set this
+                        \item \boldcap{Aliquot Printer} Set to the same as above.
+                        \item \boldcap{Media Label Printer} Where micro labels will print.
+                    \end{itemize}
+            \end{itemize}
+    \end{itemize}
+
+\section{Placing an Order}
+    \subsection{Search for a Patient}
+        \begin{itemize}
+            \item \boldcap{Right Click} the \textsc{Person Name} field.
+            \item Select \boldcap{MRN}\sidenote{Alternatively, \boldcap{Ctrl+Tab} to cycle through them.}
+            \item Enter their test patient's MRN.
+            \item Hit \boldcap{Enter}
+            \infoblock{At this point, the demographics should populate with the patient's information.}
+        \end{itemize}
+
+    \importantblock{Instruct everyone to stop using Cerner, and watch what you're doing.}
+
+    \subsection{Finding Orderables}
+        \begin{itemize}
+            \item Click the \boldcap{Orderable} field.
+            \item Search for ``Lytes''
+            \warnblock{Have them make sure to check that the orderable matches the thing they're looking for. \eg{Teg will NOT populate with Thromboelastography.}}
+            \item Explain Ancillary verses Primary orderables.
+        \end{itemize}
+
+    \subsection{Selecting Options}
+        \begin{itemize}
+            \item Yellow Fields are Required.
+            \item Select \boldcap{Collected} if it's not already checked.
+            \item Make sure \boldcap{Receive Location} is set to SMC Login. \sidenote{Go live it will be their hospitals location.}
+        \end{itemize}
+
+\importantblock{Leave the window up and allow everyone to get to where you are.}
+
+    \subsection{Scratch-Pad}
+        \begin{itemize}
+            \item Add the \boldcap{Lytes} to the scratch-Pad.\sidenote{Ctrl+A}
+            \item Add the rest
+            \begin{itemize}
+                \item \boldcap{hCG Quant}
+                \item \boldcap{TNSIBC}
+                \item \boldcap{CHABM}
+            \end{itemize}
+            \item Submit the orders.\sidenote{Ctrl+O}
+            \telltowrite{Both Accession Numbers}
+            \item Order a CDSF
+            \infoblock{If running behind, just demonstrate the error.}
+            \item Change the received time to be after the collection time.
+            \item Click the little X icon.
+        \end{itemize}
+
+
+
+    \section{Accession Add-On}
+        \begin{itemize}
+            \item Add-on a PTT
+        \end{itemize}
+
+\importantblock{Keep the \boldcap{Override} option open, and wait for everyone to catch up.}
+
+    \subsection{To Override or Not to Override}
+        Think of this question as:
+        \begin{quote}
+            Can I add this test onto the existing Containers?
+
+            We have a \boldcap{Green} and a \boldcap{GOld}. Can I add a PTT to a green or a gold?
+        \end{quote}
+        \begin{itemize}
+            \item Click Yes and order it.
+        \end{itemize}
+
+
+\chapter{Container Inquiry}
+
+\begin{itemize}
+    \item Have them pull up their Blood Accession Number
+\infoblock{They will be missing their \boldcap{Container List} show them how to fix it.}
+
+\end{itemize}
+
+\switchto{Presentation}
+
+\begin{itemize}
+    \item When to use it
+    \item Events
+\end{itemize}
+
+\switchto{Cerner}
+
+\begin{itemize}
+    \item Explain Containers
+        \telltowrite{PTT Container ID}
+    \item Explain Events
+        \infoblock{Have them make sure all their containers have a location of \boldcap{SMC Login}}
+    \item Show Routing
+        \telltowrite{PTT Service Resource.}
+\end{itemize}
+
+\section{Troubleshooting}
+\begin{itemize}
+    \item When they run into issues:
+    \begin{itemize}
+        \item Check the last event \boldcap{Location}
+        \item Check that the \boldcap{In-Lab Location} matches.
+    \end{itemize}
+\end{itemize}
+
+
+
+
+
+\switchto{Presentation}
+
+\chapter{Accession Result Entry}
+
+\begin{itemize}
+    \item Modes
+    \item Result Flags
+        \begin{itemize}
+            \item Review Flag = Mostly for auto-verification.\sidenote{If it \boldcap{Doesn't} have a review flag, it \boldcap{Still} needs to be reviewed.}
+            \item Linearity - Outside of our reportable range. This is \boldcap{After} dilution.\sidenote{Remisol handles dilutions}
+            \item Notify - This is used for E.D. troponins that are positive. Holds auto-verification.
+        \end{itemize}
+\end{itemize}
+
+\switchto{Cerner}
+
+\section{Default Values}
+    \infoblock{It helps if you leave these menus open for a bit so they can see.}
+\begin{itemize}
+    \item View \faArrowRight Customize Result Display:
+    \begin{itemize}
+        \item Select Reference Range
+        \item Select Service Resource
+    \end{itemize}
+    \item View \faArrowRight Customize \faArrowRight Sort Assays \faArrowRight By Service Resource.
+\end{itemize}
+
+\section{Entering Results}
+
+\begin{itemize}
+    \item Enter the following results for the Lytes:\sidenote{Don't Verify}
+    \begin{itemize}
+        \item Sodium: 201
+        \item Potassium: 6
+        \item Chloride: 100
+        \item CO2: 20
+    \end{itemize}
+\end{itemize}
+
+\importantblock{Instruct everyone to stop using Cerner, and watch what you're doing.}
+
+\begin{itemize}
+    \item Notice Anion gap is  gt 80.
+    \item Show what happens if CO2 is 0\sidenote{Multiple Inequalities.}
+    \item Most calculations will take place in Cerner.
+    \item Right Click Options:
+    \begin{itemize}
+        \item We can view Calculations\sidenote{Right Click, View Equation}
+        \item Show Procedure Information
+        \item Show Convert Result
+        \item Show all previous
+        \item Show Comments
+        \begin{itemize}
+            \item Comment Vs Note
+            \item Result Comment vs Order Comments\sidenote{Order means Orderable not the whole accession number.}
+            \item Result Comments are considered part of the result, they cannot be added after the result has been verified.
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\importantblock{Everyone can Follow along now.}
+
+\begin{itemize}
+    \item Quickly note that you can branch with this application.
+    \item Click Verify
+    \item Click Yes or Ok
+    \item If they click ``No'' it won't verify or perform.
+    \begin{itemize}
+        \item Walk them through the Comments\sidenote{All the templates are on page 239}
+    \end{itemize}
+    \item Cerner Will not allow you to verify or perform a critical result without a result comment or note.
+\end{itemize}
+
+\subsection{Correcting Results}
+
+\begin{itemize}
+    \item Open Accession Number using Correction mode.
+    \item Notice you can't modify things without results.
+    \item Notice the little Icon.
+    \item Change the \boldcap{Sodium} to 136.
+    \item Noticed the AGAP Changed.
+    \item Enter Batch Comment \boldcap{All Selected}
+    \item If you fail to enter a Correction Comment it will need to be corrected again.
+\end{itemize}
+
+\chapter{Order Result Viewer}
+
+\section{Set Defaults}
+    \begin{itemize}
+        \item Set Look Back to 30 days
+        \item Uncheck All Dates
+    \end{itemize}
+    \begin{itemize}
+        \item View \faArrowRight Customize \faArrowRight Orderlist
+        \item Add the three Cancel Options.
+        \item This takes a while....
+    \end{itemize}
+
+\section{Pull up Order}
+
+\begin{itemize}
+    \item Click The Blue Arrow
+    \item Search for MRN
+    \item Status is helpful for troubleshooting
+        \begin{itemize}
+            \item Page 106 has all the order statuses
+            \item Scheduled
+            \item Dispatched
+            \item Collected
+            \item In Transit
+            \item In Lab
+            \item In Process
+            \item Completed
+            \item Canceled.
+        \end{itemize}
+    \item Double click to view Results
+    \begin{itemize}
+        \item Comments
+        \item Previous Results
+        \item Result History
+    \end{itemize}
+\end{itemize}
+
+\section{Cancel Order}
+\begin{itemize}
+    \item Select SHCG
+    \item Note Reason (Required)
+    \item Add Comment
+\end{itemize}
+
+\chapter{Pending Inquiry}
+    \section{Pulling a pending}
+        \begin{itemize}
+            \item About the Search Window
+            \begin{itemize}
+                \item Test Site is any service resource.\sidenote{Usually they will want to pull a section or subsection.}
+                \item Type:
+                    \begin{itemize}
+                        \item All Pending will show things which have not gotten to the lab
+                        \item Received only - Best not to use this
+                        \item In-Lab Only: It shows everything you need to result.
+                        \item Scheduled shows things that don't have accessions yet.
+                    \end{itemize}
+            \end{itemize}
+            \item Pull a pending for SMC Coag
+            \item this doesn't refresh, click arrow to do that.
+
+        \end{itemize}
+
+
+
+
+\chapter{Transfer Specimens}
+
+\chapter{Specimen Login}
+
+\chapter{Modify Collections}
+
+
+\switchto{Presentation}
+\importantblock{CLAs can Leave}
+
+\chapter{}
+
+
+
+
+
+
+
+
+
+
+\part{Class Activities}
+\section{Department Order Entry}
+
+\warnblock{Please read the instructions carefully!
+    \begin{itemize}
+        \item Do \boldcap{NOT} change the client field.
+        \item Do \boldcap{NOT} submit orders until instructed to do so.
+    \end{itemize}
+}
+
+\refBlock{part:doe}{patientLookup}
+\activity{Search for your Patient using the MRN}\sidenote{\refQuestion{your_mrn}}
+
+\activity{Search for a \boldcap{Electrolytes Metabolic Panel}}
+
+\infoblock{Set the following values:
+    \begin{itemize}
+        \item{{\faCheckSquareO} Collected}
+        \item Set the \boldcap{Received Location} to SMC Login.
+    \end{itemize}
+
+}
+
+\activity{Add the Electrolytes Panel to your \gls{spad}}\sidenote{\hotkey{\boldcap{Ctrl+A}}}
+
+\infoblock{For the next activity, you don't need to change any of the options.They will default to those chosen with the Electrolytes Panel.}
+
+\activity{Add the following tests:}
+
+
+\begin{quote}
+\begin{quote}
+    \begin{itemize}
+        \item hCG Qualitative
+        \item TNSIBC
+        \item Chromosome Analysis on Bone Marrow
+    \end{itemize}
+\end{quote}
+\end{quote}
+
+\activity{Submit the Order}\sidenote{\hotkey{\boldcap{Ctrl+O}}}
+
+\answerFP{
+\item Accession Number (Blood)
+\item Accession Number (Bone Marrow)}
+
+\subsection{Creating An Error}
+
+
+\importantblock{For this next activity, set the \boldcap{Collection Time} to be greater than the \boldcap{Received time}.}
+
+\activity{Order a CDSF}\sidenote{This will generate an ERROR.}
+
+\refBlock{part:doe}{sec:submission_errors}
+
+\activity{View the Submission Error}
+
+\activity{Fix the error, and re-submit the orders}
+
+\answerFP{
+    \item Accession Number (Synovial)
+}
+
+
+\subsection{Accession Add-On}
+
+\activity{Add a PTT to the blood sample ordered earlier.}
+
+\section{Container Inquiry}
+
+\activity{Using \boldcap{Container Inquiry} search for the blood sample.}\sidenote{\refQuestion{blood_accession}}
+
+\answerFP{\item What container is your PTT on?}
+
+\answerFP{\item Which \boldcap{Service Resource} is the PTT routed to?}
+\answerkey{SMC ACL1}
+
+
+
+\chapter{Entering Results}
+
+\section{Accession Result Entry}
+
+\subsection{Getting Started}
+
+\refBlock{part:are}{ch:are_setup}
+
+\activity{Set the Default Values}
+
+
+\subsection{Entering Results}
+
+\importantblock{Do not \boldcap or \boldcap{Verify} these until instructed.}
+
+\activity{Open the Accession number for your Blood Sample using ARE.}\sidenote{\refQuestion{your_mrn}}
+
+\activity{Set the \boldcap{Test Site} to SMC Remisol.}\sidenote{Click Retrieve if needed.}
+
+\activity{Enter results for the Lytes using the following criteria:}
+
+\begin{quote}
+\begin{quote}
+    \begin{itemize}
+        \item \boldcap{Sodium:} 201
+        \item \boldcap{Potassium:} 6
+        \item \boldcap{Chloride:} 100
+        \item \boldcap{CO2:} 20
+    \end{itemize}
+\end{quote}
+\end{quote}
+
+
+\activity{Verify the panel.}
+
+\importantblock{Normally, we select ``Yes.''  However, in order to show you additional features, we'd like you select ``No.''}
+
+\activity{Click ``No''}
+
+\activity{Enter a \boldcap{Batch Comment}}\sidenote{\hotkey{\boldcap{Ctrl+B}}}
+
+\activity{Using the \boldcap{CallRed} template, enter a critical comment}
+
+\refBlock{part:comments}{ch:using_templates}
+
+\activity{Click Verify}
+
+\subsection{Correction Mode}
+
+In this section, we will be modifying some results.\\
+
+\activity{Set ARE to \boldcap{Correction Mode}}
+
+\activity{Change the Sodium to 136}
+
+\activity{Enter a Correction Comment}\sidenote{\hotkey{\boldcap{Ctrl+A}}}
+
+\chapter{Viewing Orders}
+
+
+\section{Order Result Viewer}
+
+\refBlock{part:orv}{ch:orv_getstart}
+
+\activity{Change default values}
+
+\subsection{Searching for a Patient}
+
+\activity{Pull up your patient's orders}\sidenote{\refQuestion{your_mrn}}
+
+\activity{Double click on the Electrolytes Panel.}
+
+\activity{Select a \boldcap{Corrected Result}}\sidenote{Look at the \boldcap{Status} column.}
+
+\activity{Click on \boldcap{History}}
+
+\subsection{Canceling Orders}
+
+\refBlock{part:orv}{ch:orv_cancel}
+
+\activity{Cancel the SHCG}
+
+\section{Pending Inquiry}
+
+\refBlock{part:pi}{ch:customizing_pending}
+
+\activity{Modify the headings}
+
+\activity{Re-Route the PTT to Brakenridge.}
+
+\refBlock{part:pi}{ch:transfer_from_pending}
+
+\activity{Transfer the PTT.}
+
+
+\chapter{Transfer Specimen}
+
+\activity{Set up defaults}
+
+\infoblock{In this section we will create two transfer lists. Please pay close attention, this section gets complicated.}
+
+
+\section{Creating Lists}
+
+\subsection{Your First List}
+
+The first list will contain your PTT.
+
+\importantblock{Use the Following Settings:
+
+From: \boldcap{\Large From SMC Login}
+
+To: \boldcap{\Large To BH Login}
+
+}
+
+\refBlock{part:transfer}{ch:creat_trans_list}
+
+\activity{Create a transfer list for the PTT Order.}
+
+\answerFP{\item What is your list number?}
+
+\subsection{Your Second List}
+
+The second list will contain your CHABM.
+
+\importantblock{Use the Following Settings:
+
+From: \boldcap{\Large From SMC Login}
+
+To: \boldcap{\Large To BH Referrals}
+
+}
+
+\refBlock{part:transfer}{ch:creat_trans_list}
+
+\activity{Create a transfer list for the CHABM}
+
+\answerFP{\item What is your list number?}
+
+\subsection{Modify List}
+
+\activity{Select and Modify your First List}\sidenote{\refQuestion{ptt_list}}
+
+\activity{Add the TNSIBC To the list}\sidenote{\refQuestion{blood_accession}}
+
+\chapter{Specimen Login}
+
+\section{Log-in By Accession}
+
+\refBlock{part:login}{sec:login_procedure}
+
+\activity{Open Accession Log-in and choose: \boldcap{Log-in by Accession} }
+
+\activity{Make Sure the \textsc{Log-in Location} is set to \boldcap{BH Login}}
+
+\importantblock{In order to prevent errors, enter the container ID after the Accession Numbers.\sidenote{Capital Letters}}
+
+\begin{itemize}
+    \item CHABM\sidenote{This will be container `A'}
+    \item PTT\sidenote{\refQuestion{ptt_container}}
+\end{itemize}
+
+\section{Login By List}
+
+\refBlock{part:login}{ch:login_list}
+
+\activity{Open Accession Log-in and choose: \boldcap{Log-in by List}}
+
+\activity{Log in your Second List}\sidenote{\refQuestion{bm_list}}
+
+\activity{Log in your First List}
+
+\chapter{Advanced ARE}
+
+\activity{Open your Synovial Fluid in ARE}
+
+\activity{Result it so that a Differential and Crystal ID will reflex.}
+
+\infoblock{\begin{itemize}
+        \item \boldcap{WBC} > 5
+        \item \boldcap{Crystals}: Present
+    \end{itemize}
+}
+
+\section{Differential Mode}
+
+\refBlock{part:are}{sec:perform_differential}
+\activity{Perform a Differential.}
+
+\activity{Switch to Accession Mode and enter the Total Cells Counted.}
+

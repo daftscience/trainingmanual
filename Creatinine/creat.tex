@@ -1,0 +1,25 @@
+\newthought{When tests are ordered} which require creatinine results Cerner will decide if a creatinine is required. If a creatinine is required, Cerner will add the creatinine automatically. This document will describe the process and procedures to ensure that the rules trigger properly.
+
+\bigskip
+
+\section{Glomerular filtration rate}
+
+\newthought{With the GFR} there are two situations we will run into
+\begin{itemize}
+\item No creatinine ordered before the GFR was ordered.
+    \begin{description}
+        \item Cerner will automatically add a creatinine to the GFR. Once the creatinine is            resulted, the GFR will be calculated.
+    \end{description}
+\item Order for Creatinine placed \textit{before} the GFR was ordered.
+    \begin{description}
+        \item The lab will have to cancel the GFR and add it to the same Accession number as the creatinine, using Accession Add-on in Department Order Entry. The GFR will immediately calculate. \marginnote[-2\baselineskip]{The GFR needs to be on the same accession number as the GFR.}
+    \end{description}
+\end{itemize}
+
+
+\section{Creatinine Clearance}
+
+\newthought{With the creatinine clearance} Cerner will be able to determine if a plasma creatinine is required. If the patient does not have an existing order for a plasma creatinine, Cerner will order it automatically. If an order \textit{does} exist for a plasma creatinine, Cerner will use that result to calculation the Creatinine Clearance.\marginnote[-4\baselineskip]{Unlike the GFR, the serum creatinine does not need to be on the same accession number for the calculation to work.}
+
+
+

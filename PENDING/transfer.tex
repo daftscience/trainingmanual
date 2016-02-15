@@ -1,0 +1,85 @@
+In the event that a laboratory is temporally unable to perform certain tests,\sidenote{\ie{An instrument has gone down indefinitely.}} samples can be routed to another laboratory.
+
+This is a two-step processes:
+\begin{itemize}
+    \bolditem{Reroute} This is done through \gls{pi}.
+    \bolditem{Transfer Specimen} This is done through \gls{trans}.
+\end{itemize}
+
+\section{Reroute Samples}
+
+Before samples can be transferred, the \textsc{Routing} location needs to be known.
+
+\subsection{Checking Routing}\label{ss:check_routing}
+
+\paragraph{Open} \appicon{container_inquiry} \gls{ci}.
+
+\paragraph{Enter} the \gls{accn}.
+
+\paragraph{Click} \btn{graphics/retrieve}\\
+
+\prettyimage{width=\textwidth}{graphics/container_inquiry}
+
+\paragraph{Right Click} on the container that will be transferred.
+
+\paragraph{Select} \boldcap{Show Routing}.\\
+
+\prettyimage{width=.6\textwidth}{graphics/get_routing}
+
+\paragraph{Note} the \boldcap{Service Resource}.\sidenote{In this case it's \textsc{SMC Remisol}}\\
+
+\prettyimage{width=.6\textwidth}{graphics/routing}
+
+\paragraph{Close} \textsc{Container Inquiry}.
+
+\subsection{Transfer Samples}
+
+\paragraph{Open} \appicon{pending_inquiry} \gls{pi}.
+
+\paragraph{Enter} the \boldcap{Service Resource} into the \boldcap{Test Site} field.\sidenote{Remember? It's SMC Remisol.}\\
+
+\prettyimage{width=.6\textwidth}{graphics/select_procedures}
+
+\paragraph{Click} \btn{graphics/ok}\\
+
+\paragraph{Select} the order to \textsc{Transfer}.\\
+
+\prettyimage{width=\textwidth}{graphics/select_thing}
+
+\paragraph{Click} \boldcap{Task} from the \textsc{Menu Bar}.
+
+\paragraph{Select} \boldcap{Transfer}.
+
+\paragraph{Select} \boldcap{Selected Orders}.
+
+\paragraph{Click} \boldcap{All Details...}\\
+
+\prettyimage{width=\textwidth}{graphics/transfer_menu}
+
+\paragraph{Enter} the \boldcap{Service Resource} destination.\\
+
+\prettyimage{width=.5\textwidth}{graphics/transfer_select}
+
+\infoblock{In most cases, you can simply replace the hospital abbreviation\sidenote{SMC in this case} with the destinations hospital abbreviation.\sidenote{BH in this case.}
+
+\begin{description}
+    \item \boldcap{SMC} Remisol {\faArrowRight } \boldcap{ BH} Remisol
+\end{description}
+ }
+
+\prettyimage{width=.5\textwidth}{graphics/transfer_to}
+
+\paragraph{Hit} {\faKeyboardO } \textsc{Enter} on the keyboard.\\
+
+\newthought{The routing} of the sample should now be set to \boldcap{BH Remisol}. This can be viewed by looking it up in \gls{ci}.\sidenote{\refpt{ss:check_routing}}\\
+
+\prettyimage{width=\textwidth}{graphics/updated_routing}
+
+\subsection{Finishing Up}
+
+Finally, the sample needs to be put on a transfer list and sent to the new testing laboratory.\\
+
+\noindent
+For information of Transferring Specimen:
+
+\checkref{part:transfer}{\refptapp{part:transfer}{transfer_specimen}}{Refer to the \boldcap{Transfer Specimens} Documentation}.

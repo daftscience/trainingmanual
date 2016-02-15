@@ -1,0 +1,99 @@
+\gls{ci} can view \glspl{accn} \textit{with} or \textit{without} using the \gls{cid}. If a \gls{cid} is used \gls{ci} will only show details for the container specified.\sidenote{\eg{Accn: 15-123-123456 has two containers. If 15-123-123456A is entered, only the details for container A will be displayed. }}
+
+\paragraph{Enter} an \gls{accn} in the \gls{accn} field.\\
+
+\prettyimage{height=4em}{graphics/accn_field.png}
+
+\paragraph{Click} \btn{graphics/retrieve_btn} to load the \gls{accn}.\\
+
+\noindent
+\begin{tikzpicture}
+% \node [anchor=west] (dem) at (-1,3.7) {\scshape{Demographics}};
+\node [anchor=west] (pif) at (-1,2.7) {\scshape{Containers}};
+\node [anchor=west] (ord) at (-1,1.7) {\scshape{Events}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.78\textwidth}{graphics/container_inquiry_loaded.png} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw [-stealth, line width=3pt, deeppurple400] (dem) to[out=90, in=180] (0.04,0.71);
+        \draw [-stealth, line width=3pt, deeporange400] (pif) to[out=0, in=200] (0.04,0.51);
+        \draw [-stealth, line width=3pt, indigo400] (ord) to[out=0, in=180] (0.04,0.21);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{The \gls{accn} shown} has three containers. We can see that container ``A'' has been \textsc{Dispatched.}\sidenote{Clicking on the other containers will show that they have also been ``Dispatched.''}
+
+\section{Container List}
+The Container List shows the list of containers, and separates orders by \textsc{Ordered} and \textsc{Collected}.
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (pif) at (.5, 1.5) {\scshape{Collected Orders}};
+\node [anchor=west] (cf) at (4, 2) {\scshape{Orders Not Collected}};
+\begin{scope}[yshift=-.7cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/containers_list}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw [-stealth, line width=3pt, deeporange500] (pif) to[out=0, in=90] (0.5,0.75);
+        \draw [-stealth, line width=3pt, cyan500] (cf) to[out=0, in=90] (0.8,0.75);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+
+\newthought{As the containers} are collected, the order will move from the \textsc{Orders not Collected} column, to the \textsc{Orders} column.\sidenote{The next section will discuss this a bit more.}\marginnote[1\baselineskip]{Container ``A'' has been collected in this image.}\\
+
+\prettyimage{width=\textwidth}{graphics/container_list_interesting.png}
+
+\section{Event List}
+
+The \textsc{Event List} shows the list of events for the container selected in the \textsc{Container List}.\\
+
+\begin{table}
+    \begin{tabular}{ll}
+        \boldcap{\large Event} & \boldcap{\large Meaning} \\
+        \hline
+         \textsc{Dispatched}     & An Accession Number has been assigned.\\
+         \textsc{Collected}      & The sample has been collected. \\
+         \textsc{Received}       & The sample was logged into a laboratory. \\
+         \textsc{Logged Out}     & The Sample has been put on a Transfer List. \\
+         \textsc{In Transit}     & The sample is on its way to another location. \\
+         \textsc{Added Orders}   & An order has been added after it was collected. \\
+         \textsc{Orders Removed}   & An order has been canceled. \\
+        \hline
+    \end{tabular}
+    \caption{Container Events and Meanings}
+    \label{table:container_events}
+\end{table}
+
+\subsection{Dispatched Status}
+
+The first status that will show up is \textsc{Dispatched}. This status means the \textsc{\gls{accn}} has been assigned, and the labels have printed.
+
+\subsection{Transfered Statuses}
+
+\textsc{Logged Out} and \textsc{In Transit} are placed on samples that have been put onto a \textsc{Transfer List} and are on their way to another location.
+
+These are usually send out tests, both \textsc{In House} and \textsc{Referral Tests.}
+
+\subsection{Example}
+
+This is the \textsc{container list} for container ``A.'' We can see that it was \textit{Dispatched, Collected,} and then \textit{Received.}\sidenote{\ie{Received at SMC Login} \note{This is important when it comes to troubleshooting.}}\\
+
+\prettyimage{width=\textwidth}{graphics/event_list.png}
+
+\section{Routing\label{sec:ci_show_routing}}
+Cerner is very picky about what can be done to samples and where. For instance: If a sample has not been logged into its \textsc{Routed} location, Cerner will not allow results to be entered.\sidenote{A test performed exclusively at Brakenridge cannot be resulted until it has been Logged-in at \textsc{BH Login}.}
+
+\newthought{To View Routing} information:
+
+\paragraph{Right Click} on the container in the ``Container List.''
+
+\paragraph{Click} \boldcap{Show Routing}.\\
+
+\prettyimage{width=\textwidth}{graphics/open_routing.png}
+
+\newthought{The ``Order Routing''} window will open. This window will show a list of orders for the container, along with a \textsc{\gls{serviceresource}},\sidenote{The Instrument or Bench where the test will be performed.} and \textsc{\gls{inlablocation}}.\sidenote{The Log-in Location where the sample needs to be logged into before it can be resulted (\eg{BH Login}).}\\
+
+\prettyimage{width=\textwidth}{graphics/routing_information.png}
+

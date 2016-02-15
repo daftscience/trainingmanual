@@ -1,0 +1,33 @@
+\newthought{If you'd like to save} the results, but \boldcap{Not} release them:
+
+\paragraph{Click} \btn{graphics/perform} to \textsc{Perform}\sidenote{This will save the results; they can be modified or \textsc{verified} at a later time.} the results.
+
+\newthought{If the results are good} to be released:
+\paragraph{Click} \btn{graphics/verify} to \textsc{Finalize}\sidenote{This will post the results to the patient's chart, they cannot be modified without \textsc{Corrections}.} the results.
+
+\section{Verifying Critical Results}
+\gls{are} will do it's best to make sure that a comment has been placed on the result before allowing the result to be verified.
+
+\newthought{When the } \btn{graphics/perform} or \btn{graphics/verify} button is pressed \boldcap{and} there is no \textsc{Comment Flag} \gls{are} will display one of the following alerts.\\
+
+\prettyimage{width=.7\textwidth}{graphics/critical_alert}\marginnote{This is displayed if there is only one critical value.}\\
+
+\newthought{Clicking the} \btn{graphics/pretty_ok} button will open a \textsc{Comments Window}.\sidenote{\info{The comment entered into this window will be applied to the \textsc{Critical Result}.}}\\
+
+\prettyimage{width=.7\textwidth}{graphics/critical_alert_batch}\marginnote{This is displayed if there are multiple critical values.}
+
+\newthought{Clicking the} \btn{graphics/yes} button will open a \textsc{Batch Comments Window}.\sidenote{\info{The comment entered into this window will be applied to every \textsc{Critical Result}.}}\\
+
+\warnblock{\gls{are} will only check for the presence of a comment, it has no way of knowing if the comment is a \textbf{Critical Call} comment.}\marginnote{Quick Reminder:
+\begin{description}
+    \paraitem{Type} \boldcap{calred}
+    \paraitem{hit} {\faKeyboardO} \boldcap{F9} to expand.
+    \paraitem{hit} {\faKeyboardO} \boldcap{F3} to move.
+    \paraitem{hit} {\faKeyboardO} \boldcap{F5} for date.
+\end{description}
+}
+
+
+\prettyimage{width=.7\textwidth}{graphics/batch_comment}\marginnote{For more information on adding comments \checkref{sec:comment_templates}{\refptch{part:comments}{ch:adding_comments}}{refer to the \boldcap{Comments} documentation}.}
+
+\infoblock{The great thing about this feature is that it's a quick way to apply the \textsc{Critical Call Comment} to every critical result.}

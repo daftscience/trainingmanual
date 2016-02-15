@@ -1,0 +1,6 @@
+(indexentry :tkey (("DOE" "\\glossentry{doe}") ) :xref ("[Glossary:]{gls-doe}") :attr "see" ) 
+(indexentry :tkey (("MRN" "\\glossentry{mrn}") ) :xref ("[Glossary:]{gls-mrn}") :attr "see" ) 
+(indexentry :tkey (("FIN" "\\glossentry{fin}") ) :xref ("[Glossary:]{gls-fin}") :attr "see" ) 
+(indexentry :tkey (("ARE" "\\glossentry{are}") ) :xref ("[Glossary:]{gls-are}") :attr "see" ) 
+(indexentry :tkey (("ORV" "\\glossentry{orv}") ) :xref ("[Glossary:]{gls-orv}") :attr "see" ) 
+(indexentry :tkey (("DOE" "\\glossentry{doe}") ) :locref "{}{2}" :attr "pageglsnumberformat" ) 

@@ -1,0 +1,28 @@
+\gls{ci} is used to view tracking information on \glspl{accn} and containers. It allows you to see where samples have been, who they were logged in by, and when. In addition, it will show \gls{routing}.\sidenote{\glsdesc{routing}}
+
+\gls{ci} is the most helpful application when it comes to troubleshooting. When having difficulty with an accession, this is the first application that should be opened.
+
+\newthought{Open} \gls{ci} by clicking the \appicon{container_inquiry} icon from the \gls{ab}.\\
+
+\vspace{1em}
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (cf) at (-2,3.7) {\scshape{Demographics}};
+\node [anchor=west] (pif) at (-2,2.7) {\scshape{Container List}};
+\node [anchor=west] (ord) at (-2,1.7) {\scshape{Event List}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.6\textwidth}{graphics/container_inquiry} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, cyan400] (cf) to[out=0, in=180] (0.04,0.71);
+        \draw [-stealth, line width=3pt, deeporange400] (pif) to[out=0, in=180] (0.04,0.51);
+        \draw [-stealth, line width=3pt, indigo400] (ord) to[out=0, in=180] (0.04,0.21);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{\Gls{ci} is divided} into three parts:\\
+\begin{description}
+    \bolditem{Demographics} This will have demographic information on the patient.
+    \bolditem{Container List} This is a list of all containers on the \gls{accn}.\sidenote{\info{If a \gls{cid} is used, this list will only have one container.}}
+    \bolditem{Event List} The list of events that have occurred on the selected container.
+\end{description}

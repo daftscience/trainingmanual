@@ -1,0 +1,57 @@
+The first time opening \gls{login}, it's a good idea to modify the default values.
+
+\paragraph{Open} \gls{login} by clicking the \appicon{specimen_login} icon from the \gls{ab}.
+
+\paragraph{Select} ``Accession'' from the  ``Log-in By'' options.
+\paragraph{Click} \btn{graphics/retrieve.png} to open ``Log-In By ACCESSION.''\\
+
+\section{Setting Location}
+The most important setting in \gls{login} \marginnote{\textbf{Fun Fact: }Most \textsc{Log-in} related mistakes
+    come from this being set to the wrong location.} is the \textsc{Location}. In most cases, the location will be set to your laboratory's \textsc{Log-in Location}.\\
+
+\noindent
+\begin{tikzpicture}
+    \node [anchor=west] (pif) at (2, 5.7) {\scshape{Location}};
+    \begin{scope}[yshift=-.7cm]
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/login_by_accession.png}};
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+            \draw [-stealth, line width=3pt, indigo400] (.25, 1.04) to[out=-90, in=-255] (0.13,0.15);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+\marginnote[2\baselineskip]{\eg{Dell's log-in location is\\ ``DC Login.''}}
+\begin{quote}\scshape
+    \begin{multicols}{3}
+        \begin{itemize}[label={-}]
+            \item BH Login
+            \item DC Login
+            \item SEBD Login
+            \item SHC Login
+            \item SHL Login
+            \item SMC Login
+            \item SNW Login
+            \item SSW Login
+            \item SWC Login
+        \end{itemize}
+    \end{multicols}
+\end{quote}%
+
+
+\noindent
+Of course, there are exceptions. Some departments will require an alternate Log-in Location \eg{Microbiology, Blood Bank, \etc}. Departments which require special log-in locations should provide that information.
+
+
+\importantblock{This setting is ``Sticky'' and there is no ``Default'' value. If you temporarily change it from your normal log-in location,\sidenote[][-1\baselineskip]{\eg{Receiving microbiology samples.}} it needs to be changed back.\sidenote[][1\baselineskip]{This will be a common mistake for people starting out. }}
+
+\paragraph{Select} your \textsc{Log-in Location} from the drop-down menu.\\
+
+\prettyimage{width=\textwidth}{graphics/location.png}
+
+\section{Setting Default Printers}
+\paragraph{Click} \textsc{Task} from the menu-bar.\marginnote{\prettyimage{width=\linewidth}{graphics/task_label.png}}
+\paragraph{Select} \textsc{Label Printer\ldots}\\
+
+\prettyimage{width=.6\textwidth}{graphics/label_printer.png}
+\paragraph{Set} both drop-down menus to the nearest label printer.\marginnote{\note{To save the settings temporarily, {\faSquareO} Un-check the \textsc{Set as Default\ldots} options}.}
+\paragraph{Click} \btn{graphics/ok} to save the settings.

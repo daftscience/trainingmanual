@@ -1,0 +1,129 @@
+
+\newcommand{\activityRef}[2]{{{{\reficon}\refcolor \scshape\textbf{\nameref{#1}}: \nameref{#2}, \textit{pg. \pageref{#2}}}}}
+
+
+
+
+\newcounter{questions}[section]
+\newenvironment{questions}[1][]{\refstepcounter{questions}{#1}}{}
+
+
+
+
+\usepackage{calc}
+
+\newlength{\remaining}
+\newcommand{\answerline}[1]{%
+\setlength{\remaining}{\linewidth-\widthof{\textsc{ #1}}}
+{\textsc{#1}\underline{\hspace*{\remaining}}}}
+
+
+% \newcommand{\question}[1]{%
+% \begin{questions}
+% #1
+% \begin{quote}
+%   \noindent\rule{\linewidth}{0.4pt}
+% \end{quote}
+% \end{questions}
+% }
+
+% \newcommand{\shortquestion}[1]{%
+% \begin{questions}
+%   \answerline{{\faPencil} #1:}
+
+% }
+\usepackage{enumitem}
+% \setlist[2]{noitemsep} % sets the itemsep and parsep for all level two lists to 0
+% \setenumerate{noitemsep} % sets no itemsep for enumerate lists only
+
+
+\newcommand{\wip}{\infoblock{We are still working out some of the details regarding this topic. We will provide more information when it's available.}}
+\newcommand{\switchto}[1]{
+\bigskip
+\noindent{\huge\warncolor Switch to #1}
+}
+
+\newcommand{\answer}[2][1]{%
+\begin{quote}
+\questions{\answercolor
+\answerline{{\faPencil} {\large\thequestions}:  #2}}
+% \ifthenelse{\equal{#1}{}}{}{
+\ifthenelse{\equal{#1}{}}{%
+    }{%
+        \ifthenelse{\equal{#1}{1}}{}{
+
+            \iftoggle{showAnswers}{
+                \marginnote{\answerkeycolor\boldcap{Answer:} #1}
+            }{}
+        }
+    }%
+\end{quote}
+}
+
+\newcommand{\issues}[1]{
+    {\warncolor
+    \begin{quote}
+        \boldcap{Common Issues}:
+        \begin{itemize}
+            #1
+        \end{itemize}
+    \end{quote}
+    }
+}
+
+\newcommand{\instruct}[1]{
+    \iftoggle{instruction}{
+    #1
+    }{}
+
+}
+
+\newcommand{\answerFP}[1]{
+  \begin{quote}\answerRefColor
+    {\faPencil} Write this down on your \boldcap{Quick Reference Guide}:
+    % \begin{quote}
+    \begin{itemize}
+     \textsc{#1}
+    \end{itemize}
+        % \end{quote}
+
+    % \answerline{{\faPencil} #1:}\sidenote{Write this on your \boldcap{Quick Reference} sheet.}
+  \end{quote}
+
+}
+
+\newcommand{\telltowrite}[1]{
+\begin{quote}\answerRefColor
+    {\faPencil} Have them note: \textsc{#1}
+  \end{quote}
+}
+
+
+\newcommand{\answermulti}[2][1]{%
+
+    \ifthenelse{\equal{#1}{}}{%
+        }{%
+            \ifthenelse{\equal{#1}{1}}{}{
+                \iftoggle{showAnswers}{
+                  \marginnote[1\baselineskip]{\answerkeycolor\boldcap{Answer:} #1}
+                }{}
+            }
+        }%
+    \begin{quote}\answercolor
+    \answerline{{\faPencil} {\large\thequestions}: #2}
+
+    \bigskip
+    \answerline{{\color{white}.}}
+    \end{quote}
+
+}
+
+\newcommand{\activity}[1]{\noindent{\faDesktop}\textsc{ #1}}
+
+
+
+
+\newcommand{\answerkey}[1]{\iftoggle{showAnswers}{\marginnote{\answerkeycolor\boldcap{Answer:} #1}}{}}
+
+\DeclareRobustCommand{\refQuestion}[1]{%
+        {\answerRefColor \scshape \boldcap{question \#: \ref{#1}} on your Quick Reference Sheet.}}

@@ -1,0 +1,127 @@
+This section will describe the process of \textsc{Manual Result Entry, Performing Results,} and \textsc{Verifying Results.}
+
+In addition, it describes \textsc{Result Flags, Reference Ranges, Critical Ranges, Linearities, }
+
+\textsc{Accession Mode} is the default resulting mode for \gls{are}. It can be used to enter results manually, or verify results performed by instruments.\\
+
+\prettyimage{width=\textwidth}{graphics/accn_mode}
+
+
+
+\section{Manual Result Entry}\label{sec:man_res_entry}
+
+\paragraph{Open} \gls{are} by clicking the \appicon{are} from the \gls{ab}.
+
+\paragraph{Enter} the \gls{accn}.\sidenote{\checkref{sec:accn_tips_entering}{\refptch{part:accn}{sec:accn_tips_entering}}{See the \boldcap{Accession Numbers} procedure for tips on entering Accession Numbers.}}\\
+
+\prettyimage{width=\textwidth}{graphics/accn_field}
+
+\paragraph{Click} \btn{graphics/retrieve}\\
+
+\prettyimage{width=\textwidth}{graphics/result_mode_start}
+
+\paragraph{Click} on the \textsc{result cell} to enter a result.\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.5\textwidth}{graphics/result_field_empty} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, teal400] (0.2, 1.02) to[out=270, in=180] (0.58,0.56);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\paragraph{Enter} the result.\sidenote{Cerner will fill any missing decimal points with \textsc{Zeros}.}\\
+
+\prettyimage{width=.5\textwidth}{graphics/result_field_one}
+
+
+\paragraph{Hit} {\faKeyboardO } \textsc{Enter} on the keyboard to move to the next result.\\
+
+\prettyimage{width=.5\textwidth}{graphics/result_field_one_done}
+
+\paragraph{Continue} entering results.\\
+
+\prettyimage{width=.8\textwidth}{graphics/results_noflags}
+
+% \cfinput{./basics.tex}
+
+% \cfsection{Verifying Results}{./}{verify}
+
+
+\section{Result Types}\label{sec:convert_result}
+Every assay has a default \textsc{Result Type}. This is the result type which will be used most often to result the assay.
+
+In situations where it's not possible to use the default,\sidenote{\eg{Unable to perform calculations.}} the \textsc{Result Type} will need to be converted to an appropriate alternative.
+
+\subsection{Result Types}
+There are several ways results can be entered using \gls{are}:
+% \begin{description}
+%      \bolditem{Numeric} Measured values.
+%      \bolditem{Alpha Response} Pre-composed text results\sidenote{\eg{Positive, Negative, \etc}} which can be selected by using the \textsc{Drop-down} menu on the result cell.
+%      \bolditem{Calculation} Calculated values based, most of them use other results in their equations.\sidenote{\eg{Anion Gap.}}
+%      \bolditem{Text} Long text results, which may require formatting.\sidenote{\eg{Pathology Interpretation response for Tegs.}}
+%      \bolditem{Freetext} This is a short text result.\sidenote{This will be used if results need to be removed.}
+% \end{description}
+
+
+\noindent
+\begin{table}
+    \begin{tabular}{p{0.2\textwidth} p{.35\textwidth} p{.35\textwidth}}
+        \boldcap{\large Type} & \boldcap{\large Meaning} & \boldcap{\large How it's Entered}\\
+        \hline
+        \textsc{Alpha}          & Pre-composed results. & Select via Drop down \\
+        \textsc{Calculation}    & Calculated values.    & Automatically Entered.\\
+        \textsc{Freetext}       & Short text result.    & Type result.\\
+        \textsc{Numeric}        & Measured values.      & Type result.\\
+        \textsc{Text}           & Long text results.    & Word Processor.\\
+        \hline
+    \end{tabular}
+    \caption{Result Types}
+    \label{table:result_types}
+\end{table}
+
+\subsection{Changing Result Types}
+
+There are situations where it may be necessary to change a result type. For instance: If a \textsc{Teg} doesn't split, the result needs to be changed to an \boldcap{Alpha Response}.
+
+\paragraph{Right Click} on the result cell.
+
+\paragraph{Select} \boldcap{Convert Result}.
+
+\paragraph{Select} the appropriate \textsc{Result Type}.\sidenote{If a \textsc{Result Type} for that assay is unavailable it will be disabled in this menu.}\\
+
+\prettyimage{width=.9\textwidth}{graphics/result_type}
+
+\section{Entering Comments}
+
+Additional information can be attached to individual results or entire orders by adding Comments and/or notes.
+
+\infoblock{For a detailed description on comments: \checkref{part:comments}{\refpt{part:comments}}{Refer to the \boldcap{Comments} documentation}.}
+
+\paragraph{Select} an assay which needs a comment.\sidenote{If the comment or note will be attached to the entire order, then simply select any result.}
+
+\paragraph{Click} \btn{graphics/comment_icon} from the \textsc{Toolbar}\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/tool_bar}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw[deeppurple400, rounded corners, line width=3] (0.02, 0.1)rectangle (0.13, 0.98);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+
+\newthought{The Comments Window} will open.\\
+
+\prettyimage{width=.5\textwidth}{graphics/comments_window}
+
+\begin{description}
+    \bolditem{Order Comment} A comment applied to the entire order.\sidenote{In this example it is applied to the whole Basic Metabolic Panel.}
+    \bolditem{Order Note} An internal note applied to the entire order.
+    \bolditem{Result Comment} A comment attached to a specific result.\sidenote{In this example it is applied to just the Creatinine result.}
+    \bolditem{Result Note} An internal note applied to a specific result.
+\end{description}

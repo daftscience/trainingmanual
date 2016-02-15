@@ -1,0 +1,23 @@
+Here are some common issues that come up when first learning \glsname{gls-doe}.
+
+\section{Unable to Search by Accession Number}
+The last time \gls{orv} was open, it was most likely in ``\gls{fs}'' mode. This mode does not allow searching by \gls{accn}.
+
+\newthought{We can fix this} by switching back to \textsc{Order List} mode.
+\marginnote[1\baselineskip]{\prettyimage{width=\linewidth}{graphics/orderlist}}
+\paragraph{Close} the \textsc{Find Orders} window.
+\paragraph{Click} \boldcap{Mode} on the menu bar.
+\paragraph{Click} \boldcap{Order List}.
+
+\section{Branching Applications Won't Open}
+This is usually caused by one of two things:
+\begin{description}
+    \bolditem{The Application is hidden behind another window} Simply move, or minimize \gls{orv}.
+    \bolditem{The Application has already been opened} Cerner will reuse branched applications.
+
+    This means, if you branch to \gls{are} and leave the window open, \gls{orv} will use the open window the next time you branch.\sidenote{Still with me?}
+
+    Since pulling up a new \gls{accn} could cause unperformed results to be lost, Cerner will not allow the second application to open.
+
+    \textit{Basically, just close all those windows except \gls{orv} and try again.}
+\end{description}

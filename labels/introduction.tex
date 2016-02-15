@@ -1,0 +1,115 @@
+There are three applications which are specifically used to print labels.\\
+
+\appicon{label_reprint} \boldcap{Label Re-print} is used to re-print \textsc{Container Labels}.
+
+\appicon{label_preprint} \boldcap{Label Pre-Print} is used to print \textsc{Downtime Labels}.
+
+\appicon{media_label_reprint} \boldcap{Media Label Re-print} is used to re-print \textsc{Micro Media Labels}.
+
+
+\chapter{Label Reprint}
+
+\newthought{Open Label Reprint} by clicking the \appicon{label_reprint} icon from the \gls{ab}.\sidenote{\checkref{ch:ab_addapp}{\refptch{part:ab}{ch:ab_addapp} }{Refer to the \textsc{App-Bar Procedure} } if you need help adding it.}\\
+
+\prettyimage{width=\textwidth}{graphics/label_reprint}
+
+\paragraph{Enter} the \textsc{Accession} in the \textsc{Starting Accession Number} field.
+
+\importantblock{If you enter the Accession Number \boldcap{With} the Container ID,\sidenote{Or, if you scan the barcode.} the label for that specific container will print.
+
+If you omit the container ID, all of the labels will print.}
+
+\paragraph{Select} the \textsc{Label Printer} from the drop down menu.
+
+\infoblock{The Label Printer is a \boldcap{Sticky} setting. It will be the default the next time this application is opened.}
+
+\paragraph{Click} \btn{graphics/print}
+
+
+\chapter{Label Preprint}
+
+Label PrePrint is used to print downtime labels.
+
+\warnblock{This application does not reserve accession numbers. This means it is important to ensure that you're not printing duplicate labels. It may be best to assign the task of printing downtime labels to one person within the laboratory.}
+
+\section{About Downtime Accession Numbers}
+
+The difference between a \textsc{Downtime Accession Number} is that the \textsc{Julian Day} is replaced with a \textsc{Downtime Number}.\\
+
+\noindent
+\begin{minipage}{\textwidth}
+\centering
+    \sffamily
+    \begin{tikzpicture}
+        {\Large
+        \node [anchor=west] (pif) at (-0.1, 1.5) {\LARGE
+                    \color{deeporange800}{Julian Year} \hspace{2em}
+                    \color{cyan800}{Group Number}};
+        \node [anchor=west] (sp) at (0.0,-2) {\LARGE
+                    \color{purple800}{Downtime Number} \hspace{1em}};
+        }
+        \node[anchor=west,inner sep=0] (image) at (0,0) {
+                \Huge{
+                        {\color{deeporange600}15}-%
+                        {\color{purple600}400}-%
+                        {\color{cyan600}123456}%
+                        }};
+        \draw [-stealth, line width=3pt, deeporange400] (1.4,  1.3)    to[out=-90, in=80] (0.6, 0.3);
+        \draw [-stealth, line width=3pt, cyan400]            (4.7,  1.3)    to[out=-90, in=60] (4, 0.3);
+        \draw [-stealth, line width=3pt, purple400]         (1.4, -1.8)   to[out=90, in=-90] (2, -0.3);
+    \end{tikzpicture}%
+\end{minipage}
+
+
+\newthought{To ensure that two} sites don't use the same \textsc{Downtime Accession Number}, each site will have a designated range.\\
+
+\begin{table}
+    \begin{tabular}{ll}
+        \boldcap{\large Hospital} & \boldcap{\large Downtime Accession} \\
+        \hline
+            \textsc{Brackenridge}              &     400\\
+            \textsc{Dell Children’s}           &     410\\
+            \textsc{Edgar B. Davis}            &     420\\
+            \textsc{Hays}                      &     430\\
+            \textsc{Highland Lakes}            &     440\\
+            \textsc{Northwest}                 &     450\\
+            \textsc{Seton Medical Center}      &     460\\
+            \textsc{Southwest}                 &     470\\
+            \textsc{Williamson}                &     480\\
+        \hline
+    \end{tabular}
+    \caption{Downtime Label Accessions}
+    \label{table:downtime_labels}
+\end{table}
+
+\section{Printing Downtime Labels}
+
+\newthought{Open Label PrePrint} by clicking the \appicon{label_preprint} icon from the \gls{ab}.\sidenote{\checkref{ch:ab_addapp}{\refptch{part:ab}{ch:ab_addapp} }{Refer to the \textsc{App-Bar Procedure} } if you need help adding it.}\\
+
+\prettyimage{width=\textwidth}{graphics/label_preprint}
+
+\paragraph{Enter} the \boldcap{Number} of Accessions to print.
+
+\paragraph{Enter} the \boldcap{Starting Accession Number}.
+
+\paragraph{Select} \boldcap{Downtime} for the \textsc{Collection Class}.
+
+\paragraph{Enter} the \boldcap{Number} of labels to print.\sidenote{5 might be a good number. This allows Four containers and 1 label for documentation.}
+
+\paragraph{Select} the \boldcap{Label Printer}.
+
+\paragraph{Click} \btn{graphics/print}
+
+\chapter{Media Label Reprint}
+
+Media Label Reprint is used to preprint microbiology media labels.
+
+\newthought{Open Media Label Reprint} by clicking the \appicon{media_label_reprint} icon from the \gls{ab}.\sidenote{\checkref{ch:ab_addapp}{\refptch{part:ab}{ch:ab_addapp} }{Refer to the \textsc{App-Bar Procedure} } if you need help adding it.}\\
+
+\prettyimage{width=.6\textwidth}{graphics/mlr}
+
+\paragraph{Enter} the \boldcap{Accession Number}.
+
+\paragraph{Select} the \boldcap{Printer}.
+
+\paragraph{Click} \btn{graphics/mlr_button}

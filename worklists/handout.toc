@@ -1,0 +1,44 @@
+\contentsline {chapter}{Introduction}{1}{chapter*.2}
+\contentsline {chapter}{About Worklists}{3}{chapter*.3}
+\contentsline {chapter}{Building Worklist}{5}{chapter*.4}
+\contentsline {paragraph}{Click}{5}{paragraph*.5}
+\contentsline {paragraph}{Select}{5}{paragraph*.6}
+\contentsline {paragraph}{Click}{5}{paragraph*.7}
+\contentsline {chapter}{Modifying the Worklist}{7}{chapter*.8}
+\contentsline {section}{Moving Items on the List}{7}{section*.9}
+\contentsline {paragraph}{Select}{7}{paragraph*.10}
+\contentsline {paragraph}{Click}{7}{paragraph*.11}
+\contentsline {section}{Removing an Item}{7}{section*.12}
+\contentsline {paragraph}{Select}{7}{paragraph*.13}
+\contentsline {paragraph}{Click}{7}{paragraph*.14}
+\contentsline {section}{Adding an Item}{7}{section*.15}
+\contentsline {paragraph}{Click}{7}{paragraph*.16}
+\contentsline {paragraph}{Select}{8}{paragraph*.17}
+\contentsline {paragraph}{Click}{8}{paragraph*.18}
+\contentsline {paragraph}{Click}{8}{paragraph*.19}
+\contentsline {chapter}{Printing Worklists}{9}{chapter*.20}
+\contentsline {section}{Print Worklists}{9}{section*.21}
+\contentsline {paragraph}{Click}{9}{paragraph*.22}
+\contentsline {paragraph}{Right-Click}{9}{paragraph*.23}
+\contentsline {paragraph}{Select}{9}{paragraph*.24}
+\contentsline {paragraph}{Select}{9}{paragraph*.25}
+\contentsline {paragraph}{Select}{10}{paragraph*.26}
+\contentsline {paragraph}{Select}{10}{paragraph*.27}
+\contentsline {paragraph}{Click}{10}{paragraph*.28}
+\contentsline {section}{Creating Favorite Printers}{10}{section*.29}
+\contentsline {paragraph}{Click}{10}{paragraph*.30}
+\contentsline {paragraph}{Select}{11}{paragraph*.31}
+\contentsline {paragraph}{Right-Click}{11}{paragraph*.32}
+\contentsline {paragraph}{Select}{11}{paragraph*.33}
+\contentsline {paragraph}{Repeat}{11}{paragraph*.34}
+\contentsline {paragraph}{Right-Click}{11}{paragraph*.35}
+\contentsline {paragraph}{Select}{11}{paragraph*.36}
+\contentsline {paragraph}{Select}{11}{paragraph*.37}
+\contentsline {section}{Print Preview}{11}{section*.38}
+\contentsline {paragraph}{Click}{11}{paragraph*.39}
+\contentsline {paragraph}{Select}{12}{paragraph*.40}
+\contentsline {paragraph}{Click}{12}{paragraph*.41}
+\contentsline {chapter}{Troubleshooting}{13}{chapter*.42}
+\contentsline {section}{I can't find my printer!}{13}{section*.43}
+\contentsline {section}{I'm Missing Accessions}{13}{section*.44}
+\contentsfinish 

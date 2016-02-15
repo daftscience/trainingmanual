@@ -1,0 +1,159 @@
+Log-in by Accession Number is used to log-in samples using the \textit{barcoded} label on the specimen container.
+
+\section{Understanding the Spreadsheet}\label{sec:login_sheet}%
+
+The \textsc{\gls{login} spreadsheet} lists the containers which have been scanned to log-in.
+\marginnote[3\baselineskip]{In this example, three containers have been scanned. Container \boldcap{A} and \boldcap{D} of one \gls{accn} and container \boldcap{A} of another.}\\
+
+\prettyimage{width=\textwidth}{graphics/accn_login_example}
+
+\newthought{The rows} are grouped by \glspl{accn} and Containers.
+
+As explained in \checkref{part:accn}{\refptplain{part:accn}}{the \textsc{\glspl{accn}} procedure}, \glspl{accn} can have multiple containers.
+
+\newthought{Under each \gls{accn}} are the containers which have been scanned.\sidenote{In the example above we can see that for \textit{\gls{accn}} \textbf{15-268-000019}, container \boldcap{A}, and \boldcap{D} have been scanned.}
+
+\newthought{Under each container} are the orderables associated with it.\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.8\textwidth}{graphics/accn_login_explain}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+    	\draw [-stealth, line width=3pt, purple500] (0.2, 0.85) to[out=270, in=180] (0.44,0.80);
+    	\draw [-stealth, line width=3pt, purple500] (0.55, 0.76) to[out=270, in=180] (0.8,0.72);
+        \draw [-stealth, line width=3pt, blue500] (0.2, 0.85) to[out=270, in=180] (0.48,0.63);
+    	\draw [-stealth, line width=3pt, blue200] (0.55, 0.6) to[out=270, in=180] (0.8,0.54);
+        \draw [-stealth, line width=3pt, blue300] (0.55, 0.6) to[out=270, in=180] (0.8,0.46);
+    	\draw [-stealth, line width=3pt, blue400] (0.55, 0.6) to[out=270, in=180] (0.8,0.38);
+    	\draw [-stealth, line width=3pt, blue500] (0.55, 0.6) to[out=270, in=180] (0.8,0.3);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\marginnote[-6\baselineskip]{This image shows the two containers, and their orders.}
+
+\subsection{Check-boxes}
+
+Each row contains a check-box. By default, they are \faCheckSquareO'd. These can be used to pick which containers are \textsc{Logged-in}.
+
+\begin{description}
+  \bolditem{Selected \faCheckSquareO} The orderable or container is selected for an action.\sidenote{\eg{Log-in, Miss\ldots The two main functions.}}
+  \bolditem{De-selected \faSquareO} The orderable or container is not select for an action.
+  \bolditem{Disabled \disablebox{\faSquareO}} The orderable or container has been \textsc{Logged-In}.
+\end{description}
+
+\newthought{After a container} has been \textsc{Logged-in}, the check-box will become \textsc{Disabled} and it can no longer be modified. \marginnote{\refpt{sec:refresh_data} for information on clearing these containers.}
+
+\section{Log-in Accessions Procedure\label{sec:login_procedure}}
+
+\newthought{Open} \gls{login} by clicking the \appicon{specimen_login} icon from the \gls{ab}.
+
+\paragraph{Select} \textsc{Accession} from the  \textsc{Log-in By} options.
+
+\paragraph{Click} \btn{graphics/retrieve.png} to open \textsc{Log-In By ACCESSION}.\\
+
+\prettyimage{width=\textwidth}{graphics/login_by_accession.png}
+
+\paragraph{Check}  that your \textsc{Log-in} location is set appropriately.\\
+
+\prettyimage{width=\textwidth, trim={0 25 150 65 }, clip}{graphics/location.png}
+
+\paragraph{Click} on the \textsc{Accession} entry field.\sidenote{Make sure you see that blinky line thing: |}\marginnote{\info{Skipping this step after changing locations will cause a minor inconvenience.}}\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}[yshift=-.7cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.8\textwidth}{graphics/accession_field}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, teal400] (1.2, 0.9) to[out=200, in=0] (0.3, 0.7);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\paragraph{Scan} the bar-code of the container.\\
+
+\prettyimage{width=.8\textwidth}{graphics/acc_entered.png}
+
+\importantblock{While, the \gls{accn} can be manually entered, it's not recommended. Accidentally omitting the \gls{cid} will cause uncollected containers to be received in error.\marginnote[-2\baselineskip]{Besides, scanning the tubes is much easier and faster.}}
+
+\newthought{\gls{login} will} update with the container scanned.\\
+
+\prettyimage{width=\textwidth}{graphics/one_container_login}
+
+\importantblock{If the \gls{accn} has multiple containers,\sidenote{Since a Green and Lav have different \glspl{cid}, they are treated individually.} scan them as well. Otherwise, only the scanned container will be logged-in.}
+
+\prettyimage{width=\textwidth}{graphics/two_container}
+
+\subsection{Updating Collect Information}
+
+\importantblock{
+This information should be entered at the time of collection.
+If it hasn't, the collecting personnel should be notified and instructed to enter it.
+}
+
+\newthought{If needed,} the collection information can be updated. This should only be done for outreach samples or if there are extenuating circumstances.
+
+\infoblock{The following instructions will update all the containers.\sidenote{Except the ones which have already been \textsc{Logged-In}. Their check boxes will be disabled \disablebox{\faSquareO}.} If only one value needs to be update \refpt{sec:mod_single}.}
+\paragraph{Click} the \textsc{Coll ID Column Header}.\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\linewidth}{graphics/update_collection} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=270] (0.6,0.84);
+        % \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=270] (0.75,0.84);
+        \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=270] (0.85,0.84);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\paragraph{Enter} the \textsc{User-Name}\sidenote{This needs to be the Cerner Username. Generic names exist for outside facilities.} of the person who collected the sample.\\
+
+\prettyimage{width=.3\textwidth}{graphics/coll_id}
+
+\paragraph{Click} the \textsc{Coll Time Column Header}.\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\linewidth}{graphics/batch_update_collection_username} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=270] (0.6,0.84);
+        \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=270] (0.75,0.84);
+        % \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=270] (0.85,0.84);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\paragraph{Enter} the \textsc{Collection Time} using a 24h format.\sidenote{This needs to be earlier than the \textsc{Receive Time} which defaults to \textsc{Now}.}\\
+
+\prettyimage{width=.3\textwidth}{graphics/coll_time}
+
+\paragraph{Click} the \textsc{Coll Date Column Header}.\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\linewidth}{graphics/batch_update_collection_time} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=270] (0.6,0.84);
+        % \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=270] (0.75,0.84);
+        % \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=270] (0.85,0.84);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\paragraph{Enter} the \textsc{Collection Date} using a mm/dd/yyyy format.\sidenote{\important{This date defaults to \textsc{Today}. If the sample was collected around midnight, make sure this date is correct.}}\\
+
+\prettyimage{width=.3\textwidth}{graphics/coll_date}
+
+\paragraph{If Needed, Hit} {\faKeyboardO } Ctrl+B to print the labels.
+\paragraph{Click} \btn{graphics/login_btn} to Log-in\sidenote{\hotkey{\boldcap{Ctrl+L} will also work.}}\marginnote{\info{If you get a pop-up asking about ``Separate Collections'' \refpt{sec:sep_collection}}.}\\
+
+\prettyimage{width=\textwidth}{graphics/logged_in}
+
+\newthought{At this point}, the samples have been \textsc{Logged-in}.  Those containers will remain in the window until it is refreshed.\marginnote{\refpt{sec:refresh_data} for information on clearing these containers.}
+
+\subsection{The Miss Button}
+
+Please ignore this button. As of right now it doesn't fit into our work flow.

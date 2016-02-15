@@ -1,0 +1,30 @@
+The main function of \gls{orv} is to view orders and results on individual patients or \glspl{accn}.
+
+In addition, it can be used view previous results and cancel orders. It can also branch to other applications such as \gls{ci}, \gls{are}, and \gls{login}.
+
+\newthought{Open \gls{orv}} by clicking \appicon{orv} icon from the \gls{ab}.\\
+
+\vspace{1em}
+\noindent
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (cf) at (-2,8) {\scshape{Patient Identifier}};
+\node [anchor=west] (pif) at (-2,5) {\scshape{Find Accession}};
+\node [anchor=west] (ord) at (-2,2.6) {\scshape{Date Range}};
+\node [anchor=west] (sp) at (-2,1) {\scshape{Type of Activity}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.67\textwidth}{graphics/find_orders}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw [-stealth, line width=3pt, cyan500] (cf) to[out=0, in=90] (0.05,0.88);
+        \draw [-stealth, line width=3pt, deeporange500] (pif) to[out=0, in=-145] (0.03,0.82);
+        \draw [-stealth, line width=3pt, indigo500] (ord) to[out=0, in=-145] (0.03,0.55);
+        \draw [-stealth, line width=3pt, bluegrey500] (sp) to[out=0, in=-125] (0.01,0.2);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\vspace{1em}
+
+\vspace{1.5em}
+When \gls{orv} is opened, the \textsc{Find Person} window will also appear. This window is used to select the patient or \gls{accn}.
+

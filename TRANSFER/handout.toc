@@ -1,0 +1,77 @@
+\contentsline {chapter}{Introduction}{1}{chapter*.2}
+\contentsline {chapter}{Getting Started}{3}{chapter*.3}
+\contentsline {section}{Status}{3}{section*.4}
+\contentsline {section}{Route}{4}{section*.5}
+\contentsline {chapter}{Create a Transfer List}{5}{chapter*.6}
+\contentsline {section}{List Build}{5}{section*.7}
+\contentsline {paragraph}{Click}{5}{paragraph*.8}
+\contentsline {paragraph}{Select}{6}{paragraph*.9}
+\contentsline {paragraph}{Select}{6}{paragraph*.10}
+\contentsline {paragraph}{Select}{6}{paragraph*.11}
+\contentsline {paragraph}{Click}{6}{paragraph*.12}
+\contentsline {paragraph}{Select}{6}{paragraph*.13}
+\contentsline {paragraph}{Click}{6}{paragraph*.14}
+\contentsline {paragraph}{Click}{7}{paragraph*.15}
+\contentsline {paragraph}{Click}{7}{paragraph*.16}
+\contentsline {chapter}{Updating Transfer Lists}{9}{chapter*.17}
+\contentsline {section}{Adding or Removing Containers}{9}{section*.18}
+\contentsline {paragraph}{Select}{9}{paragraph*.19}
+\contentsline {paragraph}{Select}{9}{paragraph*.20}
+\contentsline {paragraph}{Select}{9}{paragraph*.21}
+\contentsline {paragraph}{Update}{9}{paragraph*.22}
+\contentsline {paragraph}{Click}{9}{paragraph*.23}
+\contentsline {paragraph}{Select}{9}{paragraph*.24}
+\contentsline {paragraph}{Click}{10}{paragraph*.25}
+\contentsline {paragraph}{Move}{10}{paragraph*.26}
+\contentsline {paragraph}{Click}{10}{paragraph*.27}
+\contentsline {section}{Deleting a Transfer List}{10}{section*.28}
+\contentsline {paragraph}{Select}{10}{paragraph*.29}
+\contentsline {paragraph}{Select}{10}{paragraph*.30}
+\contentsline {paragraph}{Select}{10}{paragraph*.31}
+\contentsline {paragraph}{Update}{10}{paragraph*.32}
+\contentsline {paragraph}{Click}{10}{paragraph*.33}
+\contentsline {paragraph}{Select}{11}{paragraph*.34}
+\contentsline {paragraph}{Click}{11}{paragraph*.35}
+\contentsline {section}{Transferring Transfer Lists}{11}{section*.36}
+\contentsline {paragraph}{Select}{11}{paragraph*.37}
+\contentsline {paragraph}{Select}{11}{paragraph*.38}
+\contentsline {paragraph}{Select}{11}{paragraph*.39}
+\contentsline {paragraph}{Update}{11}{paragraph*.40}
+\contentsline {paragraph}{Click}{11}{paragraph*.41}
+\contentsline {paragraph}{Select}{12}{paragraph*.42}
+\contentsline {paragraph}{Click}{12}{paragraph*.43}
+\contentsline {subsection}{View Transferred Lists}{12}{subsection*.44}
+\contentsline {paragraph}{Select}{12}{paragraph*.45}
+\contentsline {paragraph}{Select}{12}{paragraph*.46}
+\contentsline {paragraph}{Select}{12}{paragraph*.47}
+\contentsline {paragraph}{Update}{12}{paragraph*.48}
+\contentsline {paragraph}{Click}{12}{paragraph*.49}
+\contentsline {chapter}{Troubleshooting}{13}{chapter*.50}
+\contentsline {section}{I Can't Find a Container}{13}{section*.51}
+\contentsline {subsection}{Check the List Options}{13}{subsection*.52}
+\contentsline {paragraph}{Check}{13}{paragraph*.53}
+\contentsline {paragraph}{Check}{13}{paragraph*.54}
+\contentsline {paragraph}{Select}{13}{paragraph*.55}
+\contentsline {paragraph}{Select}{13}{paragraph*.56}
+\contentsline {paragraph}{Click}{13}{paragraph*.57}
+\contentsline {subsection}{Check Container Status}{14}{subsection*.58}
+\contentsline {paragraph}{Open}{14}{paragraph*.59}
+\contentsline {paragraph}{Enter}{14}{paragraph*.60}
+\contentsline {paragraph}{Check}{14}{paragraph*.61}
+\contentsline {subsection}{Check the Routing}{15}{subsection*.62}
+\contentsline {paragraph}{Open}{15}{paragraph*.63}
+\contentsline {paragraph}{Enter}{15}{paragraph*.64}
+\contentsline {paragraph}{Right Click}{15}{paragraph*.65}
+\contentsline {paragraph}{Select}{15}{paragraph*.66}
+\contentsline {subsection}{I Still Can't Find the Container}{15}{subsection*.67}
+\contentsline {paragraph}{Open}{15}{paragraph*.68}
+\contentsline {paragraph}{Scan}{15}{paragraph*.69}
+\contentsline {paragraph}{Set}{15}{paragraph*.70}
+\contentsline {paragraph}{Click}{15}{paragraph*.71}
+\contentsline {section}{I Can't Find a List}{15}{section*.72}
+\contentsline {subsection}{Check the List Options}{15}{subsection*.73}
+\contentsline {paragraph}{Check}{15}{paragraph*.74}
+\contentsline {paragraph}{Check}{16}{paragraph*.75}
+\contentsline {paragraph}{Check}{16}{paragraph*.76}
+\contentsline {paragraph}{Click}{16}{paragraph*.77}
+\contentsfinish 

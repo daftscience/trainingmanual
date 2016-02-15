@@ -1,0 +1,4 @@
+PWD C:/Users/tom/OneDrive/Sublime Text Build 3083 x64/projects/Cerner Reference Guide/advancedfunctions
+INPUT c:/texlive/2015/texmf-var/web2c/xetex/xelatex.fmt
+INPUT ./introduction.tex
+OUTPUT introduction.log

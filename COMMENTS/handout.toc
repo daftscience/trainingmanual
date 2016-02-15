@@ -1,0 +1,27 @@
+\contentsline {chapter}{Introduction}{1}{chapter*.2}
+\contentsline {section}{Comments vs. Notes}{1}{section*.3}
+\contentsline {section}{Order Comment vs. Result Comment}{2}{section*.4}
+\contentsline {chapter}{Adding Comments}{3}{chapter*.5}
+\contentsline {paragraph}{Select}{3}{paragraph*.6}
+\contentsline {paragraph}{Click}{3}{paragraph*.7}
+\contentsline {paragraph}{Enter}{4}{paragraph*.8}
+\contentsline {paragraph}{Click}{4}{paragraph*.9}
+\contentsline {paragraph}{Click}{4}{paragraph*.10}
+\contentsline {paragraph}{Click}{4}{paragraph*.11}
+\contentsline {section}{Adding Comments to Multiple Results}{4}{section*.12}
+\contentsline {subsection}{Add Comments to Selected Results}{4}{subsection*.13}
+\contentsline {paragraph}{Hit}{5}{paragraph*.14}
+\contentsline {subsection}{Add Comments to All Critical Results}{5}{subsection*.15}
+\contentsline {paragraph}{Hit}{5}{paragraph*.16}
+\contentsline {chapter}{Using Templates}{7}{chapter*.17}
+\contentsline {section}{Expanding Templates}{7}{section*.18}
+\contentsline {paragraph}{Type}{7}{paragraph*.19}
+\contentsline {paragraph}{Hit}{7}{paragraph*.20}
+\contentsline {paragraph}{Enter}{8}{paragraph*.21}
+\contentsline {paragraph}{Hit}{8}{paragraph*.22}
+\contentsline {paragraph}{Hit}{8}{paragraph*.23}
+\contentsline {paragraph}{Hit}{8}{paragraph*.24}
+\contentsline {paragraph}{Enter}{9}{paragraph*.25}
+\contentsline {chapter}{Templates and Mnemonics}{11}{chapter*.26}
+\contentsline {chapter}{Template Hotkeys}{15}{chapter*.27}
+\contentsfinish 

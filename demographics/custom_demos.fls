@@ -1,0 +1,7 @@
+PWD C:/Users/tom/OneDrive/Sublime Text Build 3083 x64/projects/Cerner Reference Guide/demographics
+INPUT c:/texlive/2015/texmf-var/web2c/xetex/xelatex.fmt
+INPUT ./custom_demos.tex
+OUTPUT custom_demos.log
+INPUT c:/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT c:/texlive/2015/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm

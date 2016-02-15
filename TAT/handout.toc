@@ -1,0 +1,5 @@
+\contentsline {section}{How it Works}{1}{section*.3}
+\contentsline {paragraph}{Select}{1}{paragraph*.4}
+\contentsline {paragraph}{Click}{1}{paragraph*.5}
+\contentsline {section}{What's Displayed}{2}{section*.6}
+\contentsfinish 

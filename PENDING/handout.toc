@@ -1,0 +1,91 @@
+\contentsline {chapter}{Introduction}{1}{chapter*.2}
+\contentsline {chapter}{Customize Pending Inquiry}{3}{chapter*.3}
+\contentsline {paragraph}{Click}{3}{paragraph*.4}
+\contentsline {paragraph}{Click}{3}{paragraph*.5}
+\contentsline {paragraph}{Select}{3}{paragraph*.6}
+\contentsline {paragraph}{Select}{3}{paragraph*.7}
+\contentsline {subsection}{Selecting Headings}{3}{subsection*.8}
+\contentsline {paragraph}{Check {{{\FA \char "F046\relax }}}}{3}{paragraph*.9}
+\contentsline {paragraph}{Uncheck {{{\FA \char "F096\relax }}}}{4}{paragraph*.10}
+\contentsline {subsection}{Rearranging Columns}{4}{subsection*.11}
+\contentsline {paragraph}{Select}{4}{paragraph*.12}
+\contentsline {paragraph}{Click}{4}{paragraph*.13}
+\contentsline {paragraph}{Click}{4}{paragraph*.14}
+\contentsline {subsection}{Resizing Columns}{4}{subsection*.15}
+\contentsline {paragraph}{Hover}{4}{paragraph*.16}
+\contentsline {paragraph}{Click Drag}{4}{paragraph*.17}
+\contentsline {chapter}{Pulling a Pending Log}{5}{chapter*.18}
+\contentsline {section}{About the Options}{5}{section*.19}
+\contentsline {subsection}{Test Site}{5}{subsection*.20}
+\contentsline {subsection}{Procedure}{5}{subsection*.21}
+\contentsline {subsection}{Status}{5}{subsection*.22}
+\contentsline {section}{Entering Options}{6}{section*.23}
+\contentsline {paragraph}{Select}{6}{paragraph*.24}
+\contentsline {paragraph}{Enter}{6}{paragraph*.25}
+\contentsline {paragraph}{Click}{6}{paragraph*.26}
+\contentsline {paragraph}{Find}{6}{paragraph*.27}
+\contentsline {paragraph}{Click}{7}{paragraph*.28}
+\contentsline {section}{Refreshing the Pending List}{7}{section*.29}
+\contentsline {paragraph}{Click}{7}{paragraph*.30}
+\contentsline {paragraph}{Click}{8}{paragraph*.31}
+\contentsline {section}{Sorting Pending Inquiry}{8}{section*.32}
+\contentsline {paragraph}{Click}{8}{paragraph*.33}
+\contentsline {section}{Printing the Pending Log}{8}{section*.34}
+\contentsline {subsection}{Printing the Entire Pending Log}{8}{subsection*.35}
+\contentsline {paragraph}{Click}{8}{paragraph*.36}
+\contentsline {paragraph}{Select}{8}{paragraph*.37}
+\contentsline {subsection}{Printing selected procedures:}{8}{subsection*.38}
+\contentsline {paragraph}{Select}{8}{paragraph*.39}
+\contentsline {paragraph}{Click}{9}{paragraph*.40}
+\contentsline {paragraph}{Select}{9}{paragraph*.41}
+\contentsline {paragraph}{Click}{9}{paragraph*.42}
+\contentsline {chapter}{Branching from Pending Inquiry}{11}{chapter*.43}
+\contentsline {paragraph}{Select}{11}{paragraph*.44}
+\contentsline {paragraph}{Click}{11}{paragraph*.45}
+\contentsline {chapter}{Canceling}{13}{chapter*.46}
+\contentsline {paragraph}{Select}{13}{paragraph*.47}
+\contentsline {paragraph}{Click}{13}{paragraph*.48}
+\contentsline {paragraph}{Review}{13}{paragraph*.49}
+\contentsline {paragraph}{Select}{14}{paragraph*.50}
+\contentsline {paragraph}{Click}{14}{paragraph*.51}
+\contentsline {paragraph}{Review}{14}{paragraph*.52}
+\contentsline {paragraph}{Click}{15}{paragraph*.53}
+\contentsline {chapter}{Transfer Samples}{17}{chapter*.54}
+\contentsline {section}{Reroute Samples}{17}{section*.55}
+\contentsline {subsection}{Checking Routing}{17}{subsection*.56}
+\contentsline {paragraph}{Open}{17}{paragraph*.57}
+\contentsline {paragraph}{Enter}{17}{paragraph*.58}
+\contentsline {paragraph}{Click}{17}{paragraph*.59}
+\contentsline {paragraph}{Right Click}{18}{paragraph*.60}
+\contentsline {paragraph}{Select}{18}{paragraph*.61}
+\contentsline {paragraph}{Note}{18}{paragraph*.62}
+\contentsline {paragraph}{Close}{18}{paragraph*.63}
+\contentsline {subsection}{Transfer Samples}{18}{subsection*.64}
+\contentsline {paragraph}{Open}{18}{paragraph*.65}
+\contentsline {paragraph}{Enter}{18}{paragraph*.66}
+\contentsline {paragraph}{Click}{18}{paragraph*.67}
+\contentsline {paragraph}{Select}{18}{paragraph*.68}
+\contentsline {paragraph}{Click}{19}{paragraph*.69}
+\contentsline {paragraph}{Select}{19}{paragraph*.70}
+\contentsline {paragraph}{Select}{19}{paragraph*.71}
+\contentsline {paragraph}{Click}{19}{paragraph*.72}
+\contentsline {paragraph}{Enter}{19}{paragraph*.73}
+\contentsline {paragraph}{Hit}{20}{paragraph*.74}
+\contentsline {subsection}{Finishing Up}{20}{subsection*.75}
+\contentsline {chapter}{Routing}{21}{chapter*.76}
+\contentsline {section}{What is Routing?}{21}{section*.77}
+\contentsline {section}{How Does It Work?}{21}{section*.78}
+\contentsline {subsection}{Instruments and Benches and Sections oh my!}{21}{subsection*.79}
+\contentsline {subsection}{All That To Say:}{21}{subsection*.80}
+\contentsline {section}{Brackenridge}{22}{section*.81}
+\contentsline {section}{Dell Children's}{23}{section*.82}
+\contentsline {section}{Edgar B. Davis}{24}{section*.83}
+\contentsline {section}{Hays}{25}{section*.84}
+\contentsline {section}{Highland Lakes}{26}{section*.85}
+\contentsline {section}{Northwest}{27}{section*.86}
+\contentsline {section}{Southwest}{28}{section*.87}
+\contentsline {section}{Williamson}{29}{section*.88}
+\contentsline {section}{Seton Medical Center}{30}{section*.89}
+\contentsline {chapter}{Tips and Tricks}{31}{chapter*.90}
+\contentsline {section}{Keyboard Shortcuts}{31}{section*.91}
+\contentsfinish 

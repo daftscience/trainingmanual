@@ -1,0 +1,55 @@
+\section{Getting Assay Information}
+
+Additional information for each assay can be found by \boldcap{Right-clicking} on the \textsc{Result Cell} and selecting the appropriate option from the menu.\\
+
+\prettyimage{width=.5\textwidth}{graphics/additional_information}
+
+\subsection{Calculation Equations}
+To view the equation used in calculated values:\sidenote{This will not work for calculations that are performed by rules \eg{Teg Platelet mapping.}}
+
+\paragraph{Select} \boldcap{Show Equation\ldots}
+
+\newthought{A Pop-up window} will appear with the equation and a list of the equation's components.\\
+
+\prettyimage{width=.45\textwidth}{graphics/equation}
+
+\subsection{Procedure Information\label{subsection:are_show_proc_info}}
+
+To view the various ranges, delta calculations, units of measure and more:
+
+\paragraph{Select} \boldcap{Procedure Information\ldots}\\
+
+\prettyimage{width=\textwidth}{graphics/procedure_information}
+
+\importantblock{Since many of the ranges can changes based on \boldcap{sex} and \boldcap{age}, the information displayed is specific to the current patient. The ranges may not apply to other patients.}
+
+\section{Previous Results}
+The most recent previous results will appear to right of the result.\\
+
+\noindent%draw top
+\begin{tikzpicture}
+    \node [anchor=west] (one) at (3, 3.5) {\scshape{Previous Result}};
+    \node [anchor=west] (two) at (3, 4.0) {\scshape{Time Since Last Result}};
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/result_sheet} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [-stealth, line width=3pt, teal400] (one) to[out=0, in=90] (0.88, 0.88);
+            \draw [-stealth, line width=3pt, deeppurple400] (two) to[out=0, in=90] (0.95, 0.88);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+\marginnote[-4\baselineskip]{Notice that the \textsc{Time} column has two different values. This means that the previous results are mostly likely separate orders.}
+
+\subsection{Multiple Previous}
+
+\newthought{To view all} the previous results for an assay:
+
+\paragraph{Right Click} on the result cell.
+
+\paragraph{Click} \boldcap{Previous Results}\ldots\\
+
+\prettyimage{width=.4\textwidth}{graphics/prev_menu}
+
+\newthought{This will open} the \textsc{Previous Results} window for that assay.\\
+
+\prettyimage{width=.8\textwidth}{graphics/prev_results}

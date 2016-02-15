@@ -1,0 +1,25 @@
+\contentsline {chapter}{Introduction}{1}{chapter*.2}
+\contentsline {chapter}{Basic Settings}{3}{chapter*.3}
+\contentsline {paragraph}{Launch}{3}{paragraph*.4}
+\contentsline {paragraph}{Click}{3}{paragraph*.5}
+\contentsline {chapter}{Adding Applications}{5}{chapter*.6}
+\contentsline {paragraph}{Click}{5}{paragraph*.7}
+\contentsline {paragraph}{Click}{5}{paragraph*.8}
+\contentsline {section}{Sorting Applications}{6}{section*.9}
+\contentsline {paragraph}{Click }{6}{paragraph*.10}
+\contentsline {paragraph}{Select}{6}{paragraph*.11}
+\contentsline {paragraph}{Click}{6}{paragraph*.12}
+\contentsline {paragraph}{Select }{7}{paragraph*.13}
+\contentsline {paragraph}{Using}{7}{paragraph*.14}
+\contentsline {paragraph}{Repeat the previous}{8}{paragraph*.15}
+\contentsline {section}{Grouping the Applications}{8}{section*.16}
+\contentsline {paragraph}{Select}{8}{paragraph*.17}
+\contentsline {paragraph}{Select}{9}{paragraph*.18}
+\contentsline {paragraph}{Select}{9}{paragraph*.19}
+\contentsline {chapter}{Which apps do I need?}{11}{chapter*.20}
+\contentsline {section}{Required for Everyone}{11}{section*.21}
+\contentsline {section}{Microbiology Applications}{12}{section*.22}
+\contentsline {section}{Other Helpful Applications}{12}{section*.23}
+\contentsline {chapter}{Sunquest to Cerner}{15}{chapter*.24}
+\contentsline {chapter}{Glossary}{19}{section*.25}
+\contentsfinish 

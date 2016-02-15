@@ -1,0 +1,132 @@
+\setcounter{page}{1}
+Here are some training exercises to practice using Cerner. These activities and the troubleshooting situations are all detailed in the Training Manual.
+
+Unless otherwise stated, use the test patient provided to you during your class. When using your patient, use \boldcap{Your Hospital's} lab location in the applications.
+
+\section{Department Order Entry}
+
+    \subsection{Place a New Order}
+
+    \activity{Order the Following Tests:}\sideref{part:doe}{ch:doe_new_order}
+
+
+    \begin{quote}
+        \begin{itemize}
+            \item Basic Panel
+            \item Comp Panel
+            \item hCG Qualitative
+            \item CBC
+        \end{itemize}
+    \end{quote}
+
+    \answer{Note the Accession}
+
+    \subsection{Add-On an Order}
+
+    \activity{Add the Following Tests to the Accn from above:}\sideref{part:doe}{ch:doe_accn_addon}
+
+        \begin{quote}
+        \begin{itemize}
+            \item ABSRTC
+            \item Lipid Panel
+        \end{itemize}
+        \end{quote}
+
+
+\section{Container Inquiry}
+
+    \activity{Search for your Accession in Container Inquiry}\\
+%
+    \answer{How many Containers are there?}
+
+    \activity{Where are the orders Routed?}\sideref{part:ci}{sec:ci_show_routing}\\
+
+
+    \answer{CBC}
+    \answer{ABSRTC}
+    \answer{Serum hCG}
+    \answer{Comp Panel}
+    \answer{Basic Panel}
+    \answer{Lipid Panel}
+
+\section{Order Result Viewer}
+
+     \activity{Search for 15-344-000049 in Order Result Viewer.}\sideref{part:orv}{sec:orv_find_accn}
+
+     \answer{What is the result for the Osmolality?}\marginref{part:orv}{sec:orv_viewing_results}
+
+     \answer{What \boldcap{was} the original result?}
+
+\chapter{Troubleshooting Exercises}
+
+    These exercises will simulate common issues you may run into while working with Cerner. If you have difficulty, refer to the the troubleshooting sections of the Training Guide.
+
+    And remember, \textsc{Container Inquiry} will be your best friend.
+
+    \section{Exercise One}
+
+        \warnblock{\textsc{Please do not modify this accession number.}}
+
+        \activity{Search for 15-344-000050 in Container Inquiry}
+
+        \answer{Why Can't this be resulted?}
+
+        \answermulti{What needs to be done to correct this?}
+
+    \section{Exercise Two}
+
+        George is trying to result this Serum hCG, but he is having trouble.
+
+        \bigskip
+        \prettyimage{width=.9\textwidth}{graphics/correction_mode}
+
+        \answer{Why can't George enter a result?}
+
+    \section{Exercise Three}
+
+        Elaine is trying find the orders on an Accession Number, but \textsc{Order Result Viewer} will only let her enter a Medical Record Number.
+
+        \bigskip
+        \prettyimage{width=\textwidth}{graphics/orv}
+
+        \answermulti{Why can't Elaine enter an Accession Number?}
+
+        \answer{How does she fix it?}
+
+
+
+\chapter{Accession Result Entry}
+
+\importantblock{If you do not normally result within Cerner you can skip this section.}
+
+    For the next few questions, use the Accession Number you created earlier.
+
+    \section{Chemistry Resulting}
+
+    \activity{Result the \textsc{Comp Panel}.}
+
+    \activity{Open the \boldcap{Procedure Information} for the Sodium.}\sideref{part:are}{subsection:are_show_proc_info}
+
+    \answer{What is the \boldcap{Linearity}}
+
+    \answer{What are the units?}
+
+    \answer{What is the Reference Range}
+
+
+
+    \section{CBC Resulting}
+
+    \importantblock{This section covers topics not discussed in the class. It may be especially challenging.}
+
+    \activity{Enter results for the \textsc{CBC}.}\sideref{part:are}{sec:man_res_entry}
+
+    \infoblock{Select ``Manual Differential'' for the \boldcap{Differential?} result.\sideref{part:are}{are:cbc_manual_reflex}}
+
+    \activity{Verify the results.}
+
+    \answer{What happened?}\marginnote{\hint{Take a look at Order Result Viewer.}}
+
+    \activity{Result the \textsc{Differential and Morphology}.}\sideref{part:are}{subsect:are_performing_manual_diff}
+
+

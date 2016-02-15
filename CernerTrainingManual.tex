@@ -1,0 +1,95 @@
+\input{cerner_preamble.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title{General Lab Guide} % Title of the book
+% \author{Cerner Training} % Author
+\author{Cerner Training} % Author
+\publisher[Seton Medical Center]{%
+	\usebox{\titleimage}
+}
+
+
+% \usepackage{etoolbox}
+\makeatletter
+\pretocmd{\part}{\setcounter{footnote}{0}}{}{}
+\makeatother
+
+% \usepackage{showlabels}
+% \showlabels{enumerate}
+
+% \usepackage[draft]{listlbls}
+\begin{document}
+    \frontmatter
+    \maketitle % Print the title
+
+\iftoggle{justActivities}{
+    \mainmatter
+    \input{class_guide.tex}
+    % \cfpart{Cerner App-Bar\label{part:ab}}{APPBAR}{appbar.tex}
+}{
+    \begin{fullwidth}%
+        \setcounter{page}{0}
+        \tableofcontents % Print the table of contents
+
+        \listoftables
+
+
+        \addcontentsline{toc}{part}{List of Tables}
+    \end{fullwidth}
+
+
+ \mainmatter
+    \cfpart{Cerner App-Bar\label{part:ab}}{APPBAR}{appbar.tex}
+    \cfpart{Accession Numbers\label{part:accn}}{accessions}{accn.tex}
+    \cfpart{Department Order Entry\label{part:doe}}{DOE}{part.tex}
+    \cfpart{Specimen Log-in\label{part:login}}{LOGIN}{part.tex}
+    \cfpart{Container Inquiry\label{part:ci}}{CINQUIRY}{part.tex}
+    \cfpart{Routing in Cerner\label{part:routing}}{routing}{routing.tex}
+    \cfpart{Order Result Viewer\label{part:orv}}{ORV}{part.tex}
+    \cfpart{Pending Inquiry\label{part:pi}}{PENDING}{part.tex}
+    \cfpart{Transfer Specimen\label{part:transfer}}{TRANSFER}{part.tex}
+    \cfpart{Accession Result Entry\label{part:are}}{ARE}{part.tex}
+    \cfpart{Modify Collections\label{part:mod_collection}}{MODCOLLECTIONS}{part.tex}
+    \cfpart{Worklist Request\label{part:worklist}}{worklists}{part.tex}
+    \cfpart{Comments\label{part:comments}}{COMMENTS}{part.tex}
+    \cfpart{TAT Monitor\label{part:tat}}{TAT}{part.tex}
+    \cfpart{Printing Labels\label{part:labels}}{labels}{part.tex}
+
+    % \cfpart{Collections Inquiry\label{part:tat}}{COLLECTIONINQ}{part.tex}
+    \backmatter
+
+    \cfpart{Appendix\label{part:appendix}}{./}{appendix.tex}
+    \input{backmatter.tex}
+
+
+    % \setboolean{@openany}{true}
+    \iftoggle{includeActivities}{
+
+        \setboolean{@twoside}{false}
+        \let\cleardoublepage\clearpage
+
+
+        % \cfpart{Class Activities}{./}{class_guide.tex}
+        % \setcounter{questions}{0}
+        % \settoggle{showAnswers}{true}
+        \cfpart{Class Activities}{./}{classguide2.tex}
+        \cfpart{Practice 1}{TrainingScript}{homework_1.tex}
+        \cfpart{Practice 2}{TrainingScript}{homework_2.tex}
+
+    }{}
+
+
+
+}
+\end{document}
+
+
+
+% \section{Updates}
+    % \begin{itemize}
+        % \item Added Result ``Notify Flag (@)'' to the Accession Result Entry Part.
+        % \item Fixed typo on page 133
+    % \end{itemize}
+

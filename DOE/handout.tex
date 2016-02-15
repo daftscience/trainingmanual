@@ -1,0 +1,36 @@
+\input{../cerner_preamble.tex}
+
+\renewcommand{\maketitlepage}[0]{%
+  \cleardoublepage%
+  {%
+    \pagestyle{plain}%
+    \sffamily%
+    \begin{fullwidth}%
+      \fontsize{18}{20}\selectfont\par\noindent\textcolor{darkgray}{\allcaps{\thanklessauthor}}%
+      \vspace{11.5pc}%
+      \fontsize{28}{29}\selectfont\par\noindent\textcolor{darkgray}{\allcaps{\thanklesstitle}}%
+      \vfill%
+      \fontsize{14}{16}\selectfont\par\noindent\allcaps{\thanklesspublisher}%
+    \end{fullwidth}%
+  }
+}
+
+\title{Department Order Entry} % Title of the book
+\author{Cerner Training Manuals}
+\publisher[Seton Medical Center]{%
+  \usebox{\titleimage}
+} % Publisher
+
+\begin{document}
+\frontmatter
+\maketitle % Print the title page
+\begin{fullwidth}
+  \tableofcontents
+\end{fullwidth}
+\mainmatter
+\input{part.tex}
+
+\backmatter
+\cfinput{../backmatter.tex}
+
+\end{document}

@@ -1,0 +1,56 @@
+\contentsline {chapter}{Introduction}{1}{chapter*.2}
+\contentsline {chapter}{Getting Started}{3}{chapter*.3}
+\contentsline {paragraph}{Open }{3}{paragraph*.4}
+\contentsline {paragraph}{Click}{3}{paragraph*.5}
+\contentsline {paragraph}{Click}{3}{paragraph*.6}
+\contentsline {paragraph}{Select}{3}{paragraph*.7}
+\contentsline {paragraph}{Click}{3}{paragraph*.8}
+\contentsline {chapter}{Customizing Demographics}{5}{chapter*.9}
+\contentsline {section}{Helpful Tips}{5}{section*.10}
+\contentsline {section}{Changing Demographics}{5}{section*.11}
+\contentsline {paragraph}{Click}{5}{paragraph*.12}
+\contentsline {paragraph}{Click}{5}{paragraph*.13}
+\contentsline {paragraph}{Click}{6}{paragraph*.14}
+\contentsline {paragraph}{Set}{6}{paragraph*.15}
+\contentsline {paragraph}{Click}{6}{paragraph*.16}
+\contentsline {paragraph}{Click}{7}{paragraph*.17}
+\contentsline {section}{Restore to Defaults}{8}{section*.18}
+\contentsline {chapter}{Finding Orders}{9}{chapter*.19}
+\contentsline {section}{Searching by Patient}{10}{section*.20}
+\contentsline {paragraph}{Enter}{10}{paragraph*.21}
+\contentsline {paragraph}{Modify}{10}{paragraph*.22}
+\contentsline {paragraph}{Click}{10}{paragraph*.23}
+\contentsline {section}{Searching by Accession Number}{11}{section*.24}
+\contentsline {paragraph}{Click}{11}{paragraph*.25}
+\contentsline {paragraph}{Enter}{11}{paragraph*.26}
+\contentsline {paragraph}{Click}{11}{paragraph*.27}
+\contentsline {chapter}{Viewing Orders}{13}{chapter*.28}
+\contentsline {section}{Sorting the List}{13}{section*.29}
+\contentsline {section}{Orderable Status}{14}{section*.30}
+\contentsline {section}{Viewing Results}{14}{section*.31}
+\contentsline {section}{Flowsheet Mode}{15}{section*.32}
+\contentsline {paragraph}{Click}{15}{paragraph*.33}
+\contentsline {paragraph}{Click}{16}{paragraph*.34}
+\contentsline {paragraph}{Click}{16}{paragraph*.35}
+\contentsline {paragraph}{Click}{16}{paragraph*.36}
+\contentsline {section}{View Comments}{16}{section*.37}
+\contentsline {chapter}{Branching}{17}{chapter*.38}
+\contentsline {paragraph}{Select}{17}{paragraph*.39}
+\contentsline {paragraph}{Click}{17}{paragraph*.40}
+\contentsline {chapter}{Canceling Orders}{19}{chapter*.41}
+\contentsline {paragraph}{Select}{19}{paragraph*.42}
+\contentsline {paragraph}{Click}{19}{paragraph*.43}
+\contentsline {paragraph}{Review}{20}{paragraph*.44}
+\contentsline {paragraph}{Select}{20}{paragraph*.45}
+\contentsline {paragraph}{Click}{20}{paragraph*.46}
+\contentsline {paragraph}{Review}{21}{paragraph*.47}
+\contentsline {paragraph}{Click}{21}{paragraph*.48}
+\contentsline {chapter}{Tips}{23}{chapter*.49}
+\contentsline {section}{Keyboard Shortcuts}{23}{section*.50}
+\contentsline {chapter}{Troubleshooting}{25}{chapter*.51}
+\contentsline {section}{Unable to Search by Accession Number}{25}{section*.52}
+\contentsline {paragraph}{Close}{25}{paragraph*.53}
+\contentsline {paragraph}{Click}{25}{paragraph*.54}
+\contentsline {paragraph}{Click}{25}{paragraph*.55}
+\contentsline {section}{Branching Applications Won't Open}{25}{section*.56}
+\contentsfinish 

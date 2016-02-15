@@ -1,0 +1,95 @@
+% \prettyimage{width=\textwidth}{graphics/result_field_all_entered}
+\section{Flags}
+Any result which \textit{may} require special attention will be flagged. These flags appear as letters in the \textsc{Flags} Column of \gls{are}.\\
+
+\noindent
+\begin{table}
+    \begin{tabular}{lll}
+        \large{\boldcap{\large Type}} & \boldcap{\large Symb.} & \boldcap{\large Meaning}\\
+        \hline
+        \textsc{Review}    & R & The results needs to be reviewed before verifying.\\
+        \textsc{Delta}     & D & The result is has changed significantly.\\
+        \textsc{High}      & H & The result is above the Normal Range.\\
+        \textsc{Low}       & L & The result is below the Normal Range.\\
+        \textsc{Critical}  & C & The result is Critical.\\
+        \textsc{Linearity} & N & The result is outside of the defined Linearity.\\
+        \textsc{Notify}    & @ & The result needs to be called to the floor.\\
+        \textsc{Interpretation}    & (t) & The result is an an interpretation.\\
+        \textsc{Comment}   & \textit{f} & The result contains a Comment or Note. \\
+        % \textsc{Image}   & \textit{f} & The result contains a Comment or Note. \\
+        \hline
+    \end{tabular}
+    \caption{Result Flags}
+    \label{table:flags}
+\end{table}
+
+\newthought{The example below} shows multiple flags\sidenote{Specifically:
+\begin{itemize}
+    \item{\textsc{High}}
+    \item{\textsc{Critical}}
+    \item{\textsc{Review}}
+    \item{\textsc{Linearity}}
+    \item{\textsc{Comment}}
+\end{itemize}
+} for the result.\\
+
+\prettyimage{width=.9\textwidth}{graphics/all_flags}
+
+\section{Review Range}
+The \textsc{Review Range} is used to prevent results from auto-verifying, and to alert the user that action might need to be taken.
+
+\section{Critical Results}
+
+\gls{are} will emphasize critical results by changing the color to \textsc{Red} and adding the \textsc{Critical Flag (C)}.\\
+
+\prettyimage{width=\textwidth, trim={0 48 50 48}, clip}{graphics/result_field_all_entered}
+
+\section{Linearities}
+The \textsc{Linearities} have been defined as the minimum and maximum reportable values \boldcap{after} dilution.
+
+Any result that does not fall within the \textsc{Linear Range} will automatically be converted to its inequality,\sidenote{\eg{A glucose of 2,401mg/dL will convert to >2,400mg/dL.}} and the \textsc{Linearity Flag (N)}\sidenote{\boldcap{N} is used because \boldcap{L} was taken by the \boldcap{Low} flag.} will be added.
+
+\infoblock{The best way to manually enter results which are out of linearity is to enter a result which is outside of the linearity.\sidenote{Protip brought to you by Cpt. Obvious.}
+
+When the instrument sends over results which are outside of the \textsc{Linear Range}, it will automatically be converted to its inequality.}
+
+\subsection{Linearities and Calculations}
+
+When a component of a calculation falls outside of its \textsc{Linear Range}, Cerner will perform the calculation using the linear limit of the assay.\sidenote{\eg{If the \textsc{U Timed Protein is <6mg/dL, Cerner will perform the calculation using a value of 6mg/dL.}}}
+
+Finally, the appropriate inequality will be attached to the calculated result.
+
+\newthought{The following two examples} show what happens if a component is above, and below linearity.\\
+
+\begin{description}
+
+\bolditem{Below Linearity} \\
+
+\prettyimage{width=.8\linewidth}{graphics/inequality}\marginnote{In this case, we can accurately say the U24 Protein is <196mg/day.}\\
+
+\bolditem{Above Linearity}\\
+
+\prettyimage{width=.8\textwidth}{graphics/inequality_upper}\marginnote{In this case, we can accurately say the U24 Protein is >48,975mg/day.}\\
+
+\end{description}
+
+\newthought{If multiple components} of the calculation are outside of \textsc{Linearity}, Cerner will not be able to perform the calculation. Instead, a message will appear stating it's unable to perform the calculation.\\
+
+\prettyimage{width=.75\textwidth}{graphics/multiple_inequalities}
+
+\newthought{In this situation} the calculated result needs to be manually entered as \textsc{Unable to Calculate.}\sidenote{For more information \refpt{sec:convert_result}.}
+
+\paragraph{Convert} The result to an \textsc{Alpha Response.}
+
+\paragraph{Select} \textsc{Unable to Calculate.}
+
+\infoblock{If you're unable to convert it to an \textsc{Alpha Response}, convert it to a \textsc{Freetext} and manually type: \textit{``Unable to Calculate.''}}
+
+\subsection{Linearities and Delta Checks}
+Cerner will \boldcap{not} be able to perform \textsc{Delta Checking} if any of the two values are outside of linearity.
+
+\section{Reference Ranges}
+Results which are lower than the defined \textsc{Reference Range} will be flagged as \textsc{Low (L)}, results which are higher will flag as \textsc{High (H.)}\sidenote{What else can I say?}
+
+
+

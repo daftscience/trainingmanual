@@ -1,0 +1,313 @@
+
+% This should work instead of my dumb command
+% \usepackage[description, footnote]{glossaries}
+
+% \newacronym[description={a statistical pattern recognition technique}]{svm}{SVM}{support vector machine}
+
+
+% \cfinput{python_functions.py}
+
+
+\usepackage{xparse}
+\DeclareDocumentCommand{\newterm}{ O{} O{} m m m m } {
+  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
+    description={#6},#1
+  }
+  \newacronym[see={[Glossary:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
+}
+
+% {\includegraphics[height=1.5em]{\gfx#2}}
+
+
+\usepackage{xparse}
+\DeclareDocumentCommand{\newappAcryn}{ O{} O{} m m m m } {
+  \newglossaryentry{gls-#3}{name={#5},text={#5\glsadd{#3}},
+    description={{#6}#1}
+  }
+  \newacronym[see={[Glossary:]{gls-#3}},#2]{#3}{#4}{#5\glsadd{gls-#3}}
+}
+
+
+% \newcommand{\pidesc}{}
+\newglossaryentry{pi}{
+    name={Pending Inquiry},
+    description={The Cerner Application used to view pending orders. In the event an instrument goes down, this application can be used to transfer orders to another site.}
+}
+
+\newglossaryentry{tatm}{
+    name={Turnaround Time Monitor},
+    description={The Cerner Application used to view and monitor orders which have not been resulted. TAT monitor color codes the orders based on the amount of time they've been In-Lab.}
+}
+
+
+\newappAcryn{doe}{DOE}{Department Order Entry}{The Cerner Application used to place orders on in-house patients. It can also be used to add orders onto existing accession numbers.}
+
+
+\newglossaryentry{ci}
+{
+    name={Container Inquiry},
+    description={The Cerner Application used to view the details of accession containers. This is, by far, the most useful application within Cerner. It will be your best friend.}
+}
+
+
+
+
+
+
+\newterm{mrn}{MRN}{Medical Record Number}{A unique number assigned to a patient.}
+
+\newterm{fin}{FIN}{Financial Number}{A unique number used to identify a patient encounter}
+
+\newappAcryn{are}{ARE}{Accession Result Entry}{{The Cerner Application used to enter, perform and verify general laboratory results.}}
+
+\newappAcryn{orv}{ORV}{Order Result Viewer}{The Cerner Application used to view the orders on a patient or accession number.}
+
+\newglossaryentry{lrp}
+{
+    name={Label Reprint},
+    description={The Cerner Application used to reprint accession labels to any label printer.}
+}
+
+\newglossaryentry{mc}
+{
+    name={Modify Collections},
+    description={The Cerner Application used to modify the collection date, time, or method.}
+}
+
+\newglossaryentry{ab}
+{
+  name=App-Bar,
+  description={The Cerner Application used to view the orders on a patient or accession number.}
+}
+
+
+% \newglossaryentry{ci}
+% {
+%     name={Container Inquiry},
+%     description={The Cerner Application used to view the details of accession containers. This is, by far, the most useful application within Cerner. It will be your best friend.}
+% }
+
+\newglossaryentry{login}
+{
+    name={Specimen Log-in},
+    description={The Cerner Application used to ``Log-in'' samples. It can also be used to log-in entire transfer lists from other sites.}
+}
+\newglossaryentry{trans}
+{
+    name={Transfer Specimens},
+    description={The Cerner Application used to ``Transfer'' samples from the collecting site to the performing laboratory.}
+}
+
+
+\newglossaryentry{colist}
+{
+    name={Collections List},
+    description={The Cerner Application used to view ``Collections Lists.'' Future orders will appear here before they have been assigned accession numbers.}
+}
+
+\newglossaryentry{transfer}
+{
+    name={transfer},
+    description={The process used to let Cerner know that a sample is being moved from one location to another.},
+    plural={transferred}
+
+}
+
+\newglossaryentry{wlreq}
+{
+    name={Worklist Request},
+    description={The Cerner Application used to create and print worklist for certain tests. This is primarily used for batched tests.},
+}
+
+\newglossaryentry{comment}
+{
+    name={Comment},
+    description={Additional information that can be added to an order. This information can be seen by anyone with access to view the order or result.},
+    plural={Comments}
+}
+
+\newglossaryentry{note}
+{
+    name={Note},
+    description={Additional information that can be added to an order. Unlike Comments, notes can only be seen within the laboratory.},
+    plural={Notes}
+}
+
+\newglossaryentry{colinq}
+{
+    name={Collections Inquiry},
+    description={The Cerner Application used to view Collection Lists, Transfer Lists, and all pending orders for a patient. This application is helpful in tracking down samples that have been transferred between sites, and helping nurses find ``missing'' labels.}
+}
+\newglossaryentry{lpp}
+{
+    name={Label Pre-print},
+    description={The Cerner Application used to generate downtime labels. These are labels with accession numbers of yy-400-xxxxxx and above.}
+}
+
+\newglossaryentry{cid}
+{
+    name={Container Identifier},
+    text={container identifier},
+    description={A letter appended to the end of an accession. It is used to differentiate containers associated with an accession number.},
+    plural={Container Identifiers}
+}
+
+\newglossaryentry{pc}
+{
+    name={Power Charts},
+    description={The application used by the floors.}
+}
+\newglossaryentry{mre}
+{
+    name={Result Entry},
+    description={The Cerner Application used to result microbiology orders.}
+}
+\newglossaryentry{mlr}
+{
+    name={Media Label Reprint},
+    description={The Cerner Application to reprint microbiology media labels.}
+}
+\newglossaryentry{accn}
+{
+    name={Accession Number},
+    text={accession number},
+    description={The number assigned to a group of orders with the same collection type and time.},
+    plural={accession numbers}
+}
+
+\newglossaryentry{down}
+{
+    name={Downtime},
+    text={downtime},
+    description={A situation where Cerner is unavailable.},
+    plural={downtimes}
+}
+
+\newglossaryentry{osm_roe}
+{
+    name={OSM Requisition Order Entry},
+    description={The Cerner Application used to place orders on outreach patients.}
+}
+
+\newglossaryentry{spad}
+{
+    name={Scratch-Pad},
+    description={A space in Department Order Entry where individual tests are held temporarily until the entire order is ready to be submitted. Tests which are in the Scratch pad can be edited or removed.}
+}
+
+\newglossaryentry{oable}
+{
+    name={Orderable},
+    description={An Orderable is anything that can be ordered in the laboratory. It can be an individual assay (\eg{Glucose},) a panel (\eg{Basic Metabolic Panel},) or a care-set (\eg{Glucose Tolerance Test}.)}
+}
+
+\newglossaryentry{ancil}
+{
+    name={Ancillary Orderable},
+    description={Orderables with the mnemonic type of ``Ancillary'' are aliases to the ``Primary'' orderable. Basically, they are just another name for a test.},
+    plural=Ancillary Orderables
+}
+
+\newglossaryentry{prim}
+{
+    name={Primary Orderable},
+    description={Orderables with the mnemonic type of ``Primary'' are just plain old orderables. They may or, may not  have Ancillary aliases.},
+    plural=Primary Orderables
+}
+
+\newglossaryentry{inprocess}
+{
+    name={In Process},
+    description={In Process a status which means one or more of the assays within the orderable has been resulted. \eg{A Lytes has been ordered, but only the Sodium has been resulted and verified.}}
+}
+
+\newglossaryentry{inlab}
+{
+    name={In-Lab},
+    description={Is a status which means the sample is has been logged into the current laboratory, but no results have been verified.}
+}
+\newglossaryentry{completed}
+{
+    name={Completed},
+    description={Is a status which means all of the results have been verified.}
+}
+
+\newglossaryentry{collected}
+{
+    name={Collected},
+    description={Is a status which means the sample has been collected, but has not been logged-in to the laboratory.}
+}
+
+\newglossaryentry{dispatched}
+{
+    name={Dispatched},
+    description={Is a status which means the labels have printed, but the sample has not yet been collected.}
+}
+
+\newglossaryentry{scheduled}
+{
+    name={Scheduled},
+    description={Is a status which means the order has been placed for the future. Orders with this status do not have an accession number.}
+}
+
+\newglossaryentry{canceled}
+{
+    name={Canceled},
+    description={Is a status which means the order has been canceled.}
+}
+
+\newglossaryentry{intransit}
+{
+    name={In Transit},
+    description={Is a status which means the sample has been collected and is in-route to another site.}
+}
+
+\newglossaryentry{fs}
+{
+    name={Flowsheet},
+    description={A mode within Order Result Viewer which shows a history of laboratory results. This mode is almost identical to the Flowsheet in Powercharts.}
+}
+
+\newglossaryentry{routing}
+{
+    name={Routing Information},
+    description={The location and department where an order will be tested, and its In-Lab location.}
+}
+
+\newglossaryentry{inlablocation}
+{
+    name={In-Lab Location},
+    description={The location the sample must be Logged into before the orders can be resulted. Containers must have a status of ``Received'' with this location.}
+}
+
+\newglossaryentry{serviceresource}
+{
+    name={Service Resource},
+    description={A bench or resource where tests are performed.}
+}
+
+\newglossaryentry{perform}
+{
+    name={perform},
+    description={Entering a result into Accession Result Entry.}
+}
+
+\newglossaryentry{performed}
+{
+    name={performed},
+    description={An Accession Result Entry status meaning the result has been entered but not finalized. The result can be modified.}
+}
+
+\newglossaryentry{accnaddon}
+{
+    name={Accession Add-On},
+    description={A mode in Department Order Entry which allows you to add orders to an existing Accession Number.}
+}
+
+\newglossaryentry{addon}
+{
+    name={Add-On},
+    description={An order which should be run on a sample which has already been received by the laboratory.}
+}
+
+% \smartinput{bloodbank_terms.tex}

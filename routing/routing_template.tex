@@ -1,0 +1,113 @@
+\tikzset{
+  dirtree/.style={
+    growth function=\dirtree@growth,
+    every node/.style={anchor=north},
+    every child node/.style={anchor=west},
+    edge from parent path={(\tikzparentnode\tikzparentanchor) |- (\tikzchildnode\tikzchildanchor)}
+  }
+}
+\begin{minipage}[t]{.5\linewidth}
+    \vspace{0pt}
+    \timy\scshape
+    \begin{forest}
+      dir tree
+      [\treeitem{site}{ }
+        [\treeitem{section}{_ BB S}
+            [\treeitem{subsection}{ BB SS}
+                [\treeitem{bench}{ BB Bench}]
+                [\treeitem{bench}{ BB TRXN Bench}]
+            ]
+        ]
+        [\treeitem{section}{ Chem S}
+          [\treeitem{subsection}{ ChemMan SS}
+            [\treeitem{bench}{ Chem Man}]
+            [\treeitem{bench}{ Osmo}]
+          ]
+          [\treeitem{subsection}{ Remisol}
+            [\treeitem{instrument}{ DXC 1}]
+            [\treeitem{instrument}{ DXC 2}]
+            [\treeitem{instrument}{ DXI 1}]
+            [\treeitem{instrument}{ DXI 2}]
+          ]
+        ]
+        [\treeitem{section}{ Coag S}
+            [\treeitem{subsection}{ CoagAuto SS}
+                [\treeitem{instrument}{ ACL 1}]
+                [\treeitem{instrument}{ ACL 2}]
+            ]
+            [\treeitem{section}{ CoagMan SS}
+                [\treeitem{bench}{ Coag Man}]
+            ]
+        ]
+        [\treeitem{section}{ Heme S}
+            [\treeitem{subsection}{ HemeMan SS}
+                [\treeitem{bench}{ ESR}]
+                [\treeitem{bench}{ Heme Man}]
+                [\treeitem{bench}{ TEG}]
+            ]
+            [\treeitem{subsection}{ WAM}
+                [\treeitem{instrument}{ WAM Pending}]
+                [\treeitem{instrument}{ XE 1}]
+                [\treeitem{instrument}{ XE 2}]
+            ]
+        ]
+      ]
+    \end{forest}
+\end{minipage}\marginnote[15\baselineskip]{\scshape%
+
+Legend
+\begin{description}
+        \item \treeitem{site}{Laboratory}
+        \item \treeitem{section}{Section (Department)}
+        \item \treeitem{subsection}{Sub Section}
+        \item \treeitem{bench}{Bench}
+        \item \treeitem{instrument}{instrument}
+    \end{description}}%
+\begin{minipage}[t]{.5\linewidth}
+    \vspace{0pt}
+    \footnotesize\scshape
+    \begin{forest}
+      dir tree
+      [\treeitem{site}{ continued}
+        [\treeitem{section}{ Misc Micro S}
+            [\treeitem{subsection}{ Misc Micro SS}
+                [\treeitem{bench}{ Misc Micro}]
+            ]
+        ]
+        [\treeitem{section}{ Sero S}
+            [\treeitem{section}{ SeroMan SS}]
+        ]
+        [\treeitem{section}{ SO S}
+            [\treeitem{subsection}{ SO Man SS}
+                [\treeitem{bench}{ Allomap}]
+                [\treeitem{bench}{ Athena}]
+                [\treeitem{bench}{ Baylor}]
+                [\treeitem{bench}{ Ct TX Gen}]
+                [\treeitem{bench}{ Duke}]
+                [\treeitem{bench}{ Focus}]
+                [\treeitem{bench}{ Horizon}]
+                [\treeitem{bench}{ Kimball Gen}]
+                [\treeitem{bench}{ Misc SO}]
+                [\treeitem{bench}{ Prometheus}]
+                [\treeitem{bench}{ SWID}]
+                [\treeitem{bench}{ TX Dept}]
+                [\treeitem{bench}{ UT Tyler}]
+                [\treeitem{bench}{ Viracor}]
+            ]
+            [\treeitem{subsection}{ SO SS}
+                [\treeitem{bench}{ Arup}]
+                [\treeitem{bench}{ CPL}]
+                [\treeitem{bench}{ Mayo}]
+            ]
+        ]
+        [\treeitem{section}{ UA S}
+            [\treeitem{subsection}{ UA Auto SS}
+                [\treeitem{instrument}{ Clinitek}]
+            ]
+            [\treeitem{subsection}{ UA Man SS}
+                [\treeitem{bench}{ UA Man}]
+            ]
+        ]
+      ]
+    \end{forest}
+\end{minipage}

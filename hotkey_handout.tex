@@ -1,0 +1,37 @@
+\input{cerner_preamble.tex}
+
+\title{Printing Labels} % Title of the book
+\author{Cerner Training Manuals}
+\publisher[Seton Medical Center]{%
+  \usebox{\titleimage}
+} % Publisher
+
+\settoggle{ishandout}{true}
+\fancypagestyle{plain}{
+  \fancyhf{} % clear header and footer fields
+  % Uncomment the following five lines of code if you want the opening page
+  % of the chapter to express the folio in the lower outside corner.
+  % \ifthenelse{\boolean{@tufte@twoside}}
+   % {\fancyhead[LE,RO]{}}
+   % {\fancyhead[RE,RO]{}}
+}
+
+\begin{document}
+
+    \frontmatter
+        % \maketitle % Print the title page
+        % \begin{fullwidth}
+            % \tableofcontents
+        % \end{fullwidth}
+
+        \chapter{Keyboard Shortcuts}
+        \begin{fullwidth}
+        \begin{center}
+            \input{hotkeys.tex}
+        \end{center}
+        \end{fullwidth}
+
+    % \backmatter
+        % \cfinput{../backmatter.tex}
+
+\end{document}

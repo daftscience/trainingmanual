@@ -1,0 +1,199 @@
+\chapter{Introduction}\label{ch:accn_intro}
+In Cerner, an \gls{accn} is the unique number assigned to a set of orders with the same sample type\sidenote{\eg{blood, urine, body fluid, \etc}}, and collection time.
+
+This means, when the emergency department sends a ``Rainbow'' all the orders for those tubes will be on a single \gls{accn}.\\
+
+\newthought{\Glspl{accn}} are made up of four parts:
+\begin{description}
+    \bolditem{Julian Year} 2-digit number representing the current year.
+    \bolditem{Julian Day} 3-digit number representing the day of the year the sample was, or will be, collected. (001-365)\sidenote{\info{It's alright if they don't match. Samples collected around midnight will often have a different Julian date than collect date.}}
+    \bolditem{Group Number} A unique number to differentiate \glspl{accn}.
+    \bolditem{Container Identifier} A \textit{letter} used to differentiate containers attached to an \gls{accn}
+\end{description}
+
+\vspace{2em}
+\noindent
+\begin{minipage}{\textwidth}
+\centering
+    \sffamily
+    \begin{tikzpicture}
+        {\Large
+        \node [anchor=west] (pif) at (-0.1, 1.5) {\LARGE
+                    \color{deeporange800}{Julian Year} \hspace{2em}
+                    \color{cyan800}{Group Number}};
+        \node [anchor=west] (sp) at (0.0,-2) {\LARGE
+                    \color{purple800}{Julian Day} \hspace{1em}
+                    \color{indigo800}{Container Id}};
+        }
+        \node[anchor=west,inner sep=0] (image) at (0,0) {
+                \Huge{
+                        {\color{deeporange600}15}-%
+                        {\color{purple600}123}-%
+                        {\color{cyan600}123456}%
+                        {\color{indigo600}A}%
+                        }};
+        \draw [-stealth, line width=3pt, deeporange400] (1.4,  1.3)    to[out=-90, in=80] (0.6, 0.3);
+        \draw [-stealth, line width=3pt, cyan400]            (4.7,  1.3)    to[out=-90, in=60] (4, 0.3);
+        \draw [-stealth, line width=3pt, purple400]         (1.4, -1.8)   to[out=90, in=-90] (2, -0.3);
+        \draw [-stealth, line width=3pt, indigo400]         (4.1, -1.8)   to[out=90, in=-90] (6, -0.3);
+    \end{tikzpicture}%
+\end{minipage}
+
+\newthought{The group number} will reset at midnight. Since the date is built into the \gls{accn}, no two collections will ever have the same \gls{accn}.
+
+\clearpage
+\section{Container Identifiers}\label{sec:accn_cid}
+
+The \gls{cid} gives Cerner the ability to group \textit{every} container from a collection onto a single \gls{accn}, while still allowing the instruments to differentiate containers.
+
+\newthought{Example:}
+
+\begin{quote}
+An order is placed for a \textbf{CBC}, \textbf{Basic Panel}, \textbf{Lithium} and a \textbf{Troponin}.
+Cerner will create one \gls{accn} with three containers.
+    \begin{itemize}
+        \item 15-123-000001A - \textbf{CBC}
+        \item 15-123-000001B - \textbf{Basic Panel}, \textbf{Troponin}(Li-Heparin)
+        \item 15-123-000001C - \textbf{Lithium}(SST)
+    \end{itemize}
+When container ``B,'' is loaded on to the instrument, the only orders it will see are the \textbf{Basic Panel} and \textbf{Troponin}.
+\end{quote}
+
+\importantblock{Check that the correct label is placed on each of the containers. If the SST label is placed on the Li-Heparin tube, the instruments will run a lithium on the Li-Heparin container.}
+
+\section{Advantages}
+
+By assigning one \gls{accn} to an entire collection, specimen tracking becomes much easier.
+
+With \Gls{ci}, it's possible to see every container on an \gls{accn}, and each of the tests associated with those containers.
+
+Sites with automation lines will be able to load extra containers onto the line. Those containers will be spun and immediately filed.
+
+\section{Downtime Accessions}
+\warning{WORK IN PROGRESS}\\
+In the event that Cerner is unable to generate \gls{accn} (\eg{\glspl{down}},) \gls{down} \glspl{accn} will need to be manually assigned using \gls{doe}.\sidenote{\checkref{part:downtime}{\refpt{part:downtime}}{\textit{Refer to the Downtime Procedure.}}}
+
+Pre-printed \gls{down} labels have \glspl{accn} similar to normal \glspl{accn}. The main difference is that the Julian day is replaced with a number greater than 366.\sidenote{\info{We can safely use these numbers because normal \glspl{accn} can't go that high. If they do, then it's been a long year.}}
+
+\newthought{Example of a} \gls{down} \gls{accn}:\\
+
+\begin{tikzpicture}
+    \sffamily
+        \node[anchor=west,inner sep=0] (image) at (0,0) {\LARGE{{\color{deeppurple500}15-400-000001}}};
+    \end{tikzpicture}%
+% \end{minipage}
+
+\chapter{Tips and Tricks}\label{ch:accn_tips}
+While on the surface, entering \glspl{accn} in Cerner applications is fairly simple, this section will go over some of the details.
+
+\section{Container ID}
+In most Applications, Cerner will ignore the \gls{cid}%
+\sidenote{This means Cerner will pull up information on the entire order}. There are two exceptions \ie{\gls{ci} and \gls{login}}.
+
+
+\newthought{With a }\Gls{cid}: 15-123-000001\boldcap{B} \marginnote[3\baselineskip]{\info{Only the entered container appears.}}\\
+
+\prettyimage{width=\textwidth, trim={0 150pt 0 0}, clip}{graphics/with_id.png}
+
+\newthought{Without a }\Gls{cid}: 15-123-000001\marginnote[3\baselineskip]{\info{Both containers on the \gls{accn} appear.}}\\
+
+\prettyimage{width=\textwidth, trim={0 150pt 0 0}, clip}{graphics/with_cid.png}
+\importantblock{\appicon{specimen_login} \gls{login} also behaves this way. Meaning, if the \gls{accn} is entered without the \gls{cid}, it's possible to log-in containers which have not been sent to the lab.}\marginnote[-2\baselineskip]{\ldots And that is why you always use the Barcode Scanners.}
+
+\pagebreak
+\section{Entering Accession Numbers\label{sec:accn_tips_entering}}
+If you haven't noticed, the accession numbers are a bit long. Luckily we have some shortcuts.
+
+\newthought{When entering an Accn} we can auto-fill most of the information.
+This will allow us to quickly enter \glspl{accn}.\\
+
+\subsection{Fast Entry}
+\noindent
+\begin{minipage}{.5\textwidth}
+    \paragraph{Click} on the accession field.
+\end{minipage}\marginnote{If it's not empty, delete the stuff in it.}%
+\begin{minipage}{.1\textwidth}
+{ \color{white} hi}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+    \prettyimage{width=.6\textwidth}{graphics/accnfield_blank.png}
+\end{minipage}\\
+
+\noindent
+\begin{minipage}{.5\textwidth}
+    \paragraph{Hit} {\faKeyboardO} \boldcap{Tab} on the keyboard.
+    % \paragraph{Hit} the \textbf{Tab} key \faKeyboardO
+\end{minipage}\marginnote{The current year just auto-filled}%
+\begin{minipage}{.1\textwidth}
+{ \color{white} hi}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+    \prettyimage{width=.6\textwidth}{graphics/accnfield_year.png}
+\end{minipage}\\
+
+\noindent
+\begin{minipage}{.5\textwidth}
+    \paragraph{Hit} {\faKeyboardO} \boldcap{Tab} on the keyboard.
+\end{minipage}\marginnote{You guessed it, the current \\day just auto-filled.}%
+\begin{minipage}{.1\textwidth}
+{ \color{white} hi}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+    \prettyimage{width=.6\textwidth}{graphics/accnfield_day.png}
+\end{minipage}
+
+\noindent
+\begin{minipage}{.5\textwidth}
+    \paragraph{Hit} {\faKeyboardO} \boldcap{Tab} on the keyboard.
+\end{minipage}%
+\begin{minipage}{.1\textwidth}
+{ \color{white} hi}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+    \prettyimage{width=.6\textwidth}{graphics/accnfield_done.png}
+\end{minipage}\marginnote{\faMagic The whole \gls{accn} was pulled up using the last 3 digits.}
+
+
+\subsection{Faster Entry}
+\newthought{If the \gls{accn}} has today's date, you can actually skip the first two tabs.\\
+
+\noindent
+\begin{minipage}{.5\textwidth}
+\paragraph{Click} on the accession field.
+\end{minipage}\marginnote{If it's not empty, delete the stuff in it.}%
+\begin{minipage}{.1\textwidth}
+{ \color{white} hi}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+\prettyimage{width=.6\textwidth}{graphics/accnfield_blank.png}
+\end{minipage}
+
+\noindent
+\begin{minipage}{.5\textwidth}
+\paragraph{Hit} {\faKeyboardO} \boldcap{Enter}.
+\end{minipage}\marginnote{The current year and day just auto-filled. Pretty nifty.}%
+\begin{minipage}{.1\textwidth}
+{ \color{white} hi}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+\prettyimage{width=.6\textwidth}{graphics/accnfield_day.png}
+\end{minipage}
+
+% \noindent
+% \begin{minipage}{.5\textwidth}
+%     \paragraph{Hit} the \textbf{Tab} key \faKeyboardO
+% \end{minipage}\marginnote{You guessed it, the current \\day just auto-filled.}%
+% \begin{minipage}{.5\textwidth}
+%     \prettyimage{width=.6\textwidth}{graphics/accnfield_day.png}
+% \end{minipage}
+
+\noindent
+\begin{minipage}{.5\textwidth}
+    \paragraph{Hit} {\faKeyboardO} \boldcap{Tab}.
+\end{minipage}%
+\begin{minipage}{.1\textwidth}
+{ \color{white} hi}
+\end{minipage}%
+\begin{minipage}{.5\textwidth}
+    \prettyimage{width=.6\textwidth}{graphics/accnfield_done.png}
+\end{minipage}

@@ -1,0 +1,40 @@
+\section{Previously Entered}
+
+If a container is currently in the \textsc{\gls{login} Spreadsheet} it cannot be scanned in.\marginnote{This is one of the most frustrating things about \gls{login}.}\\
+
+\prettyimage{width=.7\textwidth}{graphics/prev_entered}
+
+\newthought{To fix} this, the \textsc{Spreadsheet} needs to be refreshed. \refpt{sec:refresh_data} for information on how that is done.
+
+
+\section{Invalid Collection Time}
+
+Cerner will not accept \textsc{Collection Times} that are more recent than the \textsc{Received Time}.\marginnote{Sorry time travelers.}\\
+
+\prettyimage{width=.7\textwidth}{graphics/future_time}
+
+\newthought{To fix} this, simply:
+
+\paragraph{Correct} the times to their actual values to continue.
+
+
+\section{Separate Collections}\label{sec:sep_collection}
+Occasionally, containers will be collected at different times.\sidenote{\eg{Blue top was collected at 15:00, Green top was collected at 16:00.}}
+
+Since the containers have their own collection information, this is acceptable. Cerner will display a \textit{friendly} alert asking if this is correct.\\
+
+\prettyimage{width=\textwidth}{graphics/sep_collection}
+
+\newthought{If the information} is correct:\sidenote{The samples were collected at two separate times.}
+
+\paragraph{Click} the \btn{graphics/yes} button.
+
+\newthought{If the samples} were collected at the same time:
+
+\paragraph{Click} the \btn{graphics/no} button.
+\warnblock{This option will apply the collection information from the first container to the container you're trying to Log-in. Only do this if you've entered the wrong collection time in the previous steps.}
+
+
+\section{I've Logged a Sample into the Wrong Location}
+
+\newthought{Don't Panic!} Simply log it into the correct location.

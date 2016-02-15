@@ -1,0 +1,323 @@
+\setcounter{page}{1}
+
+\chapter{Quick reference}
+
+In order to find your information quicker, you can use this page to answer some of the questions.
+
+
+\answer{Your test patient's MRN\label{your_mrn}}
+
+\subsection{Department Order Entry}
+\answer{Accession Number (Blood)\label{blood_accession}}
+\answer{Accession Number (Bone Marrow)}
+
+\subsection{Container Inquiry}
+\answer{Which container is the PTT on?\label{ptt_container}}
+\answer{Which \boldcap{Service Resource} is the \boldcap{PTT} routed to?\label{ptt_sr}}
+
+\subsection{Transferring}
+\answer{What is the number of the list your PTT is on?\label{ptt_list}}
+\answer{What is the number of the list your CHABM is on?\label{bm_list}}
+
+\subsection{Advanced ARE}
+\answer{Accession Number (Synovial)}
+\clearpage
+
+\chapter{Introduction}
+Use this handout to follow along with the class. Each section contains some instructions and questions to be answered out.
+
+Refer to this handout as you practice your own. If you have any questions you can contact LIS, or email me at:{\color{teal900} { tjperry@seton.org}}
+
+\infoblock{Too keep track of your progress, place a {\faCheck} in the {\activityicon} as you complete them.}
+
+
+
+\section{Accession Numbers}
+
+    \answermulti[{Year, Julian Day}]{How are the first 5 digits of an accession number defined?}
+
+    \answer[A letter which differentiates containers.]{What is a Container ID?}
+
+
+\chapter{Placing Orders}
+
+\section{Department Order Entry}
+
+\activity{Set the default Values for DOE}\sideref{part:doe}{sec:doe_custom}
+
+\activity{Change the \boldcap{Patient Identifier field} to search for MRN}\sidenote{\hotkey{Ctrl+Tab}}
+
+\subsection{Ordering Tests}
+Here we will be ordering some tests on your patient.
+
+\warnblock{Please read the instructions carefully!
+    \begin{itemize}
+        \item Do \boldcap{NOT} change the client field.
+        \item Do \boldcap{NOT} submit orders until instructed to do so.
+    \end{itemize}
+}
+
+\activity{Search for your Patient using the MRN}\sideref{part:doe}{patientLookup}\sidenote{\refQuestion{your_mrn}}
+
+\activity{Search for a Electrolytes Metabolic Panel}
+
+\infoblock{Set the following values:
+    \begin{itemize}
+        \item{{\faCheckSquareO} Collected}
+        \item Set the \boldcap{Received Location} to SMC Login.
+    \end{itemize}
+
+}
+
+\activity{Add the Electrolytes Panel to your \gls{spad}}\sidenote{\hotkey{\boldcap{Ctrl+A}}}
+
+\infoblock{For the next activity, you don't need to change any of the options.They will default to those chosen with the Electrolytes Panel.}
+
+\activity{Add the following tests:}
+
+
+\begin{quote}
+\begin{quote}
+    \begin{itemize}
+        \item hCG Qualitative
+        \item TNSIBC
+        \item Chromosome Analysis on Bone Marrow
+    \end{itemize}
+\end{quote}
+\end{quote}
+
+\activity{Submit the Order}\sidenote{\hotkey{\boldcap{Ctrl+O}}}
+
+\answerFP{Accession Number (Blood)}
+\answerFP{Accession Number (Bone Marrow)}
+
+\importantblock{For this next activity, set the \boldcap{Collection Time} to be greater than the \boldcap{Received time}.}
+
+\activity{Order a CDSF}\sidenote{This will generate an ERROR.}
+
+\answer[Error]{What is the \boldcap{Submission Status?}}
+
+\activity{View the Submission Error}\sideref{part:doe}{sec:submission_errors}
+
+\activity{Fix the error, and re-submit the orders}
+
+\answerFP{Accession Number (Synovial)}
+
+\subsection{Accession Add-On}
+
+\activity{Add a PTT to the blood sample ordered earlier.}
+
+\answer[Yes]{Should you override?}
+
+\section{Container Inquiry}
+
+\activity{Using \boldcap{Container Inquiry} search for the blood sample.}\sidenote{\refQuestion{blood_accession}}
+
+\answerFP{What container is your PTT on?}
+
+\answer[SMC Login]{What is the \boldcap{In-Lab Location} of the PTT?}
+
+\answerFP{Which \boldcap{Service Resource} is the PTT routed to?}
+\answerkey{SMC ACL1}
+
+
+
+\chapter{Entering Results}
+
+\section{Accession Result Entry}
+
+\subsection{Getting Started}
+
+\activity{Set the Default Values}\sideref{part:are}{ch:are_setup}
+
+
+\subsection{Entering Results}
+
+\importantblock{Do not \boldcap or \boldcap{Verify} these until instructed.}
+
+\activity{Open the Accession number for your Blood Sample using ARE.}\sidenote{\refQuestion{your_mrn}}
+
+\activity{Set the \boldcap{Test Site} to SMC Remisol.}\sidenote{Click Retrieve if needed.}
+
+\activity{Enter results for the Lytes using the following criteria:}
+
+\begin{quote}
+\begin{quote}
+    \begin{itemize}
+        \item \boldcap{Sodium:} 201
+        \item \boldcap{Potassium:} 6
+        \item \boldcap{Chloride:} 100
+        \item \boldcap{CO2:} 20
+        \item \boldcap{Everything Else:} You can pick.
+    \end{itemize}
+\end{quote}
+\end{quote}
+
+\answer[>80]{What is the value of the Anion Gap?}
+
+\answermulti[Unable to calculate]{Can the anion gap be calculated if both the Sodium and Chloride are out of linearity?}
+
+\activity{Verify the panel.}
+
+\answermulti[ARE tells you there are critical results. It asks you to enter a comment.]{What Happened?}
+
+\importantblock{Normally, we select ``Yes.''  However, in order to show you additional features, we'd like you select ``No.''}
+
+\activity{Click ``No''}
+
+\activity{Enter a \boldcap{Batch Comment}}\sidenote{\hotkey{\boldcap{Ctrl+B}}}
+
+\activity{Using the \boldcap{CallRed} template, enter a critical comment}\sideref{part:comments}{ch:using_templates}
+
+\activity{Click Verify}
+
+\answermulti[The critical results have comments]{Why didn't Cerner warn you that there are critical results?}
+
+\subsection{Correction Mode}
+
+In this section, we will be modifying some results.\\
+
+\activity{Set ARE to \boldcap{Correction Mode}}
+
+\activity{Change the Sodium to 136}
+
+\answermulti[It changed to 16]{What happened to the Anion Gap?}
+
+\answer[No]{Will Cerner warn you that a ``Corrected Comment'' needs to be entered?}
+
+\activity{Enter a Correction Comment}\sidenote{\hotkey{\boldcap{Ctrl+A}}}
+
+\answer[By correcting the result again.]{If you forgot to enter a comment, how can it be added?}
+
+\answer[Comments are considered part of the result.]{Why do you need to do that?}
+
+\chapter{Viewing Orders}
+
+
+\section{Order Result Viewer}
+
+\activity{Change default values}\sideref{part:orv}{ch:orv_getstart}
+
+\subsection{Searching for a Patient}
+
+\activity{Pull up your patient's orders}\sidenote{\refQuestion{your_mrn}}
+
+\activity{Double click on the Electrolytes Panel.}
+
+\answer[The results window Popped up.]{What Happened?}
+
+\activity{Select a \boldcap{Corrected Result}}\sidenote{Look at the \boldcap{Status} column.}
+
+\activity{Click on \boldcap{History}}
+
+\answer[>200]{What was the original Sodium Value?}
+
+\subsection{Canceling Orders}
+
+\activity{Cancel the SHCG}
+
+\answermulti[Click the little Comment icon.]{How do you enter a Comment?}
+
+\section{Pending Inquiry}
+
+\activity{Modify the headings}\sideref{part:pi}{ch:customizing_pending}
+
+\activity{Open a Pending using the service resource of the PTT}\sidenote{\refQuestion{ptt_sr}}
+
+\answermulti[Not selecting the correct service resource]{What would cause the transfer to fail?}
+\activity{Re-Route the PTT to Brakenridge.}
+
+\activity{Transfer the PTT.}\sideref{part:pi}{ch:transfer_from_pending}
+
+
+\chapter{Transfer Specimen}
+
+\activity{Set up defaults}
+
+\infoblock{In this section we will create two transfer lists. Please pay close attention, this section gets complicated.}
+
+
+\subsection{Creating Lists}
+
+\subsection{Your First List}
+
+The first list will contain your PTT.
+
+\answer[From SMC Login]{What will the \boldcap{From} location be?}
+
+\answer[To BH]{What will the \boldcap{To} location be?}
+
+\activity{Create a transfer list for the PTT Order.}\sideref{part:transfer}{ch:creat_trans_list}
+
+\answerFP{What is your list number?}
+
+
+\subsection{Your Second List}
+
+The second list will contain your CHABM.
+
+\answer[From SMC Login]{What will the \boldcap{From} location be?}
+
+\answer[To BH Referrals]{What will the \boldcap{To} location be?}
+
+\activity{Create a transfer list for the CHABM}\sideref{part:transfer}{ch:creat_trans_list}
+
+\answerFP{What is your list number?}
+
+\subsection{Modify List}
+
+\activity{Select and Modify your First List}\sidenote{\refQuestion{ptt_list}}
+
+\activity{Add the TNSIBC To the list}\sidenote{\refQuestion{blood_accession}}
+
+
+
+\chapter{Specimen Login}
+
+\activity{Open Accession Log-in and choose: \boldcap{Log-in by Accession} }\sideref{part:login}{sec:login_procedure}
+
+\activity{Make Sure the \textsc{Log-in Location} is set to \boldcap{BH Login}}
+
+\importantblock{In order to prevent errors, enter the container ID after the Accession Numbers.\sidenote{Capital Letters}}
+
+\begin{itemize}
+    \item CHABM\sidenote{This will be container `A'}
+    \item PTT\sidenote{\refQuestion{ptt_container}}
+\end{itemize}
+
+
+\activity{Login By List}
+
+\activity{Open Accession Log-in and choose: \boldcap{Log-in by List}}\sideref{part:login}{ch:login_list}
+
+\activity{Log in your Second List}\sidenote{\refQuestion{bm_list}}
+
+\answer[No orders on list.]{What does the message say?}
+
+\activity{Log in your First List}
+
+\answer[The TNSIBC Showed up]{What happened?}
+
+\answer[Because it was Missed]{Why?}
+
+
+\chapter{Advanced ARE}
+
+\activity{Open your Synovial Fluid in ARE}
+
+\activity{Result it so that a Differential and Crystal ID will reflex.}
+
+\infoblock{\begin{itemize}
+        \item \boldcap{WBC} > 5
+        \item \boldcap{Crystals}: Present
+    \end{itemize}
+}
+
+\section{Differential Mode}
+
+\activity{Perform a Differential.}\sideref{part:are}{sec:perform_differential}
+
+\answer[The Total Cells Counted]{What must you always remember?}
+
+\activity{Switch to Accession Mode and enter the Total Cells Counted.}
+

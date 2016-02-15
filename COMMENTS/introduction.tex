@@ -1,0 +1,48 @@
+\glspl{comment} and \glspl{note} can be added to Orders, Results, and Collections. They are used to provide additional\sidenote{\eg{Collection Instructions.}} information or instructions and to document events\sidenote{\eg{Documenting critical calls.}}.
+
+Comments can be added by Providers to give the laboratory additional information, or they can be added by the laboratory to give Providers additional information.
+
+Notes are internal to the laboratory. They cannot be seen by providers.
+
+\section{Comments vs. Notes}
+When entering \textsc{Comments}, you have the option to enter it as a \textsc{Comment} or as a \textsc{Note}. The main difference between the two is that \textsc{Notes} are internal to the laboratory.
+
+\begin{description}
+    \bolditem{\glspl{comment}} Additional information that can be viewed by anyone with access to the order or result.
+
+\importantblock{Result Comments are part of the result. After a result has been verified, the \textbf{Result Comment} can not be modified without ``Correcting'' the result\sidenote{\checkref{ch:correction_mode}{\refptchapp{part:are}{ch:correction_mode}{are}}{Refer to the \gls{are} procedure for more information.}}.}
+    \bolditem{\glspl{note}} Additional information for the laboratory only. Note cannot be seen by the floors.
+\end{description}
+
+
+\clearpage
+\section{Order Comment vs. Result Comment}
+\gls{are} will differentiate \textsc{Comments} and \textsc{Notes} between an order and a specific result.\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (comm) at (4, 8.5) {\scshape{Result}};
+\node [anchor=west] (note) at (.5, 8.5) {\scshape{Order}};
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.75\textwidth}{graphics/comments_window}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw[deeppurple400, rounded corners, line width=3] (0.43, 0.75)rectangle (0.58, 0.83);
+        \draw [-stealth, line width=3pt, deeporange400] (note) to[out=-90, in=90] (0.1,0.9);
+        \draw [-stealth, line width=3pt, deeporange400] (note) to[out=-90, in=90] (0.3,0.9);
+
+        \draw[deeporange400, rounded corners, line width=3] (0.06, 0.75)rectangle (0.19, 0.83);
+        \draw [-stealth, line width=3pt, deeppurple400] (comm) to[out=-90, in=90] (0.5,0.9);
+        \draw [-stealth, line width=3pt, deeppurple400] (comm) to[out=-90, in=90] (0.7,0.9);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\marginnote[-8\baselineskip]{In this example, \textsc{Result} Comments and Notes will only apply to the \textsc{Creatinine}.
+
+\textsc{Order} Comments and Notes will apply to the entire \textsc{Basic Metabolic Panel}}
+
+\begin{description}
+    \bolditem{Order Comment/Note} Will be attached to the entire Order.
+    \bolditem{Result Comment/Note} Will be attached to a specific result.
+\end{description}
+

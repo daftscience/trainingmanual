@@ -1,0 +1,113 @@
+\gls{orv} is often used for canceling orders. The advantage of using \gls{orv} is that orders can be quickly pulled up by scanning the sample's barcode.
+
+If an order status is \textit{\gls{completed}} or \textit{\gls{inprocess}} it cannot be canceled.%
+\sidenote{Luckily, \gls{orv} will disable the \btn{graphics/cancel_icon}} If you recall, orders with those statuses already have verified results.%
+\sidenote{{\reftable{table:orv_order_status}}.}
+
+
+\newthought{To start,} pull up the orders to be canceled in \gls{orv}.
+
+\paragraph{Select} the order to be canceled.\marginnote[2\baselineskip]{The basic panel was sent down in a Lavender Top. It needs to be canceled.}\\
+
+\prettyimage{width=\textwidth}{graphics/orv.png}
+
+\paragraph{Click}on the \btn{graphics/cancel_icon} icon in the toolbar to open the Cancel Order dialog.\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/orv_toolbar2}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw[indigo400, rounded corners, line width=3] (0.82, 0.1)rectangle (0.905, 0.98);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\clearpage
+\paragraph{Review} the details of the order to be canceled.\\
+\marginnote[2\baselineskip]{Check that the Order and Patient's name.}
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (cf) at (-1.7,4.7) {\scshape{Accession}};
+\node [anchor=west] (pif) at (-1.7,3.7) {\scshape{Name}};
+\node [anchor=west] (ord) at (-1.7,2.7) {\scshape{Order}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.6\textwidth}{graphics/orv_cancel_dialog_start.png} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, cyan400] (cf) to[out=0, in=240] (0.1,0.81);
+        \draw [-stealth, line width=3pt, deeporange400] (pif) to[out=0, in=250] (0.4,0.81);
+        \draw [-stealth, line width=3pt, indigo400] (ord) to[out=0, in=260] (0.6,0.81);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\paragraph{Select} the appropriate Cancel Reason from the drop-down menu.\\
+\marginnote[2\baselineskip]{In this case, we will choose ``Wrong Tube or Specimen Type''}
+
+\prettyimage{width=.5\textwidth}{graphics/orv_cancel_reasons.png}
+
+\paragraph{Click}the  \btn{graphics/comment_icon.png} icon to open the Cancel Comment window.\sidenote{\checkref{part:comments}{\refptch{part:comments}{ch:adding_comments}}{\textit{Refer to the \textsc{Comments Procedure} for more information}}.\\
+
+\prettyimage{width=\linewidth}{graphics/cancel_comment_dialog.png}
+}\\
+
+\newthought{Enter any required} comments.
+
+
+\begin{description}
+      \paraitem{Click} the \btn{graphics/edit_button.png} button.
+
+      \paraitem{Type} ``calred.''
+
+      \paraitem{Hit} {\faKeyboardO } \textbf{F9} to expand the call template.
+
+      \paraitem{Hit} {\faKeyboardO } \textbf{F3} to move between the required fields.
+
+      \paraitem{Click} \btn{graphics/ok_button.png}  when finished.
+
+      \paraitem{Click} \btn{graphics/close_button.png} to close the Comments dialog.
+\end{description}
+
+\newthought{At this point} you should be back to the \textsc{Cancel Order} window.
+\paragraph{Review} the information to ensure everything has been entered correctly.\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (cf) at (-2,5.7) {\scshape{Accession}};
+\node [anchor=west] (pif) at (-2,4.7) {\scshape{Name}};
+\node [anchor=west] (ord) at (-2,3.7) {\scshape{Order}};
+\node [anchor=west] (rsn) at (-2,2.7) {\scshape{Reason}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.6\textwidth}{graphics/orv_cancel_dialog.png} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, cyan400] (cf) to[out=0, in=240] (0.1,0.81);
+        \draw [-stealth, line width=3pt, deeporange400] (pif) to[out=0, in=250] (0.4,0.81);
+        \draw [-stealth, line width=3pt, indigo400] (ord) to[out=0, in=260] (0.6,0.81);
+        \draw [-stealth, line width=3pt, teal400] (rsn) to[out=0, in=260] (0.2,0.43);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+
+
+
+\paragraph{Click} \btn{graphics/cancel_order_button.png}  when finished.\marginnote[-10\baselineskip]{Check that the Order, Patient's name, and Cancel reason match.}\sidenote{Order Result Viewer will refresh with the updated information for the canceled order.}\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (pif) at (3.5, 4.2) {\scshape{Cancel Information}};
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/cancelled_orv_finished.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw [-stealth, line width=3pt, deeppurple500] (.45, 1.05) to[out=-90, in=90] (0.4,0.48);
+        \draw [-stealth, line width=3pt, deeppurple400] (.45, 1.05) to[out=-90, in=90] (0.45,0.48);
+        \draw [-stealth, line width=3pt, deeppurple300] (.45, 1.05) to[out=-90, in=90] (0.75,0.48);
+        \draw [-stealth, line width=3pt, deeppurple400] (.45, 1.05) to[out=-90, in=90] (0.84,0.48);
+        \draw [-stealth, line width=3pt, deeppurple500] (.45, 1.05) to[out=-90, in=90] (0.9,0.48);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{The status has been} updated to \textsc{\gls{canceled}}. In addition, \gls{orv} now shows the  \textsc{Cancel Comment, Date, Person,} and \textsc{Reason}.

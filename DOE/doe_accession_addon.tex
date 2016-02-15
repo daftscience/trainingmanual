@@ -1,0 +1,130 @@
+
+There are certain situations in which orders need to be added on to an existing accession number (\eg{Glomerular Filtration Rate.}) This is done in \gls{doe} through the \textsc{\gls{accnaddon}} screen.
+
+\newthought{Switch to } \textsc{\gls{accnaddon}} mode:
+
+\paragraph{Click} the \includegraphics[height=1em]{graphics/accession_addon_icon.png} icon from the toolbar.\\
+
+\prettyimage{width=\textwidth}{graphics/toolbar_accn_addon.png}
+
+\newthought{\gls{doe} will update.}
+
+The main difference between this mode, and the normal \textsc{Order Entry} mode is that the \textsc{Patient Identifier} field gets replaced with an accession number field.\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/doe_accession_addon.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeppurple400] (0.35,1.05) to[out=-90, in=0] (0.12,0.76);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}
+
+\section{Adding on Orders}
+
+\paragraph{Enter} the \textsc{\glsname{accn}}\sidenote{The accession number of the sample the orders will be added to.} into the \gls{accn} field.\accntip\\
+
+% \vspace{1.5em}
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth, trim={0, 330pt, 0, 0}, clip}{graphics/doe_accession_addon.png} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeppurple400] (0.19,1.05) to[out=-92, in=0] (0.12,0.17);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}
+
+\paragraph{Press} {\faKeyboardO} \textsc{Enter} on the keyboard.
+
+\paragraph{Enter } the test to be ordered in the \textsc{Orderable Field}.\marginnote[2\baselineskip]{We're looking for a Basic Metabolic Panel.}\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth, trim={0, 300pt, 0, 0}, clip}{graphics/accn_retrieved.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeppurple400] (0.15,1.05) to[out=-92, in=0] (0.12,0.15);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}
+
+
+\paragraph{Search} for the new test.
+%-------------------------------------------------------------------------------------------------------------------------------------
+% New Page!
+% ------------------------------------------------------------------------------------------------------------------------------------
+\section{To Override or Not to Override}
+When orders are added onto an existing \gls{accn} they need to be assigned to a container.\sidenote{\checkref{sec:accn_cid}{\refptch{part:accn}{sec:accn_cid}}{Refer to the \textsc{Accession Numbers} Procedure.}} This section will help walk you through the processes. It may sound more confusing than it is.\sidenote{Sorry \faFrownO}
+
+Before you begin, it's helpful to know which containers are on the original \gls{accn}. To find out, we can use our buddy \textsc{\gls{ci}}.\sidenote{\checkref{part:ci}{\refptapp{part:ci}{container_inquiry}.}{ Refer to the \boldcap{\gls{ci}} procedure for more information.}}\\
+
+
+\newthought{If you're asked} to ``\textsc{Override},'' you can think of the question like this:
+\begin{quote}
+\itshape
+``Can the add-on use an existing container?''\sidenote{``Can a Basic Panel be run on a Lavender?''\\\textit{or}\\``Can a Basic Panel be run on a Gold Top?''}
+\end{quote}
+\prettyimage{width=.5\textwidth}{graphics/no_valid_container.png}
+
+\clearpage
+\section{Not Overriding}\marginnote{You clicked ``No'' when asked to override.}
+\paragraph{Select} the appropriate container.\\
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.8\textwidth}{graphics/new_container_2.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeppurple400] (0.15,1.05) to[out=-92, in=90] (0.07,0.5);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}\\
+\paragraph{Click} \btn{graphics/ok_button} and continue the order as normal.\\
+
+\section{Overriding}\marginnote{You clicked ``Yes'' when asked to override.}
+
+\paragraph{Choose} an existing container.\marginnote[2\baselineskip]{\important{Only \faCheckSquareO one of these boxes. Selecting multiple containers will assign the order to multiple containers, and that's just asking for trouble.}}\\
+\vspace{.5em}
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.8\textwidth}{graphics/override_window.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeppurple400] (0.15,1.05) to[out=-92, in=90] (0.07,0.76);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}\\
+\vspace{.5em}
+\centerline{\textit{\textbf{--OR--}}}
+
+\paragraph{Click} \boldcap{New Container}.\marginnote{This is the same as clicking ``No''  to the override question.}\marginnote[3\baselineskip]{\important{Do not \faCheckSquareO \textit{both} ``New Container\ldots'' \textit{AND} an existing container. Again, just asking for trouble.}}\\
+\vspace{.5em}
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.8\textwidth}{graphics/override_window.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, teal400](0.15,1.05) to[out=-92, in=90] (0.04,0.25);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}
+\vspace{.5em}
+
+\paragraph{Click} \btn{graphics/ok_button} to add the test onto the selected container.
+
+\section{Submitting Orders}
+
+Finally, when all the appropriate orders have been added:
+
+\paragraph{Click} the \textsc{Submit Orders} icon \includegraphics[height=1em]{graphics/submit_order_icon.png} from the tool bar. \sidenote{\hotkey{\textbf{Ctrl+O} will also submit orders.}}\\
+
+\section{Return to Order Entry Mode}
+
+To go back to the normal \textsc{Order Entry Mode}:
+
+\paragraph{Click} the \includegraphics[height=1em]{graphics/order_entry_icon.png} icon from the toolbar.\\
+
+\prettyimage{width=\textwidth}{graphics/order_entry}
+
+Alternatively, closing and re-opening \gls{doe} will also work.
+
+\dupnote

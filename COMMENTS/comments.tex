@@ -1,0 +1,72 @@
+
+Comments can be \textsc{Viewed, Edited} and \textsc{Added} in most applications by clicking the comment icon\sidenote{\btn{graphics/comment_icon} The piece of paper with a paper clip.} from the \textsc{Tool-Bar}.
+
+\infoblock{For detailed information on opening comments within a specific application, refer to the application's documentation.}
+
+\newthought{With the Comments Window} open.
+\paragraph{Select} the appropriate \textsc{Comment/Note Tab}\sidenote{In this example the options are:
+\begin{description}
+\item{\boldcap{Order Comment}}
+\item{\boldcap{Order Note}}
+\item{\boldcap{Result Comment}}
+\item{\boldcap{Result Note}}
+\end{description}} at the top of the window.\\
+
+\prettyimage{width=.6\textwidth}{graphics/comments_window}
+
+\paragraph{Click} \btn{graphics/edit_comment}\\
+
+\prettyimage{width=.6\textwidth}{graphics/edit_comment_window}
+
+\paragraph{Enter} the \textsc{Comment} or \textsc{Template}\sidenote{\refpt{ch:using_templates} for information on using templates}.\\
+
+\prettyimage{width=.6\textwidth}{graphics/finished_comment}
+
+\paragraph{Click} \btn{graphics/spell_check} to check for spelling errors.\\
+
+\paragraph{Click} \btn{graphics/ok} to save.\\
+
+\prettyimage{width=.6\textwidth}{graphics/comments_window_with_comment}
+
+\paragraph{Click} \btn{graphics/close}
+
+\section{Adding Comments to Multiple Results}
+
+There are situations where the same comment needs to be placed on multiple results.
+
+\subsection{Add Comments to Selected Results}
+
+The \textsc{All Comments Window} is used to add a comment to all the {\faCheckSquareO} results.\\
+
+\prettyimage{width=.7\textwidth}{graphics/result_selection}
+
+\paragraph{Hit} {\faCheckSquareO} \textsc{Ctrl+A}.\sidenote{In this example, the comment will be placed on the \textsc{BUN} and \textsc{Creatinine}.}\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.5\textwidth}{graphics/all_comments}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw[deeppurple400, rounded corners, line width=2] (0.25, 0.91)rectangle (0.35, 0.98);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+
+
+
+\subsection{Add Comments to All Critical Results}
+
+The \textsc{Batch Comment Window} is used to add a comment to all the \textsc{Critical} results on an accession.
+
+\paragraph{Hit} {\faKeyboardO } \textsc{Ctrl+B}.\sidenote{The comment entered into this window will apply to every \textsc{Critical} result.}\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.5\textwidth}{graphics/critical_comments}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw[deeppurple400, rounded corners, line width=2] (0.25, 0.91)rectangle (0.43, 0.98);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%

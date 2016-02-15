@@ -1,0 +1,47 @@
+Here are some \gls{login} tips. Knowing these functions can save time, and simplify your work-flow.
+
+\section{Modifying a Single Container}\label{sec:mod_single}
+If only one value needs to be modified, it can be done by clicking on its cell in the \textsc{\gls{login} Spreadsheet}.\marginnote[\baselineskip]{The downside to this method is the collection information needs to be updated for each orderable. This can be time consuming.}\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\linewidth}{graphics/mod_one} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeppurple400] (0.2, 1.05) to[out=270, in=180] (0.67,0.5);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+
+
+\section{Refreshing Data}\label{sec:refresh_data}
+
+After the samples have been \textsc{Logged-in}, they will remain in the \textsc{\gls{login} Spreadsheet}. While they don't need to be removed before continuing with other samples, it is a good idea to periodically clear them out.
+
+\paragraph{Click} the \textsc{Refresh Data}\sidenote{The glasses and cup.} \btn{graphics/refresh_data} icon from the toolbar.\\
+
+\noindent
+\prettyimage{width=\textwidth}{graphics/toolbar.png}
+
+\importantblock{This will only remove samples which have been \textbf{Logged-in}.\sidenote{Their Check-boxes will be disabled.} Unfortunately, you can't remove samples that have not been \textbf{Logged-in} or \textbf{Missed}\sidenote{Sorry.} without closing the window and re-opening it.}
+
+
+\section{Printing Labels}
+Before samples have been \textsc{Logged-in}, the labels can be quickly reprinted.
+\paragraph{Hit} {\faKeyboardO} \boldcap{Ctrl+B}
+
+\section{Keyboard Shortcuts}
+
+% Here is a list of \acrlong{doe} hotkeys:\\
+\begin{table}
+\scshape
+\begin{tabular}{ll}
+    \multicolumn{2}{c}{\Large \boldcap{Specimen Login Shortcuts}}\\
+    \noalign{\hrule}\\
+    \cfinput{hotkeys.tex}
+    \noalign{\hrule}
+\end{tabular}
+\caption{{\faKeyboardO} Specimen Login Keyboard Shortcuts}\label{table:login_hotkeys}
+\end{table}
+

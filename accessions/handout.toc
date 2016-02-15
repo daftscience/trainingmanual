@@ -1,0 +1,17 @@
+\contentsline {chapter}{Introduction}{1}{chapter*.2}
+\contentsline {section}{Container Identifiers}{2}{section*.3}
+\contentsline {section}{Advantages}{2}{section*.4}
+\contentsline {section}{Downtime Accessions}{2}{section*.5}
+\contentsline {chapter}{Tips and Tricks}{3}{chapter*.6}
+\contentsline {section}{Container ID}{3}{section*.7}
+\contentsline {section}{Entering Accession Numbers}{4}{section*.8}
+\contentsline {subsection}{Fast Entry}{4}{subsection*.9}
+\contentsline {paragraph}{Click}{4}{paragraph*.10}
+\contentsline {paragraph}{Hit}{4}{paragraph*.11}
+\contentsline {paragraph}{Hit}{4}{paragraph*.12}
+\contentsline {paragraph}{Hit}{4}{paragraph*.13}
+\contentsline {subsection}{Faster Entry}{4}{subsection*.14}
+\contentsline {paragraph}{Click}{4}{paragraph*.15}
+\contentsline {paragraph}{Hit}{4}{paragraph*.16}
+\contentsline {paragraph}{Hit}{4}{paragraph*.17}
+\contentsfinish 

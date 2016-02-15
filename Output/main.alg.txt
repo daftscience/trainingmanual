@@ -1,0 +1,30 @@
+;; This logfile was generated automatically by `xindy'
+;; at 01.10.2015  02:10:52
+;; Indexstyle: "C:\\Users\\Tom\\Downloads\\Sublime\\projects\\Cerner Reference Guide\\Output\\OJGWLgsieM", Rawindex: "C:\\Users\\Tom\\Downloads\\Sublime\\projects\\Cerner Reference Guide\\Output\\8_QqaEmJbQ", Output: "main.acr"
+
+
+Building indexentry-tree:
+Hierdepth of index is :TREE
+
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+
+Forming letter-groups:
+Letter-group: "Ã—" -> "D"
+Letter-group: "»Ë¼" -> "M"
+Letter-group: "œ¨¼" -> "F"
+Letter-group: "€Ë—" -> "A"
+Letter-group: "ÃËå" -> "O"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "€Ë—" -> "A"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ã—" -> "D"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "œ¨¼" -> "F"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "»Ë¼" -> "M"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "ÃËå" -> "O"

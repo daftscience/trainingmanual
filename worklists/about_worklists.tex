@@ -1,0 +1,34 @@
+Worklists are an easy way to document manually entered results for batched tests.\\
+
+\noindent%draw top
+\begin{tikzpicture}
+    \node [anchor=west] (verf) at (5,10) {\scshape{Verified By}};
+    \node [anchor=west] (perf) at (5,9.5) {\scshape{Performed By}};
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/worklist_preview} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [-stealth, line width=3pt, teal400] (verf) to[out=0, in=90] (0.84,0.7);
+            \draw [-stealth, line width=3pt, deeporange400] (perf) to[out=0, in=90] (0.8,0.7);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+
+
+
+\begin{table}
+    \begin{tabular}{ll}
+        \boldcap{\large Column} & \boldcap{\large Purpose} \\
+        \hline
+         \textsc{Accession} & Lists the Accessions on the worklist.\\
+         \textsc{Demographics} & Lists the Patients Demographics.\\
+         \textsc{Location} & Lists the patient's location.\\
+         \textsc{Procedure} & The procedure being performed.\\
+         \textsc{Collected} & The collection date and time.\\
+         \textsc{Result} &  The Result of the procedure.\\
+         \textsc{Perf} &  The person who performed the test.\\
+         \textsc{Verf} &  The person who verified the results are correct.\\
+        \hline
+    \end{tabular}
+    \caption{Worklist Description}
+    \label{table:worklist_items}
+\end{table}

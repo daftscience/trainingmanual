@@ -1,0 +1,42 @@
+Cerner does a very good job of tracking samples from collection to completion. Not only can you see where a sample has been, but also what it's doing there.
+
+\begin{quote}
+\boldcap{For example: } Let's say a CBC and a HbA\textsubscript{1c} are sent to \textsc{SMCA Laboratory}.
+
+When they're \textsc{Logged-in} to \textsc{SMC Login} the CBC have an \textsc{In-Lab} status,\sidenote{Meaning, it's available to be tested.} while the HbA\textsubscript{1c} will have \textsc{Pending} status.\sidenote{Meaning, it's been collected but hasn't been sent yet.}
+\end{quote}
+
+\newthought{In order for Cerner} to do this, it needs to \boldcap{Route} the orders to the place they'll be tested.
+
+
+\section{Instruments and Benches}
+
+Every test is \boldcap{Routed} to either an \treeitem{instrument}{Instrument} or \treeitem{bench}{Bench}.\\
+
+\treeitem{instrument}{Instruments} are interfaced instruments.\sidenote{They can send the results to Cerner.}
+
+\treeitem{bench}{Benches} are where manual tests are performed.
+
+\section{Sections and Subsections}
+
+ Since there are so many instruments\sidenote{We should start a band!} and benches we need a way to organize them. To do this we have \treeitem{section}{Sections} and \treeitem{subsection}{Subsections}.\\
+
+ \treeitem{section}{Sections} are departments in the lab.\sidenote{Heme, Chem, UA, \etc}
+
+ \treeitem{subsection}{Subsections} are areas of the sections.\sidenote{Manual Chemistry, Tegs, Miscellaneous Micro, \etc}
+
+
+\subsection{All That To Say:}
+
+Tests are routed to a \treeitem{bench}{Bench} or \treeitem{instrument}{Instrument}.
+
+\noindent
+\treeitem{bench}{Benches} and \treeitem{instrument}{Instruments} belong to a \treeitem{subsection}{Subsection}.
+
+\noindent
+\treeitem{subsection}{Subsections} belongs to a \treeitem{section}{Section}.
+
+\section{Example of Routing}
+{\setstretch{0.5}\scriptsize\scshape
+    \cfinput{../routing/smcrouting.tex}
+}

@@ -1,0 +1,62 @@
+%%
+% The front matter in Tufte's /Beautiful Evidence/ contains everything up
+% to the opening page of Chapter 1.  The running heads, when they appear,
+% contain only the (arabic) page number in the outside corner.
+%\newif\if@mainmatter \@mainmattertrue
+\renewcommand\frontmatter{%
+  \if@openright%
+      \cleardoublepage%
+  \else%
+    \clearpage%
+  \fi%
+  \@mainmatterfalse%
+  \pagenumbering{arabic}%
+  %\pagestyle{plain}%
+  \fancyhf{}%
+  \ifthenelse{\boolean{@tufte@twoside}}%
+    {\fancyhead[LE,RO]{}}%
+    {\fancyhead[RE,RO]{}}%
+}
+
+
+%%
+% The main matter in Tufte's /Beautiful Evidence/ doesn't restart the page
+% numbering---it continues where it left off in the front matter.
+\renewcommand\mainmatter{%
+  \if@openright%
+      \cleardoublepage%
+  \else%
+    \clearpage%
+  \fi%
+  \@mainmattertrue%
+  \fancyhf{}%
+  \ifthenelse{\boolean{@tufte@twoside}}%
+    {% two-side
+      \renewcommand{\chaptermark}[1]{\markboth{##1}{}}%
+      \fancyhead[LE]{\thepage\quad\smallcaps{\newlinetospace{\plaintitle}}}% book title
+      \fancyhead[RO]{\smallcaps{\newlinetospace{\leftmark}}\quad\thepage}% chapter title
+    }%
+    {% one-side
+%      \fancyhead[L]{\thepage\quad\smallcaps{\newlinetospace{\plaintitle}}}% book title
+          \fancyhead[L]{\smallcaps{\newlinetospace{\plaintitle}}}% chapter title
+          \fancyhead[R]{\smallcaps{\newlinetospace{\leftmark}}\quad\thepage}% chapter title
+  %    \fancyhead[RE,RO]{\smallcaps{\newlinetospace{\plaintitle}}\quad\thepage}% book title
+    }%
+}
+
+
+%%
+% The back matter contains appendices, indices, glossaries, endnotes,
+% biliographies, list of contributors, illustration credits, etc.
+\renewcommand\backmatter{%
+  \if@openright%
+    \if@twoside%
+      \cleardoublepage%
+    \else%
+      \clearpage
+    \fi%
+  \else%
+    \clearpage%
+  \fi%
+  \@mainmatterfalse%
+}

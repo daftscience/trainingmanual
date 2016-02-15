@@ -1,0 +1,73 @@
+Samples sent from other facilities need to be \textsc{Logged-in} to the testing laboratory before they can be resulted.
+
+Log-in by List is used to \textsc{Log-In} all of the samples contained on a \textsc{Collection} or \textsc{Transfer List}. This section discusses that process. However, there is a better way to \textsc{Log-in} entire lists at the end of this section.
+
+\infoblock{The recommended way to Log-In lists is by using \boldcap{Log-in By Accession}, then use \boldcap{Log-in By List} to confirm that all the samples have arrived. \refpt{sec:login_workflow} for more information.\sidenote{This will save a considerable amount of time, while also providing a quick and accurate way of verifying that all the samples have arrived.}}
+
+\newthought{Open} \gls{login} by clicking the \appicon{specimen_login} icon from the \gls{ab}.\\
+
+\prettyimage{width=.5\textwidth}{graphics/login.png}
+
+\paragraph{Click} the \textsc{List} option.\\
+
+\prettyimage{width=.5\textwidth}{graphics/login_list}
+
+\paragraph{Enter} the \textsc{Collection} or \textsc{Transfer List Number}.\sidenote{Using the appropriate text box.}
+
+\paragraph{Update} the \textsc{List Date}.\sidenote{This is the date that the list was created.}\\
+
+\prettyimage{width=.5\textwidth}{graphics/login_list_updated}
+
+\paragraph{Click} \btn{graphics/retrieve}
+
+\newthought{The Log-In By Transfer List} window will open and the containers of the list will populate the Spreadsheet.\sidenote{\refch{sec:login_sheet} for more information.}\\
+
+\prettyimage{width=\textwidth}{graphics/login_list_containers}
+
+\paragraph{Compare} the list of containers on the Spreadsheet with the containers received.\sidenote[][-3\baselineskip]{This process is time consuming. \refpt{sec:login_workflow} for a quicker, and more accurate method.}
+
+\paragraph{Check \faCheckSquareO} the containers received.\sidenote[][-1\baselineskip]{Don't \faCheckSquareO containers if they have not been sent. These samples are considered ``Missing.''}
+
+\paragraph{Click} \btn{graphics/login_btn} to Log-in.\sidenote{\hotkey{\boldcap{Ctrl+L} will also work.}}\marginnote{\info{If you get a pop-up asking about ``Separate Collections'' \refpt{sec:sep_collection}}.}
+
+\section{List Pop-Up Alerts}
+\textsc{Log-in By List} has two Pop-Up boxes it will display.
+
+\newthought{List Not Found} will be displayed if it cannot find a list with that number, for that date.\\
+
+\prettyimage{width=.5\textwidth}{graphics/list_not_found}
+
+\newthought{What If the List Exists?} There are three things that can cause this Pop-Up:
+\begin{description}
+    \bolditem{Wrong Type} The \textsc{List Number} was entered into the wrong field.\sidenote{\eg{A Transfer List Number was entered into the Collections List field.}}
+    \bolditem{Wrong Date} The \textsc{Date Field} does not have the correct date.
+    \bolditem{Wrong Number} The \textsc{List Number} was not entered correctly.
+\end{description}
+
+
+\newthought{No Orders Found} will be displayed if all of the containers for a list have been \textsc{Logged-In}.\\
+
+\prettyimage{width=.5\textwidth}{graphics/no_orders_found.png}
+
+\newthought{This means} all the samples have been \textsc{Logged-in}. The list is now ``Empty.''
+
+\section{Recommended Procedure}\label{sec:login_workflow}
+This method eliminates the need to manually compare the \textsc{Transfer List} with the containers received.
+
+It will save a considerable amount of time, and as long as the barcode scanners are used, it will identify any missing samples.
+
+\paragraph{Log-in} each container using \boldcap{Log-in By Accession}.
+
+\paragraph{Attempt} to \textsc{Log-in} the \textsc{List} using \boldcap{Log-in By List}.
+
+\newthought{If there are no missing} samples, \textsc{Log-in By List} will display an alert.\\
+
+\prettyimage{width=.5\textwidth}{graphics/no_orders_found.png}
+
+\warnblock{This alert looks dangerously close to the \boldcap{List Not Found} alert.}
+
+\newthought{If samples are missing,} the \textsc{Log-In By Transfer List} window will open and the missing containers will populate the Spreadsheet.\\
+
+\prettyimage{width=\textwidth}{graphics/login_list_containers}
+
+These samples may have been missed during the initial \textsc{Log-in} process, or they may still be at their site of origin. Either way, it's time for some detective work.

@@ -1,0 +1,797 @@
+\contentsline {part}{List of Tables}{iii}{chapter*.2}
+\contentsline {part}{I\hspace {1em}Cerner App-Bar}{1}{part.1}
+\contentsline {chapter}{Introduction}{3}{chapter*.3}
+\contentsline {chapter}{Basic Settings}{5}{chapter*.4}
+\contentsline {paragraph}{Launch}{5}{paragraph*.5}
+\contentsline {paragraph}{Click}{5}{paragraph*.6}
+\contentsline {chapter}{Adding Applications}{7}{chapter*.7}
+\contentsline {paragraph}{Click}{7}{paragraph*.8}
+\contentsline {paragraph}{Click}{7}{paragraph*.9}
+\contentsline {section}{Sorting Applications}{8}{section*.10}
+\contentsline {paragraph}{Click }{8}{paragraph*.11}
+\contentsline {paragraph}{Select}{8}{paragraph*.12}
+\contentsline {paragraph}{Click}{8}{paragraph*.13}
+\contentsline {paragraph}{Select }{9}{paragraph*.14}
+\contentsline {paragraph}{Using}{9}{paragraph*.15}
+\contentsline {paragraph}{Repeat the previous}{10}{paragraph*.16}
+\contentsline {section}{Grouping the Applications}{10}{section*.17}
+\contentsline {paragraph}{Select}{10}{paragraph*.18}
+\contentsline {paragraph}{Select}{11}{paragraph*.19}
+\contentsline {paragraph}{Select}{11}{paragraph*.20}
+\contentsline {chapter}{Which apps do I need?}{13}{chapter*.21}
+\contentsline {section}{Required for Everyone}{13}{section*.22}
+\contentsline {section}{Microbiology Applications}{14}{section*.23}
+\contentsline {section}{Other Helpful Applications}{14}{section*.24}
+\contentsline {part}{II\hspace {1em}Accession Numbers}{17}{part.2}
+\contentsline {chapter}{Introduction}{19}{chapter*.25}
+\contentsline {section}{Container Identifiers}{20}{section*.26}
+\contentsline {section}{Advantages}{20}{section*.27}
+\contentsline {section}{Downtime Accessions}{20}{section*.28}
+\contentsline {chapter}{Tips and Tricks}{21}{chapter*.29}
+\contentsline {section}{Container ID}{21}{section*.30}
+\contentsline {section}{Entering Accession Numbers}{22}{section*.31}
+\contentsline {subsection}{Fast Entry}{22}{subsection*.32}
+\contentsline {paragraph}{Click}{22}{paragraph*.33}
+\contentsline {paragraph}{Hit}{22}{paragraph*.34}
+\contentsline {paragraph}{Hit}{22}{paragraph*.35}
+\contentsline {paragraph}{Hit}{22}{paragraph*.36}
+\contentsline {subsection}{Faster Entry}{22}{subsection*.37}
+\contentsline {paragraph}{Click}{22}{paragraph*.38}
+\contentsline {paragraph}{Hit}{22}{paragraph*.39}
+\contentsline {paragraph}{Hit}{22}{paragraph*.40}
+\contentsline {part}{III\hspace {1em}Department Order Entry}{23}{part.3}
+\contentsline {chapter}{Introduction}{25}{chapter*.41}
+\contentsline {section}{Terms to know:}{25}{section*.42}
+\contentsline {chapter}{Customizing Department Order Entry}{27}{chapter*.43}
+\contentsline {section}{Define Default Values}{27}{section*.44}
+\contentsline {paragraph}{Click}{27}{paragraph*.45}
+\contentsline {paragraph}{Select}{27}{paragraph*.46}
+\contentsline {section}{Modify Default Search Field}{27}{section*.47}
+\contentsline {subsection}{The Fast way}{27}{subsection*.48}
+\contentsline {paragraph}{Click}{28}{paragraph*.49}
+\contentsline {paragraph}{Hit}{28}{paragraph*.50}
+\contentsline {paragraph}{Continue}{28}{paragraph*.51}
+\contentsline {subsection}{The Other Fast Way}{28}{subsection*.52}
+\contentsline {paragraph}{Right Click}{28}{paragraph*.53}
+\contentsline {paragraph}{Select}{28}{paragraph*.54}
+\contentsline {chapter}{Patient Lookup}{29}{chapter*.55}
+\contentsline {section}{Using a Unique Patient Identifier}{29}{section*.56}
+\contentsline {paragraph}{Enter}{29}{paragraph*.57}
+\contentsline {paragraph}{Click }{29}{paragraph*.58}
+\contentsline {section}{Using the Encounter Search Window}{30}{section*.59}
+\contentsline {paragraph}{Click}{30}{paragraph*.60}
+\contentsline {paragraph}{Enter}{31}{paragraph*.61}
+\contentsline {paragraph}{Click}{31}{paragraph*.62}
+\contentsline {paragraph}{Select}{31}{paragraph*.63}
+\contentsline {paragraph}{Select}{31}{paragraph*.64}
+\contentsline {paragraph}{Click}{31}{paragraph*.65}
+\contentsline {section}{Troubleshooting Tips}{32}{section*.66}
+\contentsline {subsection}{Check the Search Fields}{32}{subsection*.67}
+\contentsline {subsection}{Check the Client Field}{32}{subsection*.68}
+\contentsline {chapter}{Placing New Orders}{35}{chapter*.69}
+\contentsline {paragraph}{Enter }{35}{paragraph*.70}
+\contentsline {paragraph}{Click}{35}{paragraph*.71}
+\contentsline {paragraph}{Select}{36}{paragraph*.72}
+\contentsline {paragraph}{Click }{36}{paragraph*.73}
+\contentsline {section}{Updating Order Information}{36}{section*.74}
+\contentsline {section}{Updating the order information}{37}{section*.75}
+\contentsline {section}{Scratch-Pad}{38}{section*.76}
+\contentsline {paragraph}{Click}{38}{paragraph*.77}
+\contentsline {section}{Modifying Orders in the Scratch-Pad}{39}{section*.78}
+\contentsline {paragraph}{Double-Click}{39}{paragraph*.79}
+\contentsline {paragraph}{Modify}{39}{paragraph*.80}
+\contentsline {paragraph}{Click}{39}{paragraph*.81}
+\contentsline {section}{Submitting the Orders}{39}{section*.82}
+\contentsline {paragraph}{Click}{39}{paragraph*.83}
+\contentsline {section}{Duplicate Orders}{39}{section*.84}
+\contentsline {section}{Submission Status}{40}{section*.85}
+\contentsline {section}{Troubleshooting Submission Errors}{40}{section*.86}
+\contentsline {subsection}{Submission Errors}{40}{subsection*.87}
+\contentsline {paragraph}{Click}{40}{paragraph*.88}
+\contentsline {paragraph}{Click}{40}{paragraph*.89}
+\contentsline {paragraph}{Modify}{41}{paragraph*.90}
+\contentsline {paragraph}{Re-submit}{41}{paragraph*.91}
+\contentsline {subsection}{Submission Warnings}{41}{subsection*.92}
+\contentsline {paragraph}{Click}{41}{paragraph*.93}
+\contentsline {paragraph}{Click}{41}{paragraph*.94}
+\contentsline {paragraph}{Re-submit}{41}{paragraph*.95}
+\contentsline {chapter}{Accession Add-on}{43}{chapter*.96}
+\contentsline {paragraph}{Click}{43}{paragraph*.97}
+\contentsline {section}{Adding on Orders}{44}{section*.98}
+\contentsline {paragraph}{Enter}{44}{paragraph*.99}
+\contentsline {paragraph}{Press}{44}{paragraph*.100}
+\contentsline {paragraph}{Enter }{44}{paragraph*.101}
+\contentsline {paragraph}{Search}{44}{paragraph*.102}
+\contentsline {section}{To Override or Not to Override}{44}{section*.103}
+\contentsline {section}{Not Overriding}{45}{section*.104}
+\contentsline {paragraph}{Select}{45}{paragraph*.105}
+\contentsline {paragraph}{Click}{45}{paragraph*.106}
+\contentsline {section}{Overriding}{45}{section*.107}
+\contentsline {paragraph}{Choose}{45}{paragraph*.108}
+\contentsline {paragraph}{Click}{45}{paragraph*.109}
+\contentsline {paragraph}{Click}{45}{paragraph*.110}
+\contentsline {section}{Submitting Orders}{46}{section*.111}
+\contentsline {paragraph}{Click}{46}{paragraph*.112}
+\contentsline {section}{Return to Order Entry Mode}{46}{section*.113}
+\contentsline {paragraph}{Click}{46}{paragraph*.114}
+\contentsline {section}{Duplicate Orders}{46}{section*.115}
+\contentsline {chapter}{Tips and Tricks}{47}{chapter*.116}
+\contentsline {section}{Ancillary vs. Primary Orderables}{47}{section*.117}
+\contentsline {section}{Search Tips}{47}{section*.118}
+\contentsline {section}{Keyboard Shortcuts}{48}{section*.119}
+\contentsline {chapter}{Notes on Duplicate Checking}{49}{chapter*.120}
+\contentsline {section}{When Orders Are Placed}{49}{section*.121}
+\contentsline {section}{When Orders Are Dispatched}{49}{section*.122}
+\contentsline {section}{When Orders Are Logged-In}{49}{section*.123}
+\contentsline {section}{Example}{50}{section*.124}
+\contentsline {chapter}{Those Other Functions}{51}{chapter*.125}
+\contentsline {section}{Those Other Functions}{51}{section*.126}
+\contentsline {part}{IV\hspace {1em}Specimen Log-in}{53}{part.4}
+\contentsline {chapter}{Introduction}{55}{chapter*.127}
+\contentsline {chapter}{Getting Started}{57}{chapter*.128}
+\contentsline {paragraph}{Open}{57}{paragraph*.129}
+\contentsline {paragraph}{Select}{57}{paragraph*.130}
+\contentsline {paragraph}{Click}{57}{paragraph*.131}
+\contentsline {section}{Setting Location}{57}{section*.132}
+\contentsline {paragraph}{Select}{58}{paragraph*.133}
+\contentsline {section}{Setting Default Printers}{58}{section*.134}
+\contentsline {paragraph}{Click}{58}{paragraph*.135}
+\contentsline {paragraph}{Select}{58}{paragraph*.136}
+\contentsline {paragraph}{Set}{58}{paragraph*.137}
+\contentsline {paragraph}{Click}{58}{paragraph*.138}
+\contentsline {chapter}{Log-in By Accession Number}{59}{chapter*.139}
+\contentsline {section}{Understanding the Spreadsheet}{59}{section*.140}
+\contentsline {subsection}{Check-boxes}{60}{subsection*.141}
+\contentsline {section}{Log-in Accessions Procedure}{60}{section*.142}
+\contentsline {paragraph}{Select}{60}{paragraph*.143}
+\contentsline {paragraph}{Click}{60}{paragraph*.144}
+\contentsline {paragraph}{Check}{60}{paragraph*.145}
+\contentsline {paragraph}{Click}{61}{paragraph*.146}
+\contentsline {paragraph}{Scan}{61}{paragraph*.147}
+\contentsline {subsection}{Updating Collect Information}{62}{subsection*.148}
+\contentsline {paragraph}{Click}{62}{paragraph*.149}
+\contentsline {paragraph}{Enter}{62}{paragraph*.150}
+\contentsline {paragraph}{Click}{62}{paragraph*.151}
+\contentsline {paragraph}{Enter}{62}{paragraph*.152}
+\contentsline {paragraph}{Click}{63}{paragraph*.153}
+\contentsline {paragraph}{Enter}{63}{paragraph*.154}
+\contentsline {paragraph}{If Needed, Hit}{63}{paragraph*.155}
+\contentsline {paragraph}{Click}{63}{paragraph*.156}
+\contentsline {subsection}{The Miss Button}{63}{subsection*.157}
+\contentsline {chapter}{Log-in By List}{65}{chapter*.158}
+\contentsline {paragraph}{Click}{65}{paragraph*.159}
+\contentsline {paragraph}{Enter}{65}{paragraph*.160}
+\contentsline {paragraph}{Update}{66}{paragraph*.161}
+\contentsline {paragraph}{Click}{66}{paragraph*.162}
+\contentsline {paragraph}{Compare}{66}{paragraph*.163}
+\contentsline {paragraph}{Check {{\FA \char "F046\relax }}}{66}{paragraph*.164}
+\contentsline {paragraph}{Click}{66}{paragraph*.165}
+\contentsline {section}{List Pop-Up Alerts}{66}{section*.166}
+\contentsline {section}{Recommended Procedure}{67}{section*.167}
+\contentsline {paragraph}{Log-in}{68}{paragraph*.168}
+\contentsline {paragraph}{Attempt}{68}{paragraph*.169}
+\contentsline {chapter}{Tips and Tricks}{69}{chapter*.170}
+\contentsline {section}{Modifying a Single Container}{69}{section*.171}
+\contentsline {section}{Refreshing Data}{69}{section*.172}
+\contentsline {paragraph}{Click}{69}{paragraph*.173}
+\contentsline {section}{Printing Labels}{69}{section*.174}
+\contentsline {paragraph}{Hit}{69}{paragraph*.175}
+\contentsline {section}{Keyboard Shortcuts}{70}{section*.176}
+\contentsline {chapter}{Troubleshooting}{71}{chapter*.177}
+\contentsline {section}{Previously Entered}{71}{section*.178}
+\contentsline {section}{Invalid Collection Time}{71}{section*.179}
+\contentsline {paragraph}{Correct}{71}{paragraph*.180}
+\contentsline {section}{Separate Collections}{72}{section*.181}
+\contentsline {paragraph}{Click}{72}{paragraph*.182}
+\contentsline {paragraph}{Click}{72}{paragraph*.183}
+\contentsline {section}{I've Logged a Sample into the Wrong Location}{72}{section*.184}
+\contentsline {part}{V\hspace {1em}Container Inquiry}{73}{part.5}
+\contentsline {chapter}{Introduction}{75}{chapter*.185}
+\contentsline {chapter}{Customizing Demographics}{77}{chapter*.186}
+\contentsline {section}{Helpful Tips}{77}{section*.187}
+\contentsline {section}{Changing Demographics}{77}{section*.188}
+\contentsline {paragraph}{Click}{77}{paragraph*.189}
+\contentsline {paragraph}{Click}{77}{paragraph*.190}
+\contentsline {paragraph}{Click}{78}{paragraph*.191}
+\contentsline {paragraph}{Set}{78}{paragraph*.192}
+\contentsline {paragraph}{Click}{78}{paragraph*.193}
+\contentsline {paragraph}{Click}{80}{paragraph*.194}
+\contentsline {section}{Restore to Defaults}{80}{section*.195}
+\contentsline {chapter}{Inquiring About Containers}{81}{chapter*.196}
+\contentsline {paragraph}{Enter}{81}{paragraph*.197}
+\contentsline {paragraph}{Click}{81}{paragraph*.198}
+\contentsline {section}{Container List}{81}{section*.199}
+\contentsline {section}{Event List}{82}{section*.200}
+\contentsline {subsection}{Dispatched Status}{82}{subsection*.201}
+\contentsline {subsection}{Transfered Statuses}{82}{subsection*.202}
+\contentsline {subsection}{Example}{83}{subsection*.203}
+\contentsline {section}{Routing}{83}{section*.204}
+\contentsline {paragraph}{Right Click}{83}{paragraph*.205}
+\contentsline {paragraph}{Click}{83}{paragraph*.206}
+\contentsline {chapter}{Using Container Inquiry to Troubleshoot}{85}{chapter*.207}
+\contentsline {section}{Log-in Location}{85}{section*.208}
+\contentsline {paragraph}{Open}{85}{paragraph*.209}
+\contentsline {paragraph}{Check}{85}{paragraph*.210}
+\contentsline {paragraph}{Check}{85}{paragraph*.211}
+\contentsline {section}{Finding Where Samples Need to Go}{86}{section*.212}
+\contentsline {paragraph}{Open}{86}{paragraph*.213}
+\contentsline {paragraph}{Right Click}{86}{paragraph*.214}
+\contentsline {paragraph}{Click}{86}{paragraph*.215}
+\contentsline {part}{VI\hspace {1em}Routing in Cerner}{87}{part.6}
+\contentsline {section}{What is Routing?}{89}{section*.216}
+\contentsline {section}{How Does It Work?}{89}{section*.217}
+\contentsline {subsection}{Instruments and Benches and Sections oh my!}{89}{subsection*.218}
+\contentsline {subsection}{All That To Say:}{89}{subsection*.219}
+\contentsline {section}{Brackenridge}{90}{section*.220}
+\contentsline {section}{Dell Children's}{91}{section*.221}
+\contentsline {section}{Edgar B. Davis}{92}{section*.222}
+\contentsline {section}{Hays}{93}{section*.223}
+\contentsline {section}{Highland Lakes}{94}{section*.224}
+\contentsline {section}{Northwest}{95}{section*.225}
+\contentsline {section}{Southwest}{96}{section*.226}
+\contentsline {section}{Williamson}{97}{section*.227}
+\contentsline {section}{Seton Medical Center}{98}{section*.228}
+\contentsline {part}{VII\hspace {1em}Order Result Viewer}{99}{part.7}
+\contentsline {chapter}{Introduction}{101}{chapter*.229}
+\contentsline {chapter}{Getting Started}{103}{chapter*.230}
+\contentsline {paragraph}{Open }{103}{paragraph*.231}
+\contentsline {paragraph}{Click}{103}{paragraph*.232}
+\contentsline {paragraph}{Click}{103}{paragraph*.233}
+\contentsline {paragraph}{Select}{103}{paragraph*.234}
+\contentsline {paragraph}{Click}{103}{paragraph*.235}
+\contentsline {chapter}{Customizing Demographics}{105}{chapter*.236}
+\contentsline {section}{Helpful Tips}{105}{section*.237}
+\contentsline {section}{Changing Demographics}{105}{section*.238}
+\contentsline {paragraph}{Click}{105}{paragraph*.239}
+\contentsline {paragraph}{Click}{105}{paragraph*.240}
+\contentsline {paragraph}{Click}{106}{paragraph*.241}
+\contentsline {paragraph}{Set}{106}{paragraph*.242}
+\contentsline {paragraph}{Click}{106}{paragraph*.243}
+\contentsline {paragraph}{Click}{108}{paragraph*.244}
+\contentsline {section}{Restore to Defaults}{108}{section*.245}
+\contentsline {chapter}{Finding Orders}{109}{chapter*.246}
+\contentsline {section}{Searching by Patient}{110}{section*.247}
+\contentsline {paragraph}{Enter}{110}{paragraph*.248}
+\contentsline {paragraph}{Modify}{110}{paragraph*.249}
+\contentsline {paragraph}{Click}{110}{paragraph*.250}
+\contentsline {section}{Searching by Accession Number}{111}{section*.251}
+\contentsline {paragraph}{Click}{111}{paragraph*.252}
+\contentsline {paragraph}{Enter}{111}{paragraph*.253}
+\contentsline {paragraph}{Click}{111}{paragraph*.254}
+\contentsline {chapter}{Viewing Orders}{113}{chapter*.255}
+\contentsline {section}{Sorting the List}{113}{section*.256}
+\contentsline {section}{Orderable Status}{114}{section*.257}
+\contentsline {section}{Viewing Results}{114}{section*.258}
+\contentsline {subsection}{Viewing Corrections}{115}{subsection*.259}
+\contentsline {paragraph}{Click}{115}{paragraph*.260}
+\contentsline {section}{Flowsheet Mode}{116}{section*.261}
+\contentsline {paragraph}{Click}{116}{paragraph*.262}
+\contentsline {paragraph}{Click}{116}{paragraph*.263}
+\contentsline {paragraph}{Click}{116}{paragraph*.264}
+\contentsline {paragraph}{Click}{116}{paragraph*.265}
+\contentsline {section}{View Comments}{116}{section*.266}
+\contentsline {chapter}{Branching}{119}{chapter*.267}
+\contentsline {paragraph}{Select}{119}{paragraph*.268}
+\contentsline {paragraph}{Click}{119}{paragraph*.269}
+\contentsline {chapter}{Canceling Orders}{121}{chapter*.270}
+\contentsline {paragraph}{Select}{121}{paragraph*.271}
+\contentsline {paragraph}{Click}{121}{paragraph*.272}
+\contentsline {paragraph}{Review}{122}{paragraph*.273}
+\contentsline {paragraph}{Select}{122}{paragraph*.274}
+\contentsline {paragraph}{Click}{122}{paragraph*.275}
+\contentsline {paragraph}{Review}{123}{paragraph*.276}
+\contentsline {paragraph}{Click}{123}{paragraph*.277}
+\contentsline {chapter}{Tips}{125}{chapter*.278}
+\contentsline {section}{Keyboard Shortcuts}{125}{section*.279}
+\contentsline {chapter}{Troubleshooting}{127}{chapter*.280}
+\contentsline {section}{Unable to Search by Accession Number}{127}{section*.281}
+\contentsline {paragraph}{Close}{127}{paragraph*.282}
+\contentsline {paragraph}{Click}{127}{paragraph*.283}
+\contentsline {paragraph}{Click}{127}{paragraph*.284}
+\contentsline {section}{Branching Applications Won't Open}{127}{section*.285}
+\contentsline {part}{VIII\hspace {1em}Pending Inquiry}{129}{part.8}
+\contentsline {chapter}{Introduction}{131}{chapter*.286}
+\contentsline {chapter}{Customize Pending Inquiry}{133}{chapter*.287}
+\contentsline {paragraph}{Click}{133}{paragraph*.288}
+\contentsline {paragraph}{Click}{133}{paragraph*.289}
+\contentsline {paragraph}{Select}{133}{paragraph*.290}
+\contentsline {paragraph}{Select}{133}{paragraph*.291}
+\contentsline {subsection}{Selecting Headings}{133}{subsection*.292}
+\contentsline {paragraph}{Check {{{\FA \char "F046\relax }}}}{133}{paragraph*.293}
+\contentsline {paragraph}{Uncheck {{{\FA \char "F096\relax }}}}{134}{paragraph*.294}
+\contentsline {subsection}{Rearranging Columns}{134}{subsection*.295}
+\contentsline {paragraph}{Select}{134}{paragraph*.296}
+\contentsline {paragraph}{Click}{134}{paragraph*.297}
+\contentsline {paragraph}{Click}{134}{paragraph*.298}
+\contentsline {subsection}{Resizing Columns}{134}{subsection*.299}
+\contentsline {paragraph}{Hover}{134}{paragraph*.300}
+\contentsline {paragraph}{Click Drag}{134}{paragraph*.301}
+\contentsline {chapter}{Pulling a Pending Log}{135}{chapter*.302}
+\contentsline {section}{About the Options}{135}{section*.303}
+\contentsline {subsection}{Test Site}{135}{subsection*.304}
+\contentsline {subsection}{Procedure}{135}{subsection*.305}
+\contentsline {subsection}{Status}{135}{subsection*.306}
+\contentsline {section}{Entering Options}{136}{section*.307}
+\contentsline {paragraph}{Select}{136}{paragraph*.308}
+\contentsline {paragraph}{Enter}{136}{paragraph*.309}
+\contentsline {paragraph}{Click}{136}{paragraph*.310}
+\contentsline {paragraph}{Find}{136}{paragraph*.311}
+\contentsline {paragraph}{Click}{137}{paragraph*.312}
+\contentsline {section}{Refreshing the Pending List}{137}{section*.313}
+\contentsline {paragraph}{Click}{137}{paragraph*.314}
+\contentsline {paragraph}{Click}{138}{paragraph*.315}
+\contentsline {section}{Sorting Pending Inquiry}{138}{section*.316}
+\contentsline {paragraph}{Click}{138}{paragraph*.317}
+\contentsline {section}{Printing the Pending Log}{138}{section*.318}
+\contentsline {subsection}{Printing the Entire Pending Log}{138}{subsection*.319}
+\contentsline {paragraph}{Click}{138}{paragraph*.320}
+\contentsline {paragraph}{Select}{138}{paragraph*.321}
+\contentsline {subsection}{Printing selected procedures:}{138}{subsection*.322}
+\contentsline {paragraph}{Select}{138}{paragraph*.323}
+\contentsline {paragraph}{Click}{139}{paragraph*.324}
+\contentsline {paragraph}{Select}{139}{paragraph*.325}
+\contentsline {paragraph}{Click}{139}{paragraph*.326}
+\contentsline {chapter}{Branching from Pending Inquiry}{141}{chapter*.327}
+\contentsline {paragraph}{Select}{141}{paragraph*.328}
+\contentsline {paragraph}{Click}{141}{paragraph*.329}
+\contentsline {chapter}{Canceling}{143}{chapter*.330}
+\contentsline {paragraph}{Select}{143}{paragraph*.331}
+\contentsline {paragraph}{Click}{143}{paragraph*.332}
+\contentsline {paragraph}{Review}{143}{paragraph*.333}
+\contentsline {paragraph}{Select}{144}{paragraph*.334}
+\contentsline {paragraph}{Click}{144}{paragraph*.335}
+\contentsline {paragraph}{Review}{144}{paragraph*.336}
+\contentsline {paragraph}{Click}{145}{paragraph*.337}
+\contentsline {chapter}{Transfer Samples}{147}{chapter*.338}
+\contentsline {section}{Reroute Samples}{147}{section*.339}
+\contentsline {subsection}{Checking Routing}{147}{subsection*.340}
+\contentsline {paragraph}{Open}{147}{paragraph*.341}
+\contentsline {paragraph}{Enter}{147}{paragraph*.342}
+\contentsline {paragraph}{Click}{147}{paragraph*.343}
+\contentsline {paragraph}{Right Click}{148}{paragraph*.344}
+\contentsline {paragraph}{Select}{148}{paragraph*.345}
+\contentsline {paragraph}{Note}{148}{paragraph*.346}
+\contentsline {paragraph}{Close}{148}{paragraph*.347}
+\contentsline {subsection}{Transfer Samples}{148}{subsection*.348}
+\contentsline {paragraph}{Open}{148}{paragraph*.349}
+\contentsline {paragraph}{Enter}{148}{paragraph*.350}
+\contentsline {paragraph}{Click}{148}{paragraph*.351}
+\contentsline {paragraph}{Select}{148}{paragraph*.352}
+\contentsline {paragraph}{Click}{149}{paragraph*.353}
+\contentsline {paragraph}{Select}{149}{paragraph*.354}
+\contentsline {paragraph}{Select}{149}{paragraph*.355}
+\contentsline {paragraph}{Click}{149}{paragraph*.356}
+\contentsline {paragraph}{Enter}{149}{paragraph*.357}
+\contentsline {paragraph}{Hit}{150}{paragraph*.358}
+\contentsline {subsection}{Finishing Up}{150}{subsection*.359}
+\contentsline {chapter}{Tips and Tricks}{151}{chapter*.360}
+\contentsline {section}{Keyboard Shortcuts}{151}{section*.361}
+\contentsline {part}{IX\hspace {1em}Transfer Specimen}{153}{part.9}
+\contentsline {chapter}{Introduction}{155}{chapter*.362}
+\contentsline {chapter}{Getting Started}{157}{chapter*.363}
+\contentsline {section}{Status}{157}{section*.364}
+\contentsline {section}{Route}{158}{section*.365}
+\contentsline {chapter}{Create a Transfer List}{159}{chapter*.366}
+\contentsline {section}{List Build}{159}{section*.367}
+\contentsline {paragraph}{Click}{159}{paragraph*.368}
+\contentsline {paragraph}{Select}{160}{paragraph*.369}
+\contentsline {paragraph}{Select}{160}{paragraph*.370}
+\contentsline {paragraph}{Select}{160}{paragraph*.371}
+\contentsline {paragraph}{Click}{160}{paragraph*.372}
+\contentsline {paragraph}{Select}{160}{paragraph*.373}
+\contentsline {paragraph}{Click}{160}{paragraph*.374}
+\contentsline {paragraph}{Click}{161}{paragraph*.375}
+\contentsline {paragraph}{Click}{161}{paragraph*.376}
+\contentsline {chapter}{Updating Transfer Lists}{163}{chapter*.377}
+\contentsline {section}{Adding or Removing Containers}{163}{section*.378}
+\contentsline {paragraph}{Select}{163}{paragraph*.379}
+\contentsline {paragraph}{Select}{163}{paragraph*.380}
+\contentsline {paragraph}{Select}{163}{paragraph*.381}
+\contentsline {paragraph}{Update}{163}{paragraph*.382}
+\contentsline {paragraph}{Click}{163}{paragraph*.383}
+\contentsline {paragraph}{Select}{163}{paragraph*.384}
+\contentsline {paragraph}{Click}{164}{paragraph*.385}
+\contentsline {paragraph}{Move}{164}{paragraph*.386}
+\contentsline {paragraph}{Click}{164}{paragraph*.387}
+\contentsline {section}{Deleting a Transfer List}{164}{section*.388}
+\contentsline {paragraph}{Select}{164}{paragraph*.389}
+\contentsline {paragraph}{Select}{164}{paragraph*.390}
+\contentsline {paragraph}{Select}{164}{paragraph*.391}
+\contentsline {paragraph}{Update}{164}{paragraph*.392}
+\contentsline {paragraph}{Click}{164}{paragraph*.393}
+\contentsline {paragraph}{Select}{165}{paragraph*.394}
+\contentsline {paragraph}{Click}{165}{paragraph*.395}
+\contentsline {section}{Transferring Transfer Lists}{165}{section*.396}
+\contentsline {paragraph}{Select}{165}{paragraph*.397}
+\contentsline {paragraph}{Select}{165}{paragraph*.398}
+\contentsline {paragraph}{Select}{165}{paragraph*.399}
+\contentsline {paragraph}{Update}{165}{paragraph*.400}
+\contentsline {paragraph}{Click}{165}{paragraph*.401}
+\contentsline {paragraph}{Select}{166}{paragraph*.402}
+\contentsline {paragraph}{Click}{166}{paragraph*.403}
+\contentsline {subsection}{View Transferred Lists}{166}{subsection*.404}
+\contentsline {paragraph}{Select}{166}{paragraph*.405}
+\contentsline {paragraph}{Select}{166}{paragraph*.406}
+\contentsline {paragraph}{Select}{166}{paragraph*.407}
+\contentsline {paragraph}{Update}{166}{paragraph*.408}
+\contentsline {paragraph}{Click}{166}{paragraph*.409}
+\contentsline {chapter}{Troubleshooting}{167}{chapter*.410}
+\contentsline {section}{I Can't Find a Container}{167}{section*.411}
+\contentsline {subsection}{Check the List Options}{167}{subsection*.412}
+\contentsline {paragraph}{Check}{167}{paragraph*.413}
+\contentsline {paragraph}{Check}{167}{paragraph*.414}
+\contentsline {paragraph}{Select}{167}{paragraph*.415}
+\contentsline {paragraph}{Select}{167}{paragraph*.416}
+\contentsline {paragraph}{Click}{167}{paragraph*.417}
+\contentsline {subsection}{Check Container Status}{168}{subsection*.418}
+\contentsline {paragraph}{Open}{168}{paragraph*.419}
+\contentsline {paragraph}{Enter}{168}{paragraph*.420}
+\contentsline {paragraph}{Check}{168}{paragraph*.421}
+\contentsline {subsection}{Check the Routing}{169}{subsection*.422}
+\contentsline {paragraph}{Open}{169}{paragraph*.423}
+\contentsline {paragraph}{Enter}{169}{paragraph*.424}
+\contentsline {paragraph}{Right Click}{169}{paragraph*.425}
+\contentsline {paragraph}{Select}{169}{paragraph*.426}
+\contentsline {subsection}{I Still Can't Find the Container}{169}{subsection*.427}
+\contentsline {paragraph}{Open}{169}{paragraph*.428}
+\contentsline {paragraph}{Scan}{169}{paragraph*.429}
+\contentsline {paragraph}{Set}{169}{paragraph*.430}
+\contentsline {paragraph}{Click}{169}{paragraph*.431}
+\contentsline {section}{I Can't Find a List}{169}{section*.432}
+\contentsline {subsection}{Check the List Options}{169}{subsection*.433}
+\contentsline {paragraph}{Check}{169}{paragraph*.434}
+\contentsline {paragraph}{Check}{170}{paragraph*.435}
+\contentsline {paragraph}{Check}{170}{paragraph*.436}
+\contentsline {paragraph}{Click}{170}{paragraph*.437}
+\contentsline {part}{X\hspace {1em}Accession Result Entry}{171}{part.10}
+\contentsline {chapter}{Introduction}{173}{chapter*.438}
+\contentsline {section}{About this Procedure}{173}{section*.439}
+\contentsline {section}{Accession Result Entry Modes}{173}{section*.440}
+\contentsline {chapter}{Customizing Accession Result Entry}{175}{chapter*.441}
+\contentsline {section}{Setup Result View}{175}{section*.442}
+\contentsline {paragraph}{Open}{175}{paragraph*.443}
+\contentsline {paragraph}{Click}{175}{paragraph*.444}
+\contentsline {paragraph}{Click}{175}{paragraph*.445}
+\contentsline {paragraph}{Click}{175}{paragraph*.446}
+\contentsline {paragraph}{Check {{\FA \char "F046\relax }}}{175}{paragraph*.447}
+\contentsline {paragraph}{Check {{\FA \char "F046\relax }}}{175}{paragraph*.448}
+\contentsline {paragraph}{Un-Check {{\FA \char "F096\relax }}}{176}{paragraph*.449}
+\contentsline {section}{Assay Sorting}{176}{section*.450}
+\contentsline {paragraph}{Click}{176}{paragraph*.451}
+\contentsline {paragraph}{Click}{176}{paragraph*.452}
+\contentsline {paragraph}{Click}{176}{paragraph*.453}
+\contentsline {paragraph}{Click}{176}{paragraph*.454}
+\contentsline {chapter}{Customizing Demographics}{177}{chapter*.455}
+\contentsline {section}{Helpful Tips}{177}{section*.456}
+\contentsline {section}{Changing Demographics}{177}{section*.457}
+\contentsline {paragraph}{Click}{177}{paragraph*.458}
+\contentsline {paragraph}{Click}{177}{paragraph*.459}
+\contentsline {paragraph}{Click}{178}{paragraph*.460}
+\contentsline {paragraph}{Set}{178}{paragraph*.461}
+\contentsline {paragraph}{Click}{178}{paragraph*.462}
+\contentsline {paragraph}{Click}{180}{paragraph*.463}
+\contentsline {section}{Restore to Defaults}{180}{section*.464}
+\contentsline {chapter}{Entering Results}{181}{chapter*.465}
+\contentsline {section}{Manual Result Entry}{181}{section*.466}
+\contentsline {paragraph}{Open}{181}{paragraph*.467}
+\contentsline {paragraph}{Enter}{181}{paragraph*.468}
+\contentsline {paragraph}{Click}{181}{paragraph*.469}
+\contentsline {paragraph}{Click}{182}{paragraph*.470}
+\contentsline {paragraph}{Enter}{182}{paragraph*.471}
+\contentsline {paragraph}{Hit}{182}{paragraph*.472}
+\contentsline {paragraph}{Continue}{182}{paragraph*.473}
+\contentsline {section}{Result Types}{183}{section*.474}
+\contentsline {subsection}{Result Types}{183}{subsection*.475}
+\contentsline {subsection}{Changing Result Types}{183}{subsection*.476}
+\contentsline {paragraph}{Right Click}{183}{paragraph*.477}
+\contentsline {paragraph}{Select}{183}{paragraph*.478}
+\contentsline {paragraph}{Select}{183}{paragraph*.479}
+\contentsline {section}{Entering Comments}{183}{section*.480}
+\contentsline {paragraph}{Select}{184}{paragraph*.481}
+\contentsline {paragraph}{Click}{184}{paragraph*.482}
+\contentsline {chapter}{Interpreting Results}{185}{chapter*.483}
+\contentsline {section}{Flags}{185}{section*.484}
+\contentsline {section}{Review Range}{185}{section*.485}
+\contentsline {section}{Critical Results}{185}{section*.486}
+\contentsline {section}{Linearities}{186}{section*.487}
+\contentsline {subsection}{Linearities and Calculations}{186}{subsection*.488}
+\contentsline {paragraph}{Convert}{187}{paragraph*.489}
+\contentsline {paragraph}{Select}{187}{paragraph*.490}
+\contentsline {subsection}{Linearities and Delta Checks}{187}{subsection*.491}
+\contentsline {section}{Reference Ranges}{187}{section*.492}
+\contentsline {chapter}{Verifying Results}{189}{chapter*.493}
+\contentsline {paragraph}{Click}{189}{paragraph*.494}
+\contentsline {paragraph}{Click}{189}{paragraph*.495}
+\contentsline {section}{Verifying Critical Results}{189}{section*.496}
+\contentsline {chapter}{Differential Mode}{191}{chapter*.497}
+\contentsline {section}{Orders with Differentials}{191}{section*.498}
+\contentsline {section}{Body Fluid Differentials}{191}{section*.499}
+\contentsline {subsection}{Reflexing Manual Differentials}{192}{subsection*.500}
+\contentsline {paragraph}{Enter}{192}{paragraph*.501}
+\contentsline {paragraph}{Click}{192}{paragraph*.502}
+\contentsline {subsection}{Changing to Differential Mode}{192}{subsection*.503}
+\contentsline {paragraph}{Open}{192}{paragraph*.504}
+\contentsline {paragraph}{Click}{192}{paragraph*.505}
+\contentsline {paragraph}{Click}{193}{paragraph*.506}
+\contentsline {paragraph}{Click}{193}{paragraph*.507}
+\contentsline {paragraph}{Select}{193}{paragraph*.508}
+\contentsline {paragraph}{Click}{193}{paragraph*.509}
+\contentsline {paragraph}{Select}{193}{paragraph*.510}
+\contentsline {paragraph}{Click}{193}{paragraph*.511}
+\contentsline {subsection}{About Differential Mode}{194}{subsection*.512}
+\contentsline {subsection}{Performing the Differential}{195}{subsection*.513}
+\contentsline {paragraph}{Count}{195}{paragraph*.514}
+\contentsline {paragraph}{Click}{195}{paragraph*.515}
+\contentsline {subsection}{Finishing Up}{196}{subsection*.516}
+\contentsline {paragraph}{Click}{196}{paragraph*.517}
+\contentsline {paragraph}{Click}{196}{paragraph*.518}
+\contentsline {paragraph}{Enter}{196}{paragraph*.519}
+\contentsline {paragraph}{Click}{196}{paragraph*.520}
+\contentsline {section}{CBC Differentials}{196}{section*.521}
+\contentsline {subsection}{How CBCs Work}{196}{subsection*.522}
+\contentsline {subsection}{Manually Reflexing}{197}{subsection*.523}
+\contentsline {paragraph}{Select}{197}{paragraph*.524}
+\contentsline {paragraph}{Click}{197}{paragraph*.525}
+\contentsline {paragraph}{Click}{197}{paragraph*.526}
+\contentsline {paragraph}{Click}{198}{paragraph*.527}
+\contentsline {subsection}{Performing Manual Differentials}{198}{subsection*.528}
+\contentsline {paragraph}{Click}{198}{paragraph*.529}
+\contentsline {paragraph}{Click}{198}{paragraph*.530}
+\contentsline {paragraph}{Click}{198}{paragraph*.531}
+\contentsline {paragraph}{Select}{198}{paragraph*.532}
+\contentsline {paragraph}{Click}{198}{paragraph*.533}
+\contentsline {paragraph}{Select}{199}{paragraph*.534}
+\contentsline {paragraph}{Click}{199}{paragraph*.535}
+\contentsline {chapter}{Correction Mode}{201}{chapter*.536}
+\contentsline {paragraph}{Click}{201}{paragraph*.537}
+\contentsline {paragraph}{Click}{201}{paragraph*.538}
+\contentsline {section}{Correcting Results}{202}{section*.539}
+\contentsline {paragraph}{Select}{202}{paragraph*.540}
+\contentsline {paragraph}{Enter}{202}{paragraph*.541}
+\contentsline {paragraph}{Hit}{202}{paragraph*.542}
+\contentsline {paragraph}{Hit}{202}{paragraph*.543}
+\contentsline {paragraph}{Click}{202}{paragraph*.544}
+\contentsline {paragraph}{Click}{203}{paragraph*.545}
+\contentsline {paragraph}{Click}{203}{paragraph*.546}
+\contentsline {subsection}{Viewing Original Results}{203}{subsection*.547}
+\contentsline {paragraph}{Open}{203}{paragraph*.548}
+\contentsline {paragraph}{Double-Click}{203}{paragraph*.549}
+\contentsline {paragraph}{Select}{204}{paragraph*.550}
+\contentsline {paragraph}{Click}{204}{paragraph*.551}
+\contentsline {chapter}{Instrument Queue Mode}{205}{chapter*.552}
+\contentsline {section}{Opening Instrument Queue}{205}{section*.553}
+\contentsline {paragraph}{Open}{205}{paragraph*.554}
+\contentsline {paragraph}{Click}{205}{paragraph*.555}
+\contentsline {paragraph}{Select}{205}{paragraph*.556}
+\contentsline {section}{Cosmetic Differences}{206}{section*.557}
+\contentsline {section}{Using Instrument Queue}{206}{section*.558}
+\contentsline {paragraph}{Enter}{206}{paragraph*.559}
+\contentsline {paragraph}{Click}{206}{paragraph*.560}
+\contentsline {paragraph}{Review}{207}{paragraph*.561}
+\contentsline {paragraph}{Enter}{207}{paragraph*.562}
+\contentsline {paragraph}{Click}{207}{paragraph*.563}
+\contentsline {subsection}{Moving To the Next Result}{207}{subsection*.564}
+\contentsline {paragraph}{Click}{207}{paragraph*.565}
+\contentsline {subsection}{Go To the Start of the Queue}{207}{subsection*.566}
+\contentsline {paragraph}{Click}{207}{paragraph*.567}
+\contentsline {paragraph}{Click}{207}{paragraph*.568}
+\contentsline {subsection}{Canceling Orders}{208}{subsection*.569}
+\contentsline {chapter}{Additional Information}{209}{chapter*.570}
+\contentsline {section}{Getting Assay Information}{209}{section*.571}
+\contentsline {subsection}{Calculation Equations}{209}{subsection*.572}
+\contentsline {paragraph}{Select}{209}{paragraph*.573}
+\contentsline {subsection}{Procedure Information}{210}{subsection*.574}
+\contentsline {paragraph}{Select}{210}{paragraph*.575}
+\contentsline {section}{Previous Results}{210}{section*.576}
+\contentsline {subsection}{Multiple Previous}{211}{subsection*.577}
+\contentsline {paragraph}{Right Click}{211}{paragraph*.578}
+\contentsline {paragraph}{Click}{211}{paragraph*.579}
+\contentsline {chapter}{Troubleshooting}{213}{chapter*.580}
+\contentsline {section}{Too Many Digits}{213}{section*.581}
+\contentsline {section}{Decimals Not Allowed}{213}{section*.582}
+\contentsline {section}{Unable to Enter Results}{214}{section*.583}
+\contentsline {subsection}{The Sample Isn't In-Lab}{214}{subsection*.584}
+\contentsline {paragraph}{Click}{214}{paragraph*.585}
+\contentsline {paragraph}{Log-in}{214}{paragraph*.586}
+\contentsline {subsection}{You're Still in Correction Mode}{214}{subsection*.587}
+\contentsline {paragraph}{Click}{214}{paragraph*.588}
+\contentsline {paragraph}{Click}{215}{paragraph*.589}
+\contentsline {part}{XI\hspace {1em}Modify Collections}{217}{part.11}
+\contentsline {subsection}{Using Modify Collections}{219}{subsection*.591}
+\contentsline {paragraph}{Enter}{219}{paragraph*.592}
+\contentsline {paragraph}{Click}{219}{paragraph*.593}
+\contentsline {paragraph}{Double Click}{219}{paragraph*.594}
+\contentsline {paragraph}{Enter}{219}{paragraph*.595}
+\contentsline {paragraph}{Click}{220}{paragraph*.596}
+\contentsline {paragraph}{Click}{220}{paragraph*.597}
+\contentsline {part}{XII\hspace {1em}Worklist Request}{221}{part.12}
+\contentsline {chapter}{Introduction}{223}{chapter*.598}
+\contentsline {chapter}{About Worklists}{225}{chapter*.599}
+\contentsline {chapter}{Building Worklists}{227}{chapter*.600}
+\contentsline {paragraph}{Click}{227}{paragraph*.601}
+\contentsline {paragraph}{Select}{227}{paragraph*.602}
+\contentsline {paragraph}{Click}{227}{paragraph*.603}
+\contentsline {chapter}{Modifying the Worklist}{229}{chapter*.604}
+\contentsline {section}{Moving Items on the List}{229}{section*.605}
+\contentsline {paragraph}{Select}{229}{paragraph*.606}
+\contentsline {paragraph}{Click}{229}{paragraph*.607}
+\contentsline {section}{Removing an Item}{229}{section*.608}
+\contentsline {paragraph}{Select}{229}{paragraph*.609}
+\contentsline {paragraph}{Click}{229}{paragraph*.610}
+\contentsline {section}{Adding an Item}{229}{section*.611}
+\contentsline {paragraph}{Click}{229}{paragraph*.612}
+\contentsline {paragraph}{Select}{230}{paragraph*.613}
+\contentsline {paragraph}{Click}{230}{paragraph*.614}
+\contentsline {paragraph}{Click}{230}{paragraph*.615}
+\contentsline {chapter}{Printing Worklists}{231}{chapter*.616}
+\contentsline {section}{Print Worklists}{231}{section*.617}
+\contentsline {paragraph}{Click}{231}{paragraph*.618}
+\contentsline {paragraph}{Right-Click}{231}{paragraph*.619}
+\contentsline {paragraph}{Select}{231}{paragraph*.620}
+\contentsline {paragraph}{Select}{231}{paragraph*.621}
+\contentsline {paragraph}{Select}{232}{paragraph*.622}
+\contentsline {paragraph}{Select}{232}{paragraph*.623}
+\contentsline {paragraph}{Click}{232}{paragraph*.624}
+\contentsline {section}{Creating Favorite Printers}{232}{section*.625}
+\contentsline {paragraph}{Click}{232}{paragraph*.626}
+\contentsline {paragraph}{Select}{232}{paragraph*.627}
+\contentsline {paragraph}{Right-Click}{233}{paragraph*.628}
+\contentsline {paragraph}{Select}{233}{paragraph*.629}
+\contentsline {paragraph}{Repeat}{233}{paragraph*.630}
+\contentsline {paragraph}{Right-Click}{233}{paragraph*.631}
+\contentsline {paragraph}{Select}{233}{paragraph*.632}
+\contentsline {paragraph}{Select}{233}{paragraph*.633}
+\contentsline {section}{Print Preview}{233}{section*.634}
+\contentsline {paragraph}{Click}{233}{paragraph*.635}
+\contentsline {paragraph}{Select}{233}{paragraph*.636}
+\contentsline {paragraph}{Click}{234}{paragraph*.637}
+\contentsline {chapter}{Troubleshooting}{235}{chapter*.638}
+\contentsline {section}{I can't find my printer!}{235}{section*.639}
+\contentsline {section}{I'm Missing Accessions}{235}{section*.640}
+\contentsline {part}{XIII\hspace {1em}Comments}{237}{part.13}
+\contentsline {chapter}{Introduction}{239}{chapter*.641}
+\contentsline {section}{Comments vs. Notes}{239}{section*.642}
+\contentsline {section}{Order Comment vs. Result Comment}{240}{section*.643}
+\contentsline {chapter}{Adding Comments}{241}{chapter*.644}
+\contentsline {paragraph}{Select}{241}{paragraph*.645}
+\contentsline {paragraph}{Click}{241}{paragraph*.646}
+\contentsline {paragraph}{Enter}{242}{paragraph*.647}
+\contentsline {paragraph}{Click}{242}{paragraph*.648}
+\contentsline {paragraph}{Click}{242}{paragraph*.649}
+\contentsline {paragraph}{Click}{242}{paragraph*.650}
+\contentsline {section}{Adding Comments to Multiple Results}{242}{section*.651}
+\contentsline {subsection}{Add Comments to Selected Results}{242}{subsection*.652}
+\contentsline {paragraph}{Hit}{243}{paragraph*.653}
+\contentsline {subsection}{Add Comments to All Critical Results}{243}{subsection*.654}
+\contentsline {paragraph}{Hit}{243}{paragraph*.655}
+\contentsline {chapter}{Using Templates}{245}{chapter*.656}
+\contentsline {section}{Expanding Templates}{245}{section*.657}
+\contentsline {paragraph}{Type}{245}{paragraph*.658}
+\contentsline {paragraph}{Hit}{245}{paragraph*.659}
+\contentsline {paragraph}{Enter}{246}{paragraph*.660}
+\contentsline {paragraph}{Hit}{246}{paragraph*.661}
+\contentsline {paragraph}{Hit}{246}{paragraph*.662}
+\contentsline {paragraph}{Hit}{246}{paragraph*.663}
+\contentsline {paragraph}{Enter}{247}{paragraph*.664}
+\contentsline {chapter}{Templates and Mnemonics}{249}{chapter*.665}
+\contentsline {chapter}{Template Hotkeys}{253}{chapter*.666}
+\contentsline {part}{XIV\hspace {1em}TAT Monitor}{255}{part.14}
+\contentsline {section}{How it Works}{257}{section*.668}
+\contentsline {paragraph}{Select}{257}{paragraph*.669}
+\contentsline {paragraph}{Click}{257}{paragraph*.670}
+\contentsline {section}{What's Displayed}{258}{section*.671}
+\contentsline {part}{XV\hspace {1em}Printing Labels}{259}{part.15}
+\contentsline {chapter}{Label Reprint}{263}{chapter*.673}
+\contentsline {paragraph}{Enter}{263}{paragraph*.674}
+\contentsline {paragraph}{Select}{263}{paragraph*.675}
+\contentsline {paragraph}{Click}{263}{paragraph*.676}
+\contentsline {chapter}{Label Preprint}{265}{chapter*.677}
+\contentsline {section}{About Downtime Accession Numbers}{265}{section*.678}
+\contentsline {section}{Printing Downtime Labels}{266}{section*.679}
+\contentsline {paragraph}{Enter}{266}{paragraph*.680}
+\contentsline {paragraph}{Enter}{266}{paragraph*.681}
+\contentsline {paragraph}{Select}{266}{paragraph*.682}
+\contentsline {paragraph}{Enter}{266}{paragraph*.683}
+\contentsline {paragraph}{Select}{266}{paragraph*.684}
+\contentsline {paragraph}{Click}{266}{paragraph*.685}
+\contentsline {chapter}{Media Label Reprint}{267}{chapter*.686}
+\contentsline {paragraph}{Enter}{267}{paragraph*.687}
+\contentsline {paragraph}{Select}{267}{paragraph*.688}
+\contentsline {paragraph}{Click}{267}{paragraph*.689}
+\contentsline {part}{XVI\hspace {1em}Appendix}{269}{part.16}
+\contentsline {chapter}{Customizing Demographics}{271}{chapter*.690}
+\contentsline {section}{Helpful Tips}{271}{section*.691}
+\contentsline {section}{Changing Demographics}{271}{section*.692}
+\contentsline {paragraph}{Click}{271}{paragraph*.693}
+\contentsline {paragraph}{Click}{271}{paragraph*.694}
+\contentsline {paragraph}{Click}{272}{paragraph*.695}
+\contentsline {paragraph}{Set}{272}{paragraph*.696}
+\contentsline {paragraph}{Click}{272}{paragraph*.697}
+\contentsline {paragraph}{Click}{274}{paragraph*.698}
+\contentsline {section}{Restore to Defaults}{274}{section*.699}
+\contentsline {chapter}{Keyboard Shortcuts}{275}{chapter*.700}
+\contentsline {chapter}{Sunquest to Cerner: Application Equivalents}{277}{chapter*.701}
+\contentsline {part}{XVII\hspace {1em}Class Activities}{278}{part.17}
+\contentsline {chapter}{Quick reference}{1}{chapter*.702}
+\contentsline {chapter}{Getting Started}{2}{chapter*.703}
+\contentsline {section}{Opening the App-Bar}{2}{section*.704}
+\contentsline {section}{About the Class}{2}{section*.705}
+\contentsline {section}{Accession Numbers}{2}{section*.706}
+\contentsline {subsection}{Downtime Accessions}{3}{subsection*.707}
+\contentsline {section}{Routing}{3}{section*.708}
+\contentsline {subsection}{Hay's Example}{3}{subsection*.709}
+\contentsline {subsection}{In-Lab Location}{3}{subsection*.710}
+\contentsline {subsection}{Analogy}{3}{subsection*.711}
+\contentsline {subsection}{Workflow Example 1}{3}{subsection*.712}
+\contentsline {subsection}{Workflow Example 2}{4}{subsection*.713}
+\contentsline {chapter}{Department Order Entry}{5}{chapter*.714}
+\contentsline {section}{Set Defaults}{5}{section*.715}
+\contentsline {section}{Placing an Order}{5}{section*.716}
+\contentsline {subsection}{Search for a Patient}{5}{subsection*.717}
+\contentsline {subsection}{Finding Orderables}{5}{subsection*.718}
+\contentsline {subsection}{Selecting Options}{5}{subsection*.719}
+\contentsline {subsection}{Scratch-Pad}{6}{subsection*.720}
+\contentsline {section}{Accession Add-On}{6}{section*.721}
+\contentsline {subsection}{To Override or Not to Override}{6}{subsection*.722}
+\contentsline {chapter}{Container Inquiry}{7}{chapter*.723}
+\contentsline {section}{Troubleshooting}{7}{section*.724}
+\contentsline {chapter}{Accession Result Entry}{8}{chapter*.725}
+\contentsline {section}{Default Values}{8}{section*.726}
+\contentsline {section}{Entering Results}{8}{section*.727}
+\contentsline {subsection}{Correcting Results}{9}{subsection*.728}
+\contentsline {chapter}{Order Result Viewer}{10}{chapter*.729}
+\contentsline {section}{Set Defaults}{10}{section*.730}
+\contentsline {section}{Pull up Order}{10}{section*.731}
+\contentsline {section}{Cancel Order}{10}{section*.732}
+\contentsline {chapter}{Pending Inquiry}{11}{chapter*.733}
+\contentsline {section}{Pulling a pending}{11}{section*.734}
+\contentsline {chapter}{Transfer Specimens}{12}{chapter*.735}
+\contentsline {chapter}{Specimen Login}{13}{chapter*.736}
+\contentsline {chapter}{Modify Collections}{14}{chapter*.737}
+\contentsline {chapter}{}{15}{chapter*.738}
+\contentsline {part}{XVIII\hspace {1em}Class Activities}{16}{part.18}
+\contentsline {section}{Department Order Entry}{17}{section*.739}
+\contentsline {subsection}{Creating An Error}{17}{subsection*.740}
+\contentsline {subsection}{Accession Add-On}{18}{subsection*.741}
+\contentsline {section}{Container Inquiry}{18}{section*.742}
+\contentsline {chapter}{Entering Results}{19}{chapter*.743}
+\contentsline {section}{Accession Result Entry}{19}{section*.744}
+\contentsline {subsection}{Getting Started}{19}{subsection*.745}
+\contentsline {subsection}{Entering Results}{19}{subsection*.746}
+\contentsline {subsection}{Correction Mode}{20}{subsection*.747}
+\contentsline {chapter}{Viewing Orders}{21}{chapter*.748}
+\contentsline {section}{Order Result Viewer}{21}{section*.749}
+\contentsline {subsection}{Searching for a Patient}{21}{subsection*.750}
+\contentsline {subsection}{Canceling Orders}{21}{subsection*.751}
+\contentsline {section}{Pending Inquiry}{21}{section*.752}
+\contentsline {chapter}{Transfer Specimen}{22}{chapter*.753}
+\contentsline {section}{Creating Lists}{22}{section*.754}
+\contentsline {subsection}{Your First List}{22}{subsection*.755}
+\contentsline {subsection}{Your Second List}{22}{subsection*.756}
+\contentsline {subsection}{Modify List}{23}{subsection*.757}
+\contentsline {chapter}{Specimen Login}{24}{chapter*.758}
+\contentsline {section}{Log-in By Accession}{24}{section*.759}
+\contentsline {section}{Login By List}{24}{section*.760}
+\contentsline {chapter}{Advanced ARE}{25}{chapter*.761}
+\contentsline {section}{Differential Mode}{25}{section*.762}
+\contentsline {part}{XIX\hspace {1em}Practice 1}{26}{part.19}
+\contentsline {section}{Department Order Entry}{1}{section*.763}
+\contentsline {subsection}{Place a New Order}{1}{subsection*.764}
+\contentsline {subsection}{Add-On an Order}{1}{subsection*.765}
+\contentsline {section}{Container Inquiry}{1}{section*.766}
+\contentsline {section}{Order Result Viewer}{2}{section*.767}
+\contentsline {chapter}{Troubleshooting Exercises}{3}{chapter*.768}
+\contentsline {section}{Exercise One}{3}{section*.769}
+\contentsline {section}{Exercise Two}{3}{section*.770}
+\contentsline {section}{Exercise Three}{4}{section*.771}
+\contentsline {chapter}{Accession Result Entry}{5}{chapter*.772}
+\contentsline {section}{Chemistry Resulting}{5}{section*.773}
+\contentsline {section}{CBC Resulting}{5}{section*.774}
+\contentsline {part}{XX\hspace {1em}Practice 2}{6}{part.20}
+\contentsline {section}{Which Application?}{1}{section*.775}
+\contentsline {chapter}{Troubleshooting}{2}{chapter*.776}
+\contentsline {section}{Exercise One}{2}{section*.777}
+\contentsline {section}{Exercise Two}{3}{section*.778}
+\contentsline {section}{Exercise Three}{3}{section*.779}
+\contentsline {section}{Exercise Four}{4}{section*.780}
+\contentsfinish 

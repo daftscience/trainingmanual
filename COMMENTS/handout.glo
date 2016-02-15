@@ -1,0 +1,5 @@
+(indexentry :tkey (("Comment" "\\glossentry{comment}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Note" "\\glossentry{note}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Comment" "\\glossentry{comment}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Accession Result Entry" "\\glossentry{gls-are}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 
+(indexentry :tkey (("Note" "\\glossentry{note}") ) :locref "{}{1}" :attr "pageglsnumberformat" ) 

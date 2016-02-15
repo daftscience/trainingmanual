@@ -1,0 +1,28 @@
+\input{../cerner_preamble.tex}
+\input{../terms.tex}
+\input{../material_colors}
+
+%----------------------------------------------------------------------------------------
+%   BOOK META-INFORMATION
+%----------------------------------------------------------------------------------------
+\newsavebox{\titleimage}
+\savebox{\titleimage}{\includegraphics[height=7\baselineskip]{../graphics/seton/seton_Healthcarefamily_alt_cmyk.jpg}}
+\title{Sunquest to Cerner} % Title of the book
+\author{Cerner Training Manuals}
+\publisher[Seton Medical Center]{%
+  \usebox{\titleimage}
+} % Publisher
+
+\begin{document}
+    \frontmatter
+        \maketitle % Print the title page
+        \tableofcontents
+
+    \mainmatter
+        \cfchapter{applications.tex}
+        \cfchapter{terms.tex}
+
+    \backmatter
+        \cfinput{../backmatter.tex}
+
+\end{document}

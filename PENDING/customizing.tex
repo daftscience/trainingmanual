@@ -1,0 +1,76 @@
+The default layout for the \textsc{Pending Inquiry} can be modified to make the most important details easier to see.
+
+\newthought{Open \gls{pi}} by clicking the \appicon{pending_inquiry} icon from the \gls{ab}.\sidenote{\checkref{ch:ab_addapp}{\refptch{part:ab}{ch:ab_addapp} }{Refer to the \textsc{App-Bar Procedure} } if you need help adding it.}
+
+\paragraph{Click} \btn{graphics/cancel}
+
+\paragraph{Click} \boldcap{View} from the menu bar.
+
+\paragraph{Select} \boldcap{Customize}.
+
+\paragraph{Select} \boldcap{Display\ldots}\\
+
+\prettyimage{width=.5\textwidth}{graphics/customize_display_menu}
+
+\newthought{The Customize Display Window} will open.\\
+
+\prettyimage{width=\textwidth}{graphics/customize_display}
+
+Each {\faCheckSquareO } represents a \textsc{Column Header}.
+
+\subsection{Selecting Headings}
+
+\paragraph{Check {\faCheckSquareO }} the columns you'd like displayed.
+
+\paragraph{Uncheck {\faSquareO }} the columns you'd like to hide.
+
+\subsection{Rearranging Columns}
+
+\paragraph{Select} the \textsc{Heading} to be moved.\sidenote{Click its name.}\\
+
+\noindent%draw top
+\begin{tikzpicture}
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/selected_heading} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [-stealth, line width=3pt, teal400] (.05, 1.05) to[out=270, in=180] (0.21,0.6);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+
+\paragraph{Click} either \btn{graphics/left} or \btn{graphics/right} to move the column.
+
+\newthought{Here is a suggestion} for a layout.
+
+\begin{description}
+    \setlength\itemsep{.1em}\scshape
+    \bolditem{Received In-Lab} Date and Time the sample was \textsc{Received.}
+    \bolditem{Procedure} The Test which is ordered.
+    \bolditem{Accession} The accession number
+    \bolditem{Name} Patients Name
+    \bolditem{MRN} MRN
+    \bolditem{Comments} A flag to identify if comments are present.
+    \bolditem{Status} The \textsc{Pending Status} of the order.\sidenote{This will be either: \textsc{Pending} or \textsc{In-Lab}.}
+    \bolditem{Priority} The priority of the order.\sidenote{Stat, Routine, Time Study \etc}
+    \bolditem{Collected} The Date and Time of Collection.
+    \bolditem{Specimen Location} The current location of the container.\sidenote{\eg{BH Login, SEBD Login, 4S SNW, \etc}}
+\end{description}
+
+\paragraph{Click} \btn{graphics/ok} when finished.
+
+\subsection{Resizing Columns}
+
+\paragraph{Hover} over the \textsc{Column Separator}.\sidenote{We want the cursor to look like this: \btn{graphics/resize_cursor}.}
+
+\paragraph{Click Drag} the \textsc{Column Separator} until the column is the desired size.\\
+
+\noindent%draw top
+\begin{tikzpicture}
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/pending_example} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [-stealth, line width=3pt, deeppurple400] (0.05, 1.05) to[out=270, in=180] (0.2,0.9);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+

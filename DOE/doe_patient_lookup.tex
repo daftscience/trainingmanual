@@ -1,0 +1,130 @@
+%-------------------------------------------------------------------------------------------------------------------------------------
+% New Page!
+% ------------------------------------------------------------------------------------------------------------------------------------
+From \acrlong{doe} there are two ways to search for a patient.\\
+The quickest way to find a patient is using a \textsc{Unique Patient Identifier} such as a \gls{mrn}, or \gls{fin}.
+
+If that information is unavailable the \textsc{Encounter Search} window can be used to find patients using information such as Partial name, date of birth \textit{etc\ldots}
+\vfill
+\section{Using a Unique Patient Identifier}\label{sec:doe_pid}
+\vfill
+\paragraph{Enter} the \boldcap{Patient Identifier} in the \textsc{Patient Identifier} field.\sidenote{Make sure that the \textsc{Patient Identifier} entered matches the description above the text box.}\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    % \node [anchor=west] (pif) at (0.2,0.3);
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.8\textwidth}{graphics/doe_patient_search}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeppurple400] (0.08,1.05) to[out=-90, in=-185] (0.02,0.28);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\paragraph{Click } \btn{graphics/elips_button.png} to pull up the patient.\sidenote{\hotkey{ Hitting \boldcap{Enter} also works}}
+
+\vfill
+\newthought{If the patient has} only one encounter, \gls{doe} will use that encounter. The demographics in \gls{doe} will update with the selected patient.
+
+However, if there are multiple encounters, or \gls{doe} could not find the patient, then the ``Encounter Search'' window will appear.\\
+% \sidenote{\textit: ``Using the Encounter Search Window''}
+
+\clearpage
+%-------------------------------------------------------------------------------------------------------------------------------------
+% New Page!
+% ------------------------------------------------------------------------------------------------------------------------------------
+\section{Using the Encounter Search Window}
+The \textsc{Encounter Search Window} can be used to find patients in the event that a \textsc{Unique Patient Identifier} is missing.\\
+
+\begin{tikzpicture}
+\node [anchor=west] (pif) at (1, 6.9) {\scshape{Search Fields}};
+\node [anchor=west] (cf) at (3, 6.4) {\scshape{Persons List}};
+\node [anchor=west] (el) at (5, 5.9) {\scshape{Encounters List}};
+\begin{scope}[yshift=-.7cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.9\textwidth}{graphics/encounter_results}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeporange400] (pif) to[out=270, in=-255] (0.1,0.9);
+        \draw [-stealth, line width=3pt, teal400] (cf) to[out=270, in=90] (0.3,0.89);
+        \draw [-stealth, line width=3pt, deeppurple400] (el) to[out=270, in=90] (0.3,0.5);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{The Encounter Search Window} is divided into three sections:
+\begin{description}%
+    \bolditem{Search Fields} This is where the search criteria are entered.%
+    \bolditem{Persons List} A list of persons matching the search criteria.%
+    \bolditem{Encounters List} A list of encounters for the Person selected in the ``Persons List.''%
+\end{description}
+
+
+\newthought{To open the Encounter Search} window:
+
+\paragraph{Click}  \btn{graphics/elips_button} to open the ``Encounter Search'' window.\sidenote{\hotkey{The \boldcap{Enter} will also work.}}
+
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.8\textwidth}{graphics/doe_patient_search}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, cyan500] (0.13,1.05) to[out=-90, in=-185] (0.38,0.28);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\clearpage
+\paragraph{Enter} any known information into the search fields.\sidenote{\important{Be as specific as possible. If the search is too vague Cerner will simply display ``Too many persons found. Please enter more filter data.''}}\marginnote[4\baselineskip]{\trouble{If any of the search fields are populated when the window opens, but the Persons List says ``No Persons Found'' \refpt{sec:doe_ptlookup_trouble}}}\\
+
+\prettyimage{width=.75\textwidth}{graphics/encounter_search}
+
+\paragraph{Click} \btn{graphics/search_button} to search.
+
+\paragraph{Select} the appropriate patient from the  Persons List.\marginnote[4\baselineskip]{These are the patients which match the search criteria.}\marginnote[3\baselineskip]{These are the encounters for the, currently selected, patient.}\\
+
+\prettyimage{width=.75\textwidth}{graphics/encounter_results}
+\paragraph{Select} the appropriate encounter from the Encounters List.
+\paragraph{Click} \btn{graphics/doe_ok_button}\marginnote[4\baselineskip]{\gls{doe} will update with the patient's demographics, and orders can now be placed.}\\
+
+\prettyimage{width=.75\textwidth}{graphics/encounter_results.png}
+
+% \clearpage
+\section{Troubleshooting Tips\label{sec:doe_ptlookup_trouble}}
+
+If you're having trouble finding a patient, don't fret. Here are some things to look for when the ``Encounter Search'' window says: ``No persons found'' but the patient \textit{is} in the system.
+
+\subsection{Check the Search Fields}
+\newthought{In the example below, } the ``Patient Identifier'' field was set to search for a patient name, however the user entered a \gls{fin}.\marginnote[3\baselineskip]{The ``Encounter Search'' window will say ``No persons found.''}\\
+
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.8\textwidth}{graphics/wrong_identifier_location.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [stealth-stealth, line width=3pt, red400] (0.03,0.75) to[out=60, in=90] (0.26,0.8);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\begin{quote}
+\newthought{\textbf{Solution:}} This is easily fixed by typing the \gls{fin} into the FIN NBR field, and deleted the contents of the ``Name'' field.
+\end{quote}
+
+\subsection{Check the Client Field}
+
+\newthought{The patient below} has never been to Pflugerville. Cerner cannot find the patient, because she does not have a Pflugerville encounter.\marginnote[3\baselineskip]{The \textsc{Encounter Search} window will say ``No persons found.''}\marginnote[2\baselineskip]{\textit{See the next page for the solution}}\\
+
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.8\textwidth}{graphics/wrong_patient_location.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+         \draw [-stealth, line width=3pt, red400] (0.25,1.05) to[out=-90, in=65] (0.09,0.81);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}
+
+\begin{quote}
+\newthought{\textbf{Solution:}} In most cases, \textit{Clicking} \btn{graphics/search_button} should bring up the patient. If it doesn't, try this:
+
+\begin{description}
+    \paraitem{Close} the \textsc{Encounter Search} Window
+    \paraitem{Set} the \textsc{Client} field to (None)
+    \paraitem{Retry} the search
+\end{description}
+\end{quote}

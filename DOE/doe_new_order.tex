@@ -1,0 +1,236 @@
+\newthought{Search for the} patient using a unique patient identifier, \eg{\gls{mrn}, or \gls{fin};} or by using the ``Encounter Search''\\
+
+\prettyimage{width=.9\textwidth, trim={0, 330pt, 0, 0}, clip}{graphics/doe_patient_found.png}
+
+\paragraph{Enter } the test to be ordered in the ``Orderable Field''\footnote{\info{\glsdesc{oable}}}
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.9\textwidth, trim={0, 330pt, 0, 0}, clip}{graphics/order_start.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeppurple400] (0.17,1.05) to[out=-90, in=0] (0.12,0.13);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}
+
+\paragraph{Click} the \btn{graphics/doe_shiny_elips.png} button to search.\marginnote[2\baselineskip]{\warning{ There are cases where \gls{doe} will not present this window \eg{If you search for Thromboelastography tests using the keyword: ``teg'' \gls{doe} will load Tegretol.}}}\\
+
+\prettyimage{width=.9\textwidth, trim={0, 100pt, 50pt, 0pt}, clip}{graphics/orderable_search.png}
+
+\clearpage
+\paragraph{Select} the appropriate test from the list of orderables.\sidenote{\textit{Refer to: \refpt{searchTests}}.}
+\paragraph{Click } \btn{graphics/doe_ok_button.png}
+
+\section{Updating Order Information}
+\newthought{Once an orderable} has been selected, the order information needs to be defined.\marginnote{\tip{Resize your window so there are three columns of text boxes (\textit{as shown.})}}\\
+
+\prettyimage{width=.9\textwidth, trim={0pt, 200pt, 0pt, 200pt}, clip}{graphics/placing_order.png}
+
+\infoblock{The fields in yellow are required. Orders cannot be placed until they have been filled in.}
+
+\newthought{A description} of the options above.
+
+\begin{quote}
+\begin{description}
+    \bolditem{Specimen Type} The type of sample \eg{Blood, Body Fluid, Urine \etc}
+    \bolditem{Collected Check Box} Has the sample been collected? If so, check this.
+    \bolditem{Collection Method} The method used to collect the sample -- more applicable to urines and body fluids.
+    \bolditem{Specimen Received by} The person who is ``receiving'' the sample. This will default to your user name.
+    \bolditem{Collection Priority} The priority of which the sample is to be collected. It can be Routine, Stat, Time Study \etc. If this order is for a future collection, this option determines \textit{when} labels will print.
+    \bolditem{Collected By} The person who collected the sample.
+    \bolditem{Specimen Receive Date and Time} When was the sample brought to the lab. This defaults to now.
+    \bolditem{Print Label} Do you want a label to print after you place the order?
+    \bolditem{Manual Assign Accession Number} This is used for downtime, see the downtime procedure.
+    \bolditem{Collection Date and Time} The date and time the sample was collected, or the date and time it will be collected. It defaults to now.
+    \bolditem{Reporting Priority} The priority of the sample when it reaches the laboratory.
+    \bolditem{Specimen Receive Location} The current location of the sample. In most cases this will be set to your current location, \eg{SMC Login}.
+    \bolditem{Label Printer} The location where labels should print after placing the order.
+    \bolditem{Ordering Physician} The Physician who ordered the test. This will usually default to the patients attending physician.
+\end{description}
+\end{quote}
+
+
+\section{Updating the order information}
+\begin{quote}
+\begin{description}
+    \paraitem{Select} the appropriate {\scshape Specimen Type} from the drop-down menu.
+    \paraitem{Check} the {\scshape{Collected}} check-box.\footnote{This will enable the receiving options.}
+    \paraitem{Select} the {\scshape Collection Priority}.\sidenote{\note{\textsc{Collection priority} is a \boldcap{Semi-Sticky} option, if you set it to ``ST'' it will stay that way until you change it, or the window is closed. }}
+    \paraitem{Update} the {\scshape Specimen Received} Date and Time. In most cases this value does not need to be changed.
+    \paraitem{Check} the {\scshape Print label Y/N} check-box.
+    \paraitem{Update} the \textsc{Collection Date}\sidenote{\hotkey{ Press T for ``Today''}} and \textsc{Time}.\sidenote{\hotkey{ Press N for ``Now''}}
+    \marginnote{\info{%
+    Use the + and - to increase or decrease the Date by 1 day and the time by 1 minute.
+
+    {\faKeyboardO} + to \textsc{Increase}
+
+    {\faKeyboardO} - to \textsc{Decrease}
+    }}
+    \paraitem{Update} the {\scshape Reporting Priority}.
+    \paraitem{Check} that the {\scshape Specimen Receive Location} is correct. This should be set to your current location.
+    \paraitem{Check} that the {\scshape Label Printer} is correct. This should be set to the label printer closest to you.
+    \paraitem{Check} that the {\scshape Ordering Physician} is correct.
+\end{description}
+\end{quote}
+\importantblock{If an attending physician has been set for the patient, it will automatically populate the \textbf{Ordering Physician} field. In most cases, they will be the same physician. However, if another doctor has placed these orders it is important to update the \textbf{Ordering Physician} field.}
+
+\newthought{\gls{doe} should now} look something like this:\\
+
+\noindent
+\prettyimage{width=\textwidth,trim={0 215pt 0 220pt}, clip}{graphics/doe_order_updated.png}
+
+\newthought{If the information} is correct, the order can be added to the \gls{spad}.
+
+\section{Scratch-Pad}
+The \gls{spad} is used to temporarily hold orderables before they are ``Submitted.\sidenote{``Submitting Orders'' is another way of saying \textit{``Hey Cerner, these orders are good to go.''} Cerner will perform duplicate checking and assign an \gls{accn}.}'' While in the \gls{spad}, orderables can be modified or removed.
+
+\importantblock{If you need to order multiple items, do not click \textbf{Submit Orders} until you've added them all to the \gls{spad}.
+
+Submitting orders individually will put them on separate \glspl{accn} and Cerner will be unable to perform it's duplicate checking magic.}
+
+\paragraph{Click} the \textsc{Add to Scratch-pad} icon \includegraphics[height=1em]{graphics/scratch_pad_icon.png} from the tool-bar\sidenote{\hotkey{\textbf{Ctrl+A} will also add orders to the \gls{spad}}}\\
+
+\begin{tikzpicture}
+\begin{scope}%[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.9\textwidth,trim={0pt, 715pt, 300pt, 0pt}, clip}{graphics/doe_order_updated.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeporange500] (0.084,1.05) to[out=-90, in=-160] (0.48,0.13);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}
+
+\newthought{The test will} be moved down to the \gls{spad}, and \gls{doe} is ready to accept another test.\\
+
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (sp) at (-.9,4.0) {\scshape{Basic Panel}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.7\textwidth}{graphics/order_added_scratchpad.png}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeporange500] (sp) to[out=0, in=-180] (0.06,0.29);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{Follow the steps} above for any additional tests that need to be ordered. \sidenote{\info{The information entered for the first order will be copied to each additional test (\eg{Collection date and time, Received date and time, \etc})}}
+
+\importantblock{If you need to place orders for more than one specimen type, it's best to order them in groups.
+
+This means, add all of the blood orders to the \gls{spad}. Next, add the urine orders; and finally add the body fluid orders.
+
+The reason for this is that the fields in \gls{doe} change based on specimen type. If you're not very careful, strange things can happen.}
+
+\section{Modifying Orders in the Scratch-Pad}
+
+\newthought{To modify an order} in the Scratch-Pad:
+
+\paragraph{Double-Click} the order in the \gls{spad}.
+
+\newthought{The order information} will be brought back up to \gls{doe}.
+
+\paragraph{Modify} the information that needs to be changed.
+
+\paragraph{Click} the \textsc{New Order} icon \includegraphics[height=1em]{graphics/new_order_icon.png} when you're finished.\sidenote{Alternatively, if you've finished with the order you move to the next section.}
+
+\section{Submitting the Orders}
+\newthought{After all of the tests} have been added, the orders can be ``Submitted.'' This will finalize the order, and generate an Accession Number.\marginnote[1\baselineskip]{Notice that the \textsc{Submission Status} is \textsc{Ready.} This means Cerner is waiting for the order to be ``Submitted''. }\\
+
+\prettyimage{width=\textwidth, trim={0 0 130 0}, clip}{graphics/doe_status_ordered.png}
+
+\paragraph{Click} the \textsc{Submit Orders} icon \includegraphics[height=1em]{graphics/submit_order_icon.png} from the tool bar. \sidenote{\hotkey{\textbf{Ctrl+O} will also submit orders}}\\
+
+\prettyimage{width=\textwidth, trim={0 0 130 0}, clip}{graphics/doe_status_submited.png}
+
+\newthought{The ``Submission Status''} should change from ``Ready'' to ``Submitted,'' an Accession Number will be generated and the labels should print.
+
+\dupnote
+
+\section{Submission Status}
+
+The \gls{spad} has a column titled \textsc{Submission Status}, these can be used to troubleshoot order submissions.\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/doe_status_ordered}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw[deeppurple400, rounded corners, line width=2] (0.73, 0.1)rectangle (0.83, 0.98);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\begin{table}
+    \begin{tabular}{ll}
+        \boldcap{\large Status} & \boldcap{\large Meaning} \\
+        \hline
+         \textsc{Ready} & The order is ready to be submitted. \\
+         \textsc{Validating} & Cerner is checking for errors.\\
+         \textsc{Scheduled} & The order has been placed for the future.\\
+         \textsc{Submitted} & An accession number has been assigned.\\
+         \textsc{Error} &  A problem has Occurred during Processing.\\
+        \hline
+    \end{tabular}
+    \caption{DOE Submission Statuses}
+    \label{table:Submission_statuses}
+\end{table}
+
+\section{Troubleshooting Submission Errors}\label{sec:submission_errors}
+
+After \textsc{Submitting} the orders in \gls{doe} Cerner will check for duplicates and errors. If something is wrong with the order, Cerner will return \textsc{Submission Errors} or \textsc{Submission Warnings}.
+
+\subsection{Submission Errors}
+
+\textsc{Submission Errors} will be highlighted in red in the \gls{spad}.\\
+
+\prettyimage{width=\textwidth}{graphics/submission_Error}
+
+\paragraph{Click} the \btn{graphics/error_button} icon from the tool-bar.
+
+\newthought{A dialog will} appear describing the error.\sidenote{In this case it's saying we can't receive a sample before it was collected.}\\
+
+\prettyimage{width=.8\textwidth}{graphics/error}
+
+\paragraph{Click} \btn{graphics/ok_button}
+
+\paragraph{Modify} the order to correct the error.\sidenote{In this case, collected time, or received time needs to be modified.}\\
+
+\noindent%draw top
+\begin{tikzpicture}
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/order_error_fix} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [stealth-stealth, line width=3pt, indigo400] (0.6, 0.5) to[out=0, in=180] (0.83,0.85);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+
+\paragraph{Re-submit} the order if all the errors have been corrected.
+
+\subsection{Submission Warnings}
+
+These are mostly caused by duplicate \textsc{Orderables}. They will be highlighted in yellow in the \gls{spad}.\\
+
+\prettyimage{width=\textwidth}{graphics/duplicate}
+
+\paragraph{Click} the \btn{graphics/error_button} icon from the tool-bar.
+
+\newthought{A dialog will} appear describing the error.\sidenote{In this case it's saying the CBC is a duplicate.}\\
+
+\prettyimage{width=.8\textwidth}{graphics/warning}
+
+\paragraph{Click} \btn{graphics/ok_button} to remove the duplicate order.
+
+\paragraph{Re-submit} the order if all the warnings have been corrected.
+
+\newthought{This error can} be caused by two situations:
+
+\begin{quote}
+    \begin{description}
+        \bolditem{Submitting Duplicates} You've added an \textsc{Orderable} to the \gls{spad} multiple times.
+        \bolditem{Order already exists} You're trying to order something which has been done recently.\sidenote{\eg{You're ordering a Potassium, and the patient had a Potassium recently.}} This does not apply to \textsc{Canceled} orders.
+    \end{description}
+\end{quote}
+
+\infoblock{For more information regrading duplicates \refpt{ch:doe_duplicate}.}

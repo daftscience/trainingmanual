@@ -1,0 +1,27 @@
+\newlength{\remaining}
+\newcommand{\answerline}[1]{%
+\setlength{\remaining}{\linewidth-\widthof{\textsc{ #1}}}
+{\textsc{#1}\underline{\hspace*{\remaining}}}}
+
+\newcommand{\sideref}[2]{
+    \sidenote{\activityRef{#1}{#2}}
+}
+
+\newcommand{\activityRef}[2]{{{{\reficon} \scshape\textbf{\nameref{#1}}: \nameref{#2}, \textit{pg. \pageref{#2}}}}}
+
+\newcommand{\answer}[1]{%
+\begin{quote}
+\answerline{{\faPencil} #1:}
+\end{quote}
+}
+
+\newcommand{\answermulti}[1]{%
+\begin{quote}
+\answerline{{\faPencil} #1:}
+
+\bigskip
+\answerline{{\color{white}.}}
+\end{quote}
+}
+
+\newcommand{\activity}[1]{{\faDesktop}\textsc{ #1}}

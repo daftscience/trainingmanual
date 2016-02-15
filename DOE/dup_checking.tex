@@ -1,0 +1,40 @@
+\warnblock{This section describes some complicated rules and concepts.}
+
+\noindent
+Cerner will check for, and correct, duplicate orders at three points before the sample gets to the laboratory. At each point, it will look for different types of duplication.
+
+\begin{quote}
+    \warning{After the \gls{accn} has been assigned, Cerner will not be able to perform the more complicated duplicate checking. The following rules work in most normal situations; however, it does not apply to \textbf{Add-Ons} or orders placed incorrectly.}
+\end{quote}
+
+\section{When Orders Are Placed}
+When orders are ``Submitted,'' Cerner will look back to ensure that we are not creating duplicate orders.\sidenote{The amount of time it will look back depends on the test it is checking.}
+
+If a previous order exists for one you've placed in the \gls{spad} it will need to be removed before continuing.\sidenote{This is checking for duplicates at the \textsc{orderable} level \eg{if two Basic Panels were ordered.}}
+
+\section{When Orders Are Dispatched}
+Cerner will check for duplicates within the orders\sidenote{This is checking for duplicates at the \textsc{Assay} level \eg{If an Electrolytes Panel (or even just a Potassium) was ordered with a Basic Panel.}} on the \gls{spad}. Any duplicates will be canceled immediately after being ordered.
+
+Similar checking also occurs for scheduled orders placed by the floors. It happens before the \gls{accn} is assigned and the order is \textit{Dispatched}.
+
+\section{When Orders Are Logged-In}
+There are cases where two orderables have partial duplications. The Renal Function Panel is the best example of this.
+
+Most of the assays in a Renal Function Panel are also in a Comprehensive Metabolic Panel, Phosphorous being the one exception.
+
+In these situations, when the sample is \textsc{Logged-in}, Cerner will cancel the Renal Function Panel and order a Phosphorous.\\
+
+\section{Example}
+
+Here is an example of duplicate checking which demonstrates the last two situations.\\
+
+An order was placed for a \boldcap{CMPNL, RENPNL,} and \boldcap{LYTES}\\
+
+\noindent
+\prettyimage{width=\textwidth, trim={0  0 0pt 83pt}, clip}{graphics/dupe_checking.PNG}
+
+\newthought{When the order} was \textit{Dispatched},\sidenote{at 22:37} the Electrolytes Panel was canceled. Again, this happened because the Electrolytes is included in a Comprehensive Metabolic Panel.
+
+\newthought{When the sample} was \textit{Logged-in}\sidenote{at 22:38} the Renal Function Panel was canceled and the Phosphorus was added-on.
+
+\newthought{The end result,} a \boldcap{Comprehensive Metabolic Panel} and \boldcap{Phosphorus}, contains all the original assays without any duplication.

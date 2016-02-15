@@ -1,0 +1,586 @@
+\RequirePackage{etoolbox}
+\providetoggle{debug}
+\providetoggle{offset}
+\providetoggle{showlayout}
+\providetoggle{isdraft}
+\providetoggle{ishandout}
+
+\providetoggle{onlineversion}
+
+\providetoggle{showAnswers}
+\providetoggle{justActivities}
+\providetoggle{includeActivities}
+\providetoggle{instruction}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\settoggle{debug}{false}
+\settoggle{offset}{false}
+\settoggle{isdraft}{false}
+\settoggle{showlayout}{false}
+\settoggle{ishandout}{false}
+\settoggle{onlineversion}{false}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\settoggle{justActivities}{false}
+\settoggle{showAnswers}{false}
+\settoggle{includeActivities}{true}
+\settoggle{instruction}{true}
+
+
+
+\iftoggle{justActivities}{
+    \settoggle{onlineversion}{true}
+    \settoggle{includeActivities}{false}
+  }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\newcommand{\warncolor}{\color{red900}}
+\newcommand{\impcolor}{\color{cyan700}}
+\newcommand{\refcolor}{\color{deeppurple700}}
+\newcommand{\hotcolor}{\color{indigo700}}
+\newcommand{\infocolor}{\color{bluegrey800}}
+
+\newcommand{\answercolor}{\color{indigo900}}
+\newcommand{\answerRefColor}{\color{cyan900}}
+% \newcommand{\questioncolor}{\color{indigo900}}
+\newcommand{\answerkeycolor}{\color{red900}}
+
+
+\newcommand{\titlepagecolor}{bluegrey50}
+\newcommand{\chaptercolor}{\color{indigo900}}
+\newcommand{\sectioncolor}{\color{indigo900}}
+\newcommand{\subsectioncolor}{\color{indigo800}}
+
+
+\iftoggle{debug}{
+	\IfFileExists{../tufte-book.cls}{\documentclass{../tufte-book}}{\documentclass{tufte-book}}
+	\usepackage[none]{hyphenat}
+}{%
+  \iftoggle{onlineversion}{
+    \IfFileExists{../tufte-book.cls}{\documentclass[oneside,openany, marginals, justified]{../tufte-book}}{%
+      \documentclass[oneside, openany, marginals, justified]{tufte-book}}{}
+  }{
+    \IfFileExists{../tufte-book.cls}{\documentclass[marginals, justified]{../tufte-book}}{%
+      \documentclass[marginals, justified]{tufte-book}}{}
+  }
+}
+
+
+
+
+\iftoggle{offset}{
+    \setlength{\evensidemargin}{-0.3125in}
+    \setlength{\oddsidemargin}{0.3in}
+}
+\iftoggle{showlayout}{
+  \usepackage[texcoord,gridunit=cm]{showframe}
+}
+\iftoggle{isdraft}{
+  \usepackage{draftwatermark}
+  \SetWatermarkText{DRAFT}
+  \SetWatermarkScale{1}
+}
+
+% \setsidenotefont{\color{black}\footnotesize}
+% \setmarginnotefont{\color{black}\footnotesize}
+
+
+
+\RequirePackage{fontawesome}
+
+\let\oldkb\faKeyboardO
+\renewcommand{\faKeyboardO}{\hotcolor\oldkb}
+
+\newcommand{\activityicon}{\faDesktop}
+
+\newcommand{\pencilParagraph}[1]{%
+\renewcommand{\activityicon}{\faPencil}%
+\paragraph{#1}
+\renewcommand{\activityicon}{\faDesktop}}
+
+\usepackage{pgffor, ifthen}
+\newcommand{\notes}[3][\empty]{%
+    \noindent {\faStickyNoteO} \boldcap{ Notes}:\vspace{10pt}\\
+    \foreach \n in {1,...,#2}{%
+        \ifthenelse{\equal{#1}{\empty}}
+            {\rule{#3}{0.5pt}\\}
+            {\rule{#3}{0.5pt}\vspace{#1}\\}
+        }
+}
+
+% Better horizontal rules in tables
+\usepackage{booktabs}
+\usepackage{longtable}
+\AtBeginDocument {\sloppy}
+
+\newcommand{\smartinput}[1]{
+  \IfFileExists{#1}{\input{#1}}{\input{../#1}}
+}
+
+
+% Image things
+\usepackage{graphicx}
+\graphicspath{{graphics/}}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\usepackage{tikz}
+\usepackage{forest}
+\usetikzlibrary{trees}
+\usepackage{tikz-qtree}
+\usetikzlibrary{shadows.blur}
+\usetikzlibrary{shapes,arrows}
+\usepackage[export]{adjustbox}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{tabularx}
+
+
+% Define block styles
+\tikzstyle{decision} = [diamond, draw, fill=blue!20,
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20,
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+    minimum height=2em]
+
+\forestset{
+  dir tree/.style={
+    for tree={
+      parent anchor=south west,
+      child anchor=west,
+      anchor=mid west,
+      inner ysep=1pt,
+      grow'=0,
+      align=left,
+      edge path={
+        \noexpand\path [draw, \forestoption{edge}] (!u.parent anchor) ++(1em,0) |- (.child anchor)\forestoption{edge label};
+      },
+      font=\sffamily,
+      if n children=0{}{
+        delay={
+          prepend={[,phantom, calign with current]}
+        }
+      },
+      fit=band,
+      before computing xy={
+        l=2em
+      }
+    },
+  }
+}
+
+
+
+\newcommand{\treeitem}[2]{%
+{\includegraphics[height=1em]{graphics/routing_icons/#1} {\scshape #2}}}
+
+\usepackage{tcolorbox}
+ \tcbuselibrary{most}
+\newtcbox{\disablebox}{colback=bluegrey200, nobeforeafter, size=tight}
+\newcommand*{\ClipSep}{2pt}%
+
+
+
+\newcommand{\framedimg}[2]{%
+\begin{tikzpicture}
+\node [inner sep=0pt] at (0,0) {\includegraphics[#1]{#2}};
+\draw [cyan800, rounded corners=\ClipSep, line width=\ClipSep/2]
+    (current bounding box.north west) --
+    (current bounding box.north east) --
+    (current bounding box.south east) --
+    (current bounding box.south west) -- cycle
+    ;\end{tikzpicture}}
+
+\newcommand{\framedicon}[2]{%
+\begin{tikzpicture}
+\node [inner sep=0pt] at (0,0) {\includegraphics[#1]{#2}};
+\draw [bluegrey500, rounded corners=.5pt, line width=0]
+    (current bounding box.north west) --
+    (current bounding box.north east) --
+    (current bounding box.south east) --
+    (current bounding box.south west) -- cycle
+    ;\end{tikzpicture}}
+
+
+\newcommand{\prettyimage}[3][]{%
+\noindent
+\tcbox[%
+      enhanced,
+      boxsep=0pt, top=0pt, bottom=0pt, left=0pt, right=0pt,%
+      boxrule=0pt,
+      drop lifted shadow,
+      clip upper,
+      colback=teal500,
+      nobeforeafter]{%
+\framedimg{#2}{#3}}
+}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+%%
+% Prints a trailing space in a smart way.
+\usepackage{xspace}
+
+\usepackage{mathtools}
+
+
+% Macros for typesetting the documentation
+\newcommand{\hlred}[1]{\textcolor{Maroon}{#1}}% prints in red
+\newcommand{\hangleft}[1]{\makebox[0pt][r]{#1}}
+\newcommand{\hairsp}{\hspace{1pt}}% hair space
+\newcommand{\hquad}{\hskip0.5em\relax}% half quad space
+\newcommand{\TODO}{\textcolor{red}{\bf TODO!}\xspace}
+\newcommand{\ie}{\textit{i.\hairsp{}e.}\xspace}
+\newcommand{\eg}{\textit{e.\hairsp{}g.}\xspace}
+\newcommand{\na}{\quad--}% used in tables for N/A cells
+
+\renewcommand{\ie}[1]{\textit{i.\hairsp{}e.\xspace #1}} % Command to print i.e.
+\renewcommand{\eg}[1]{\textit{e.\hairsp{}g.\xspace #1}} % Command to print i.e.
+\newcommand{\etc}{\textit{etc\ldots}}
+\newcommand{\abspace}{\textbf{--(Space)--} }
+
+% \newcommand{\bolditem}[1]{\item \textbf{\scshape #1:}}
+
+% Prints the month name (e.g., January) and the year (e.g., 2008)
+\newcommand{\monthyear}{%
+  \ifcase\month\or January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or
+  December\fi\space\number\year
+}
+
+% Prints an epigraph and speaker in sans serif, all-caps type.
+\newcommand{\openepigraph}[2]{%
+  %\sffamily\fontsize{14}{16}\selectfont
+  \begin{fullwidth}
+  \sffamily\large
+  \begin{doublespace}
+  \noindent\allcaps{#1}\\% epigraph
+  \noindent\allcaps{#2}% author
+  \end{doublespace}
+  \end{fullwidth}
+}
+
+% Generates the index
+\usepackage{makeidx}
+\makeindex
+
+\newcommand{\blankpage}{\newpage\hbox{}\thispagestyle{empty}\newpage} % Command to insert a blank page
+
+% This makes folder paths work better
+\usepackage{chapterfolder}
+\let\includegraphicsWithoutCF\includegraphics
+\renewcommand{\includegraphics}[2][]{\includegraphicsWithoutCF[#1]{\cfcurrentfolder#2}}
+
+\usepackage{tabto}
+
+\usepackage[nopostdot, xindy, toc, acronym, nohypertypes={acronym,notation}]{glossaries}
+\makeglossaries
+
+\newglossarystyle{acrstyle}{%
+ \setglossarystyle{altlist}%
+ \renewcommand*{\glossentry}[2]{%
+    \NumTabs{6}
+   \item \tab \LARGE\glsentryitem{##1}\boldcap{\glstarget{##1}{\glossentryname{##1}}}%
+   \tab \scshape{\glossentrydesc{##1}}
+ }%
+}
+
+
+\newglossarystyle{mystyle}{%
+ \setglossarystyle{treegroup}%
+ \renewcommand*{\glsgroupheading}[1]{{\huge{##1}}\\}%
+ \renewcommand*{\glossentry}[2]{%
+   \glsentryitem{##1}\boldcap{\glstarget{##1}{\glossentryname{##1}}}%
+   \begin{quote}\glossentrydesc{##1}\end{quote}
+ }%
+}
+
+\newcommand{\button}[1]{\includegraphics[height=1.5em]{#1}}
+\newcommand{\btn}[1]{\tcbox[%
+       enhanced,
+       boxsep=0pt, top=0pt, bottom=0pt, left=0pt, right=0pt,%
+       boxrule=0pt,
+       drop fuzzy shadow,
+       clip upper,
+       colback=black!75!white,
+       nobeforeafter]{%
+ \framedimg{height=1.5em}{#1}}}
+
+% \newcommand{\btn}[1]{\includegraphics[height=1.5em, cframe={bluegrey300} {1pt}]{#1}}
+% \newcommand{\btn}[1]{\framedicon{height=1.5em}{#1}}
+\newcommand{\gfx}{graphics/apps/}
+% \newcommand{\appicon}[1]{{\includegraphics[height=1.5em, cframe={bluegrey300} {1pt}]{\gfx #1}}}
+\newcommand{\appicon}[1]{\tcbox[%
+       enhanced,
+       arc=3pt,
+       borderline={2pt}{0pt}{bluegrey500},
+       drop fuzzy shadow,
+       size=tight,
+       nobeforeafter]{%
+ \includegraphics[height=1.5em]{\gfx #1}} }
+
+
+
+
+
+\iftoggle{debug}{
+  \DeclareDocumentCommand{\textls}{O{1}O{2}m}{#3}
+  \renewcommand{\allcapsspacing}[1]{\textls[1][2]{#1}}
+  \renewcommand{\smallcapsspacing}[1]{\textls[2][1.4]{#1}}
+  \renewcommand{\allcaps}[1]{\textls[10]{\MakeTextUppercase{#1}}}
+  \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
+  \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
+}{
+  \DeclareDocumentCommand{\textls}{O{1}O{2}m}{%
+    \begingroup\addfontfeatures{LetterSpace=#1, WordSpace=#2}#3\endgroup}
+  \renewcommand{\allcapsspacing}[1]{\textls[1][2]{#1}}
+  \renewcommand{\smallcapsspacing}[1]{\textls[2][1.4]{#1}}
+
+  \renewcommand{\allcaps}[1]{\textls[10]{\MakeTextUppercase{#1}}}
+  \renewcommand{\smallcaps}[1]{\smallcapsspacing{\scshape\MakeTextLowercase{#1}}}
+  \renewcommand{\textsc}[1]{\smallcapsspacing{\textsmallcaps{#1}}}
+}
+
+
+
+\usepackage{fontspec}
+
+% Some commands to standardize margin notes
+\newcommand{\tip}[1]{\textit{\textbf{Tip}: #1}}
+\newcommand{\hotkey}[1]{\hotcolor\faKeyboardO \textit{\textbf{ Hotkey: } #1}}
+\newcommand{\warning}[1]{\textit{\warncolor\faWarning \textbf{ WARNING: } #1}}
+\newcommand{\important}[1]{{\impcolor\faWarning \textbf{ IMPORTANT: } #1}}
+% \newcommand{\important}[1]{\faWarning \textbf{ IMPORTANT: } \textit{#1}}
+\newcommand{\note}[1]{\textit{\textbf{Note: } #1}}
+
+\newcommand{\info}[1]{{\infocolor\textbf{\faInfo nfo:} #1}}
+\newcommand{\hint}[1]{{\infocolor\textbf{Hint:} #1}}
+
+% \newcommand{\importantblock}[1]{\begin{quote}\scshape\textbf{\faExclamationTriangle { IMPORTANT: }} #1 \end{quote}}
+% \newcommand{\importantblock}[1]{\begin{quote} \important{ #1 } \end{quote}}
+% \newcommand{\importantblock}[1]{\begin{quote} #1 \end{quote}}
+\newcommand{\importantblock}[1]{\begin{quote} \important{#1} \end{quote}}
+\newcommand{\warnblock}[1]{\begin{quote} \warning{#1} \end{quote}}
+% \newcommand{\warnblock}[1]{\begin{quote}\scshape\textbf{\faExclamationTriangle { WARNING}:} #1 \end{quote}}
+
+\newcommand{\infoblock}[1]{\begin{quote}\info{#1}\end{quote}}
+\newcommand{\hintblock}[1]{\begin{quote}\hint{#1}\end{quote}}
+\setmainfont{TeX Gyre Pagella}
+\setsansfont{TeX Gyre Heros}[Scale=MatchUppercase]
+
+
+\newcommand{\boldcap}[1]{\textbf{\textsc{#1}}}
+\newcommand{\bolditem}[1]{\item \boldcap{#1:}}
+\newcommand{\paraitem}[1]{\item{\itshape\textls[15]{{\faDesktop} #1}  \hspace*{.5em}} }
+\newcommand{\trouble}[1]{\faWrench \boldcap{ Troubleshooting: }#1 }
+
+
+
+
+% \newcommand{\fontset}{Lato}
+\newcommand{\fontset}{SourceSansPro}
+% \newcommand{\fontset}{Roboto}
+% \newcommand{\fontset}{Delicious}
+% \newcommand{\fontset}{FontinSans}
+% \newcommand{\fontset}{ArchivoNarrow}
+\newcommand{\fontfolder}{fonts/}
+
+\newcommand{\boldface}{-Bold}
+\newcommand{\italicface}{-Italic}
+\newcommand{\regularface}{-Regular}
+\newcommand{\bolditalicface}{-BoldItalic}
+\newcommand{\smallcapface}{-SmallCaps}
+
+\ifthenelse{\equal{\fontset}{SourceSansPro}}{
+    \renewcommand{\boldface}{-Semibold}
+    \renewcommand{\bolditalicface}{-SemiboldItalic}
+}{}
+
+\IfFileExists{\fontfolder\fontset/\fontset-Regular.ttf}{%
+}{%
+    \renewcommand{\fontfolder}{../fonts/}
+}
+\setmainfont{\fontset}[
+    Path = \fontfolder\fontset/ ,
+    UprightFont = *\regularface ,
+    ItalicFont = *\italicface ,
+    BoldFont = *\boldface ,
+    BoldItalicFont = *\bolditalicface ,
+    % SmallCapsFont = *\smallcapface,
+  ]
+
+\smartinput{terms.tex}
+\smartinput{material_colors}
+\smartinput{layout.tex}
+
+\newcommand*{\IsAlphaCharacter}[3]{
+  \int_compare:nTF{ (`#1 >= `a && `#1 <=`z) || (`#1>= `A && `#1 <= `Z) } {#1 #2}{#1 #3}}
+
+% Fix part references
+\makeatletter
+\let\oldpart\part
+\def\part#1{\def\@currentlabelname{#1}\oldpart{#1}}
+\makeatother
+
+
+
+
+
+
+
+\IfFileExists{graphics/seton/seton_Healthcarefamily_alt_cmyk.jpg}{%
+  \newsavebox{\titleimage}
+  \savebox{\titleimage}{\includegraphics[height=7\baselineskip]{graphics/seton/seton_Healthcarefamily_alt_cmyk.png}}
+}{
+  \newsavebox{\titleimage}
+  \savebox{\titleimage}{\includegraphics[height=7\baselineskip]{../graphics/seton/seton_Healthcarefamily_alt_cmyk.png}}
+}
+
+
+\usepackage{nameref}
+\usepackage{cleveref}
+
+% \makeatletter
+% \newcommand{\iflabelexists}[3]{\@ifundefined{r@#1}{#3}{#2}}
+% \makeatother
+\newcommand{\checkref}[3]{\ifcsundef{r@#1}{{\refcolor {\reficon} #3}}{#2}}
+\newcommand{\checkrefbookless}[3]{\ifcsundef{r@#1}{{\refcolor #3}}{#2}}
+
+\creflabelformat{part}{#1#2#3}
+\creflabelformat{ch}{#1#2#3}
+
+\newcommand{\reficon}{\refcolor\faBook}
+
+
+\newcommand{\refptplain}[1]{{\refcolor {\reficon} {\boldcap{\nameref{#1}} \textit{pg. \pageref{#1}}}}}
+
+% \crefname{part}{Part}{Parts}
+% \crefname{ch}{Chapter}{Chapter}
+\newcommand{\refch}[1]{{\refcolor {\reficon} Refer to: {\scshape\nameref{#1} \textit{pg. \pageref{#1}}}}}
+\newcommand{\refpt}[1]{{\refcolor {\reficon} Refer to: {\boldcap{\nameref{#1}} \textit{pg. \pageref{#1}}}}}
+\newcommand{\refptch}[2]{{\refcolor {\reficon} Refer to: {\scshape\textbf{\nameref{#1}}: \nameref{#2} \textit{pg. \pageref{#2}}}}}
+
+
+\newcommand{\refptapp}[2]{{\refcolor {\reficon} Refer to: {\miniappicon{#2}\boldcap{\nameref{#1}} \textit{pg. \pageref{#1}}}}}
+\newcommand{\refptchapp}[3]{{\refcolor {\reficon} Refer to: {\miniappicon{#3}\scshape\textbf{\nameref{#1}}: \nameref{#2} \textit{pg. \pageref{#2}}}}}
+
+\newcommand{\reftable}[1]{{\refcolor {\reficon} Refer to Table: {\boldcap{\nameref{#1}} \textit{pg. \pageref{#1}}}}}
+
+
+\newcommand{\accntip}{\sidenote{{\checkref{sec:accn_tips_entering}{\refptch{part:accn}{sec:accn_tips_entering} for some nifty tips}{See the \textsc{\gls{accn}} handout for more information}}.}}
+
+
+% app
+\newcommand{\appitem}[2]{\item \appicon{#1}{{\Large{\boldcap{ \gls{#2}}}}}}
+
+\newcommand{\checkdemo}{\checkrefbookless{part:appendix}{%
+  \section{Customizing Demographics}
+    \refptch{part:appendix}{ch:demographics} for detailed instructions on modifying the demographic information.}{%
+    \cfchapter{Customizing Demographics\label{ch:handout_demo}}{../demographics}{custom_demos.tex}}}
+
+\newcommand{\addrouting}{%
+\IfFileExists{./routing/routing.tex}{}{
+\chapter{Routing\label{ch:appended_routing}}
+\input{../routing/routing.tex}
+% \cfchapter{Routing\label{ch:appended_routing}}{../routing}{routing.tex}
+}%
+% \checkref{part:appendix}{\refptch{part:appendix}{ch:routing} for a detailed diagram of Seton's routing.}{\input{../routing/routing.tex}}
+}
+
+\newcommand{\checkrouting}{\checkrefbookless{part:appendix}{\refpt{part:routing}}{\refpt{ch:appended_routing}}}
+
+\newcommand{\dupnote}{\section{Duplicate Orders}
+
+Cerner should be able to handle most instances when duplicate orders are placed. It won't allow the same \textsc{Orderable} to be placed twice.
+
+If there are duplicate assays within the orderables, Cerner should automatically perform any cancellations or modifications as needed.
+
+
+\importantblock{Duplicate checking occurs at several steps throughout the ordering process. \refpt{ch:doe_duplicate} for more information.}}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\let\Oldpart\part
+\newcommand{\parttitle}{}
+\renewcommand{\part}[1]{\Oldpart{#1}\renewcommand{\parttitle}{#1}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[toc, lot]{multitoc}
+\usepackage[titles]{tocloft}
+\renewcommand\cftpartfont{\LARGE\scshape\chaptercolor}
+\renewcommand\cftchapfont{\large\scshape}
+\renewcommand{\multicolumntoc}{2}
+\setlength{\columnsep}{1cm}
+
+\newcommand{\instrument}{\treeitem{instrument}{Instrument}}
+\newcommand{\instruments}{\treeitem{instrument}{Instruments}}
+\newcommand{\bench}{\treeitem{bench}{Bench}}
+\newcommand{\benches}{\treeitem{bench}{Benches}}
+\newcommand{\sect}{\treeitem{section}{Section}}
+\newcommand{\sects}{\treeitem{section}{Sections}}
+\newcommand{\subsect}{\treeitem{subsection}{Subsection}}
+\newcommand{\subsects}{\treeitem{subsection}{Subsections}}
+\newcommand{\site}{\treeitem{site}{Site}}
+
+
+
+% {\parbox[c]{.55\textwidth}{}\parbox[c]{.4\textwidth}{\includegraphics{{\gfx #2}}}}
+
+
+% \newcommand{\miniappicon}[1]{\includegraphics[width=1em]{\gfx #1}}
+
+\newcommand{\miniappicon}[1]{\tcbox[%
+       enhanced,
+       arc=3pt,
+       borderline={2pt}{0pt}{deeppurple500},
+       size=tight,
+       nobeforeafter]{%
+ \includegraphics[height=1em]{\gfx #1}} }
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Activity Functions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\newcommand{\sideref}[2]{
+    \sidenote{\activityRef{#1}{#2}}
+}
+
+\newcommand{\refBlock}[2]{
+  \infoblock{For help with the next activity; see:
+
+  \activityRef{#1}{#2}}
+
+}
+
+\newcommand{\turnto}[2]{
+  \infoblock{Have them turn to:
+
+  \activityRef{#1}{#2}}
+}
+
+\newcommand{\marginref}[2]{
+    \marginnote{\activityRef{#1}{#2}}
+}
+
+
+\smartinput{activity_functions.tex}

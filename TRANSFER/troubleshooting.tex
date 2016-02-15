@@ -1,0 +1,113 @@
+\textsc{Transfer Specimens} can be a confusing application. This section will break down into two groups: \boldcap{I Can't Find a Container} and \boldcap{I Can't Find a List}.
+
+\section{I Can't Find a Container}
+
+Three things can prevent a container from appearing in the \textsc{Available Containers List}.\\
+
+\prettyimage{width=.8\textwidth}{graphics/available_containers}
+
+\subsection{Check the List Options}
+
+Many times, this issue is caused because either the \boldcap{To Location, From Location} or \textsc{Date} are incorrectly entered.
+
+Sometimes, it can be caused because a \boldcap{Transport Temperature} is set incorrectly.\sidenote{Setting this to all is a way to make sure that's not the issue.}
+
+\paragraph{Check} the \boldcap{From} Location.
+
+\paragraph{Check} the \boldcap{To} Location.
+
+\paragraph{Select} \boldcap{(All)} in the \boldcap{Transfer Temp} dropdown.
+
+\paragraph{Select} \boldcap{All Containers}
+
+\paragraph{Click} \btn{graphics/retrieve}\\
+
+\prettyimage{width=\textwidth}{graphics/troubleshoot1}
+
+\subsection{Check Container Status}
+
+\paragraph{Open} \appicon{container_inquiry} \gls{ci}.
+
+\paragraph{Enter} the \gls{accn} in the \textsc{Accession} field.\\
+
+\paragraph{Check} the status of the sample.\sidenote{Is the sample received at your laboratory?}\\
+
+\noindent%draw top
+\begin{tikzpicture}
+    \node [anchor=west] (one) at (1,1.8) {\scshape{Status}};
+    \node [anchor=west] (two) at (3,1.8) {\scshape{Location}};
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/wrong_status} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [-stealth, line width=3pt, deeppurple400] (two) to[out=180, in=180] (0.45,0.56);
+            \draw [-stealth, line width=3pt, deeporange400] (one) to[out=180, in=90] (0.05,0.8);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+
+\newthought{The most recent} status should be \boldcap{Received}, and the location should be your \boldcap{Login Location}.
+
+\begin{quote}
+    \newthought{Sample already sent:}\sidenote{This tells us that the sample already placed on a \textsc{Transfer List.}
+
+    Nothing needs to be done.}\\
+
+    \prettyimage{width=\linewidth, trim={0 0 200 0}, clip}{graphics/wrong_status}
+
+    \newthought{Sample hasn't been Received:}\sidenote{The last \textsc{Status} is not ``Received'' at ``SMC Login.''
+
+    This sample needs to be \textsc{Logged-in} using \gls{login}.}\\
+
+    \prettyimage{width=\linewidth, trim={0 0 200 0}, clip}{graphics/another_bad_status}
+
+    \newthought{This is a \boldcap{GOOD} status:}\sidenote{We may need to check the \boldcap{Routing}.}\\
+
+    \prettyimage{width=\linewidth, trim={0 0 200 0}, clip}{graphics/correct_status}
+
+\end{quote}
+
+
+\subsection{Check the Routing}
+
+\paragraph{Open} \appicon{container_inquiry} \gls{ci}.
+
+\paragraph{Enter} the \gls{accn} in the \textsc{Accession} field.
+
+\paragraph{Right Click} the on the container.
+
+\paragraph{Select} \boldcap{Show Routing}\\
+
+\prettyimage{width=.6\textwidth}{graphics/routing}
+
+\newthought{Make sure the} \boldcap{In-Lab Location} fits with the \textsc{Destination} you're trying to set.\sidenote{For this example, it would not appear if \boldcap{BH Referrals} was set as the destination in \textsc{Transfer Specimens.}}
+
+\subsection{I Still Can't Find the Container}
+
+If all of the above options fail, try re-logging the sample into the laboratory.
+
+\paragraph{Open} \gls{login}
+
+\paragraph{Scan} the barcode of the sample.
+
+\paragraph{Set} the location to your laboratories \textsc{Log-in Location}.
+
+\paragraph{Click} the Log-in Button.
+
+\newthought{The reason this} \textit{may} work is because the sample may have been placed on a transfer list that cannot be easily found.
+
+
+\section{I Can't Find a List}
+
+\subsection{Check the List Options}
+
+Many times, this issue is caused because either the \boldcap{To Location, From Location} or \textsc{Date} are incorrectly entered.
+
+\paragraph{Check} the \boldcap{From} Location.
+
+\paragraph{Check} the \boldcap{To} Location.
+
+\paragraph{Check} the \boldcap{Date}.
+
+\paragraph{Click} \btn{graphics/retrieve}\\
+
+\prettyimage{width=\textwidth}{graphics/troubleshoot1}

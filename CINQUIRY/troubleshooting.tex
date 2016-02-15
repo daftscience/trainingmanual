@@ -1,0 +1,49 @@
+Since \gls{ci} tracks samples so well and Cerner is so picky about \textsc{\gls{routing}}, \gls{ci} is the \textit{best} application to use when trouble arises.
+
+This chapter will discuss what you should look for when Cerner won't allow certain functions to be performed on an \gls{accn}.\sidenote{\eg{\gls{are} won't allow results to be entered.}}
+
+\section{Log-in Location}
+
+If you're unable to \textsc{Transfer,} or \textsc{Result} orders, the most common issue is that it hasn't been \textsc{Logged-in} to the correct location.
+
+This can happen if the wrong location was selected in \gls{login} or the sample hasn't been \textsc{Logged-in} at all\sidenote{Or, you're trying to result something that should be done at another facility.}.
+
+\paragraph{Open} the \gls{accn} in \gls{ci}.
+
+\paragraph{Check} the \gls{inlablocation} of the container.\sidenote{\textbf{Hint:} Right click on the container, and select :``Show Routing.''}
+
+\paragraph{Check} the current location of the sample.\sidenote{\textbf{Hint:} It's the last \textsc{Recieve} event in the \textit{Events List}.}\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (pif) at (.5, 6.5) {\scshape{In-Lab Location}};
+\node [anchor=west] (cf) at (.5, 6) {\scshape{Current Location}};
+\begin{scope}[yshift=-.7cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/wrong_login_routing.png} };
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeporange500] (pif) to[out=0, in=90] (0.7,0.79);
+        \draw [-stealth, line width=3pt, cyan500] (cf) to[out=0, in=180] (0.67,0.26);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{In the example above}, the \textsc{In-lab} location is \textit{SMC Login}, however the sample has been \textsc{Received} at \textit{BH Login}.
+
+Use \gls{login} to \textsc{Log-in} the sample to the correct location.\sidenote{\checkref{part:login}{\refptchapp{part:login}{ch:login_accn}{specimen_login}}{Refer to the \miniappicon{specimen_login} \textsc{Specimen Log-in} procedure}.}
+
+
+\section{Finding Where Samples Need to Go}
+
+Have you ever thought to yourself: \textit{`I have no clue where this test is performed.'} Well, the answer to that question can be found in the \textsc{Order Routing} of \gls{ci}.
+
+\paragraph{Open} the \textsc{\gls{accn}} in \textsc{\gls{ci}}.
+
+\paragraph{Right Click} on the container in the \textsc{Container List}.
+
+\paragraph{Click} \textsc{Show Routing}.\\
+
+\prettyimage{width=\textwidth}{graphics/open_routing.png}
+
+\newthought{The Service Resource} is the location where the order is performed.\\
+
+\prettyimage{width=\textwidth}{graphics/routing_information.png}

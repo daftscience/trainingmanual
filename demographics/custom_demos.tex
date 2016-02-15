@@ -1,0 +1,87 @@
+There are a few applications within Cerner\sidenote{\gls{are} and \gls{doe} are the two most common applications with this feature.} which display demographic information.
+
+The information displayed can be modified to display any necessary information. This can be very useful if you find yourself searching for specific patient information.\\
+
+\prettyimage{width=\textwidth}{graphics/demographics}
+
+
+\section{Helpful Tips}
+Before you begin, here are a few tips you should keep in mind if you decide to create your own demographics setup.
+
+\newthought{Follow these tips} for the best results.
+\begin{itemize}
+    \bolditem{Number of Columns} The fewer the columns the better.\sidenote{Fewer columns means information will not be cutoff.}
+    \bolditem{Avoid TMI} Only include fields you \textit{know} you'll need.
+    \bolditem{Split Locations} Separate the patients floor from the room number.
+\end{itemize}
+
+
+\section{Changing Demographics}
+
+\paragraph{Click} \boldcap{View} from the menu bar.\\
+
+\prettyimage{width=.5\linewidth}{graphics/view_menu2}
+
+\paragraph{Click} \boldcap{Customize\ldots}
+
+\paragraph{Click} \boldcap{Demographics\ldots}\\
+
+\prettyimage{width=.5\textwidth}{graphics/demographics_menu}
+
+\newthought{This window} displays the \textsc{Values} currently set in each of the demographics \textsc{Fields}.\\
+
+\prettyimage{width=\textwidth}{graphics/modify_demo}
+
+\paragraph{Set} the columns count to \boldcap{2}.\sidenote{It's located on the top left corner of the window.}\\
+
+
+\prettyimage{width=.25\textwidth}{graphics/demo_column_count}
+
+\newthought{Cerner will ask} if you're sure.\\
+
+\prettyimage{width=.5\textwidth}{graphics/change_demo_warning}
+
+\paragraph{Click} \btn{graphics/yes}\\
+
+\newthought{Next to each field} in the \textsc{Demographics Data Elements} box is an ellipses \btn{graphics/ellipses} button. Clicking it will open the \textsc{Set Demographic Data Elements window.}
+
+The two important fields are \textsc{Value}\sidenote{\textsc{Value} is what information will be displayed.} and \textsc{Label}.\sidenote{\textsc{Label} is the name it is given. This can be customized.}\\
+
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (val) at (-1,4.0) {\scshape{Value}};
+\node [anchor=west] (lb) at (-1,2.0) {\scshape{Label}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.7\textwidth}{graphics/set_demo_data}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, deeporange500] (val) to[out=0, in=-180] (0.02,0.82);
+        \draw [-stealth, line width=3pt, teal500] (lb) to[out=0, in=-180] (0.02,0.33);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{For each of the 10} fields listed:
+\begin{description}
+    \paraitem{Click} the \btn{graphics/ellipses} button.
+    \paraitem{Set} the \textsc{Values} to match the image below.
+    \paraitem{Modify} the \textsc{Label}, if needed.\sidenote{Sometimes it's helpful to make it shorter.}
+\end{description}
+
+\prettyimage{width=\textwidth}{graphics/best_demographics_settings}
+
+\paragraph{Click} \btn{graphics/ok} when finished.
+
+
+\section{Restore to Defaults}
+
+At any the values can be restored to their original settings.
+
+\begin{description}
+    \paraitem{Click} the \btn{graphics/restore} button.
+\end{description}
+
+
+
+
+

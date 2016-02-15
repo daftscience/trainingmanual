@@ -1,0 +1,36 @@
+When opening \gls{orv} for the first time, it is a good idea to change the default value for the ``Find Person'' field.
+
+While there are many options which can be modified, it's best to avoid changing them until you've become familiar with how \gls{orv} works. Modifying these settings can make it difficult to find orders.
+
+\paragraph{Open } \gls{orv} by clicking \appicon{orv} icon from the \gls{ab}.
+
+\paragraph{Click} \btn{graphics/cancel_button} to close the ``Find Orders'' window.
+
+\newthought{In the main} \gls{orv} window:
+\begin{marginfigure}
+\prettyimage{width=.9\textwidth}{graphics/taskbar_options.png}
+\end{marginfigure}
+\paragraph{Click} \boldcap{View} from the menu bar.
+\paragraph{Select} \boldcap{Options\ldots}
+
+\newthought{This will open} the \textsc{Options} window. The two options we are going to adjust are the \textsc{Find Person} option and the \textsc{Date Range}.\sidenote[][2\baselineskip]{This option will speed up the time it takes to search for orders.}\marginnote[1\baselineskip]{\warning{Again, avoid those other options. If you want to filter, it can be done in the ``Find Orders'' window.}}\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (mrn) at  (-2, 4) {\textit{S e l e c t} MRN};
+\node [anchor=west] (date) at (-2, 3) {\textit{U n c h e c k} All Dates};
+\node [anchor=west] (la) at   (-2, 1.5) {\textit{S e t  t o} 1};
+\node [anchor=west] (lb) at   (-2, .5) {\textit{S e t  t o} 30};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.55\textwidth, trim={0 135pt 0 0}, clip}{graphics/options}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw [-stealth, line width=3pt, teal400] (mrn) to[out=0, in=-200] (0.08,0.58);
+        \draw [-stealth, line width=3pt, deeporange400] (date) to[out=0, in=-250] (0.1,0.3);
+        \draw [-stealth, line width=3pt, indigo400] (lb) to[out=0, in=-200] (0.35,0.1);
+        \draw [-stealth, line width=3pt, cyan400] (la) to[out=0, in=-200] (0.35,0.16);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\paragraph{Click} \btn{graphics/shiny_ok}

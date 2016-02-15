@@ -1,0 +1,52 @@
+\section{Ancillary vs. Primary Orderables}
+
+Learning how to locate orderables on any new system can be challenging. Fortunately, Cerner has made this a bit easier with the addition of \glspl{ancil}.
+
+\Glspl{ancil} are aliases for the real (\glspl{prim}) orderables.\sidenote{Basically, it's another name for the same test.} They have been built in to help us search for orderables.\marginnote[3\baselineskip]{In this example, ``CBC'' is an ``Ancillary'' to ``CBC with Diff.'' Without this ancillary, ``CBC w/Indices only'' would appear first when searching for ``CBC''.}\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (pif) at (.5, 2) {\scshape{Ancillary}};
+\node [anchor=west] (cf) at (4, 2) {\scshape{Primary}};
+\begin{scope}[yshift=-.7cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth, trim={0 8cm 0 0},clip}{graphics/aliases}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw [-stealth, line width=3pt, deeporange500] (.14, 1.05) to[out=-90, in=-255] (0.035,0.32);
+        \draw [-stealth, line width=3pt, cyan500] (.45, 1.05) to[out=-90, in=90] (0.1,0.2);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{There is no difference} between the \gls{prim} and its \glspl{ancil}.
+
+
+\section{Search Tips}
+As you get familiar with placing orders, you'll begin to notice that some search terms will trigger Cerner to choose the orderable for you. \marginnote[-2\baselineskip]{\warning{This means Cerner may select an order different than you intended {\eg{``Teg'' will select ``Tegretol.''}}}}
+
+\newthought{The fastest way to find} common orderables:
+\begin{itemize}
+    \item \textbf{D-Dimer:} dimer
+    \item \textbf{Glucose:} ``glucose r''
+    \item \textbf{Intra Operative PTH:} ``intra''
+    \item \textbf{Troponin:} ``trop''
+    \item \textbf{Most fluid counts:} ``cdx''\footnote{``cd'' will bring up CD markers.}
+\end{itemize}
+
+
+If you can't find the order you're looking for, try synonyms (\eg{Synovial Fluids are often called ``Joint fluids.''})
+
+
+\section{Keyboard Shortcuts}
+
+% Here is a list of \acrlong{doe} hotkeys:\\
+\begin{table}
+\scshape
+\begin{tabular}{ll}
+    \multicolumn{2}{c}{\Large \boldcap{Department Order Entry Keyboard Shortcuts}}\\
+    \noalign{\hrule}\\
+    \cfinput{hotkeys.tex}
+    \noalign{\hrule}
+\end{tabular}
+\caption{{\faKeyboardO} Department Order Entry Shortcuts}\label{table:doe_hotkeys}
+\end{table}

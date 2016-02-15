@@ -1,0 +1,151 @@
+%%
+% Only show the chapter titles in the table of contents
+\setcounter{tocdepth}{1}
+
+\usepackage{afterpage}
+\usepackage{xcolor}
+\usepackage{pagecolor}
+
+
+% % CUSTOM INTER-PART PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\titleformat{\part}[block]%
+    {\begin{fullwidth}\newpagecolor{\titlepagecolor}\afterpage{\restorepagecolor}\sffamily}%
+    {\fontsize{18}{20}\selectfont\color{darkgray}{\allcaps{Part \thepart}}}%
+    {1em}%
+    {\vspace{11.5pc}\fontsize{26}{28}\selectfont\\\color{darkgray}\allcaps}
+    [\vfill\end{fullwidth}]
+
+\titleformat{\chapter}%
+  [display]% shape
+  {\relax\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\begin{fullwidth}\chaptercolor}{}}% format applied to label+text
+  {\Huge\boldcaps{\thechapter}}% label
+  {0pt}% horizontal separation between label and title body
+  {\scshape\Huge}% before the title body
+  [\ifthenelse{\NOT\boolean{@tufte@symmetric}}{\end{fullwidth}}{}]% after the title body
+
+\titleformat{\section}%
+  [hang]% shape
+  {\normalfont\LARGE\scshape\sectioncolor}% format applied to label+text
+  % {\normalfont\LARGE\itshape\sectioncolor}% format applied to label+text
+  {\thesection}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+\titleformat{\subsection}%
+  [hang]% shape
+  {\normalfont\Large\scshape\subsectioncolor}% format applied to label+text
+  % {\normalfont\Large\itshape\subsectioncolor}% format applied to label+text
+  {\thesubsection}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+\titleformat{\paragraph}%
+  [runin]% shape
+  {\normalfont\scshape}% format applied to label+text
+  % {\normalfont\itshape}% format applied to label+text
+  {\large\theparagraph}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+
+\titlespacing*{\chapter}{0pt}{10pt}{40pt}
+\titlespacing*{\section}{0pt}{2.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{2.25ex plus 1ex minus .2ex}{2ex plus.2ex}
+
+
+
+\ifthenelse{\boolean{@tufte@toc}}{%
+  \titlecontents{part}% FIXME
+    [0em] % distance from left margin
+    {\vspace{1\baselineskip}\begin{fullwidth}\LARGE\sffamily} % above (global formatting of entry)
+    {\contentslabel{2em}} % before w/label (label = ``II'')
+    {Part  } % before w/o label
+    {} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+
+
+
+  \titlecontents{chapter}%
+    [2em] % distance from left margin
+    {\begin{fullwidth}\large\sffamily\scshape} % above (global formatting of entry)
+    {\hspace*{2em}\contentslabel{2em}} % before w/label (label = ``2'')
+    {\hspace*{2em}} % before w/o label
+    {\sffamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+
+
+
+  \titlecontents{section}% FIXME
+    [4em] % distance from left margin
+    {\begin{fullwidth}\sffamily\itshape} % above (global formatting of entry)
+    {\hspace*{4em}\contentslabel{2em}} % before w/label (label = ``2.6'')
+    {\hspace*{4em}} % before w/o label
+    {\sffamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+
+% \titlecontents*{section}
+% [0pt]
+% {\small\itshape}
+% {}
+% {}
+% {}[ \textbullet\ ][.]
+
+% \titlecontents*{subsection}
+% [0pt]
+% {\upshape}
+% {}
+% {}
+% {, \thecontentspage}
+% [ (]
+% [. ]
+% [)]
+
+
+
+  \titlecontents{paragraph}% FIXME
+    [0em] % distance from left margin
+    {\begin{fullwidth}\normalsize\rmfamsffamilyily\itshape} % above (global formatting of entry)
+    {\hspace*{6em}\contentslabel{2em}} % before w/label (label = ``2.6.0.0.1'')
+    {\hspace*{6em}} % before w/o label
+    {\sffamily\upshape\qquad\thecontentspage} % filler + page (leaders and page num)
+    [\end{fullwidth}] % after
+}{}
+
+
+
+\iftoggle{debug}{
+  \titleformat{\paragraph}%
+  [runin]
+  {}% format applied to label+text
+  {}% label
+  {}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
+}{
+\titleformat{\paragraph}%
+  [runin]% shape
+  {\normalfont\itshape\large\textls[15]}% format applied to label+text
+  {\theparagraph}% label
+  {1em}% horizontal separation between label and title body
+  {{\activityicon} }% before the title body
+  []% after the title body
+}
+
+
+\renewcommand{\maketitlepage}[0]{%
+  \cleardoublepage%
+  {
+  \sffamily%
+  \begin{fullwidth}%
+  \newpagecolor{\titlepagecolor}\afterpage{\restorepagecolor}
+  \fontsize{18}{20}\selectfont\par\noindent\textcolor{bluegrey700}{\allcaps{\thanklessauthor}}%
+  \vspace{11.5pc}%
+  \fontsize{37}{40}\selectfont\par\noindent\textcolor{bluegrey700}{\allcaps{\thanklesstitle}}%
+  \vfill%
+  \fontsize{14}{16}\selectfont\par\noindent\allcaps{\thanklesspublisher}%
+  \end{fullwidth}%
+  \clearpage%
+  }
+}

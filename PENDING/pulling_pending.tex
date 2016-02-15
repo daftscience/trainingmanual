@@ -1,0 +1,157 @@
+\section{About the Options}
+
+When \gls{pi} is first opened, the \textsc{Select Pending Procedures} window will appear. This window is used to select which assays will be displayed.\\
+
+\prettyimage{width=.6\textwidth}{graphics/select_procedures}
+
+\subsection{Test Site}
+The \textsc{Test Site} is the \treeitem{instrument}{Instrument}, \treeitem{Bench}{Bench}, \treeitem{section}{Section} or \treeitem{subsection}{Subsection} you're looking for.\sidenote{Selecting a \treeitem{section}{Section} or \treeitem{section}{Subsection} will include everything under it. For instance, \textsc{DC Heme S} will include: CBCs, Tegs, ESRs, \etc}
+
+\infoblock{For a detailed description of routing: \checkrouting.}
+
+\subsection{Procedure}
+
+The \textsc{Procedure} is used to limit the list to one test.\sidenote{This is an optional field.}
+
+\subsection{Status}
+
+The \textsc{Status} is used to refine the list by the status of the order.
+
+\begin{table}
+\begin{tabular}{ll}
+    \boldcap{\large Status} & \boldcap{\large What will be displayed on the list} \\
+    \hline
+    \textsc{All pending}           &  All Pending Orders.  \\
+    \textsc{Received only}         &  Orders with at least one Received Container. \\
+    \textsc{In-Lab only}           &  Orders which are in the In-Lab Status. \\
+    \textsc{Scheduled only only}   &  Only view order that haven't been Dispatched.\\
+\hline
+\end{tabular}
+\caption{Pending Status Options}\label{table:pending_status_Options}
+\end{table}
+
+\section{Entering Options}
+
+\paragraph{Select} the \boldcap{In-Lab Only} option.\\
+
+\noindent%draw top
+\begin{tikzpicture}
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.75\textwidth}{graphics/select_procedures} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [-stealth, line width=3pt, deeppurple400] (.4, 1.05) to[out=270, in=0] (0.25, 0.2);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+
+\paragraph{Enter} your hospital's abbreviation in the \boldcap{Test Site} field.
+
+\begin{marginfigure}
+    \scshape
+    \begin{tabular}{ll}
+        \boldcap{Site} & \boldcap{Abbreviation} \\
+        \hline
+        Brack                & BH   \\
+        Dell's               & DC   \\
+        Edgar B.             & SEBD \\
+        Hays                 & SHC  \\
+        Highland Lakes       & SHL  \\
+        SMCA                 & SMC  \\
+        Northwest            & SNW  \\
+        Southwest            & SSW  \\
+        Williamson           & SWC  \\
+        \hline
+    \end{tabular}
+\end{marginfigure}
+
+\infoblock{If you know a portion of the site name, you can enter it now. For instance: If you're looking for \treeitem{section}{SMC Heme S} you can type: `SMC Heme S', or even just `SMC Heme.'}
+
+\paragraph{Click} the \btn{graphics/elips} button.\sidenote{\hotkey{Enter} also works}\\
+
+\newthought{To refine the} list, continue typing the name of the site in the text box.
+
+\importantblock{For a map of your hospitals routing: \checkrouting
+}
+
+
+\paragraph{Find} the \treeitem{section}{Section}, \treeitem{subsection}{Subsection}, \treeitem{instrument}{Instrument} or \treeitem{bench}{Bench}.\sidenote{\eg{\treeitem{section}{SMC Heme S}}}\\
+
+\prettyimage{width=.5\textwidth}{graphics/test_site_lookup_found}
+
+\paragraph{Click} \btn{graphics/ok}\\
+
+\prettyimage{width=\textwidth}{graphics/pending}
+
+\section{Refreshing the Pending List}
+It is useful to periodically refresh \textsc{Pending Inquiry.} This will remove any orders that have been \textsc{Validated}, or \textsc{Canceled} and add new orders which have been \textsc{Logged-In},
+
+\paragraph{Click} the \btn{graphics/refresh_button} \textsc{Refresh Button} from the \textsc{Tool bar.}\\
+
+\noindent
+\begin{tikzpicture}
+\begin{scope}
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/toolbar}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw[indigo400, rounded corners, line width=3] (0.04, 0.1)rectangle (0.13, 0.98);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{This will re-open} the \textsc{Select Pending Procedures} window.\\
+
+\prettyimage{width=.75\textwidth}{graphics/refresh_window}
+
+\paragraph{Click} \btn{graphics/ok} \sidenote{\textsc{Optionally}: Update any information.}
+
+\section{Sorting Pending Inquiry}
+
+The Pending List can be sorted by any of the columns displayed.
+
+\paragraph{Click} on the \boldcap{Column Header}.\sidenote{The current Sorting column will appear in \boldcap{Bold} text.}
+
+\noindent%draw top
+\begin{tikzpicture}
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/default_sort} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [-stealth, line width=3pt, teal200] (.3, 2) to[out=270, in=90] (0.05,1);
+            \draw [-stealth, line width=3pt, teal300] (.3, 2) to[out=270, in=90] (0.2,1);
+            \draw [-stealth, line width=3pt, teal400] (.3, 2) to[out=270, in=90] (0.4,1);
+            \draw [-stealth, line width=3pt, teal500] (.3, 2) to[out=270, in=90] (0.5,1);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+
+\infoblock{Clicking a header multiple times will toggle the sort order.\sidenote{Sort \faSortAlphaAsc  or  \faSortAlphaDesc} }
+
+
+\section{Printing the Pending Log}
+
+The pending log can be printed in its entirety or a portion of the pending log can be printed.
+
+Cerner will use the \textsc{Default Printer} for your computer.\sidenote{To view the installed printers:\\
+
+\noindent
+\textit{H i t } the { \faWindows} key on the keyboard.\\
+\noindent
+\textit{S e l e c t } \boldcap{Devices and Printers}.}
+
+
+\subsection{Printing the Entire Pending Log}
+
+\paragraph{Click} the \textsc{Print} icon \btn{graphics/print_icon} from the \textsc{Tool bar}.\sidenote{\hotkey{Ctrl+P} will also work.}\\
+
+\prettyimage{width=.4\textwidth}{graphics/print_dialog}
+
+\paragraph{Select} \boldcap{All}.
+
+
+\subsection{Printing selected procedures:}
+
+\paragraph{Select} the orders to print.\sidenote{This can be done by clicking and dragging down the list.}
+
+\paragraph{Click} the \textsc{Print} icon \btn{graphics/print_icon} from the \textsc{Tool bar}.\sidenote{\hotkey{Ctrl+P} will also work.}
+
+\paragraph{Select} \boldcap{Selected.}
+
+\paragraph{Click} \btn{graphics/ok}

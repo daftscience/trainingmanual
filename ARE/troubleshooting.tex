@@ -1,0 +1,69 @@
+\section{Too Many Digits}
+
+When trying to modify a result, you may get an alert stating that ``Too many Digits were entered.''\\
+
+\prettyimage{width=.65\textwidth}{graphics/too_many_digits}
+
+\newthought{This often happens when} changing a result value. When you \textsc{Double Click} on a result cell the cursor is placed to the far right.\sidenote{In the example, it's to the right of \_\_\_\_5.0|}\\
+
+\prettyimage{width=.65\textwidth}{graphics/cursor_location}
+
+Cerner treats the leading underscores as zeros.
+
+\newthought{The easiest fix} is to hit {\faKeyboardO} \boldcap{ Backspace} to clear the results.\\
+
+\prettyimage{width=.65\textwidth}{graphics/cursor_location_fixed}
+
+\section{Decimals Not Allowed}
+
+The number of places after the decimal point is defined for each assay.
+
+If no decimals have been defined, Cerner will prevent them from being entered.\\
+
+\prettyimage{width=.65\textwidth}{graphics/decimals_warning}
+
+\section{Unable to Enter Results}
+
+There are two reasons why \gls{are} won't let you enter results.
+
+\begin{itemize}
+    \item{The sample isn't \textsc{In-lab}}
+    \item{ARE is in Correction Mode.}
+\end{itemize}
+
+\subsection{The Sample Isn't In-Lab}
+
+Results can only be entered if status is \textsc{Pending}. This means that the sample has been \textsc{Logged-in} to the proper location.\sidenote{For additional help with this issue: \checkref{ch:ci_troubleshoot}{\refptchapp{part:ci}{ch:ci_troubleshoot}{container_inquiry}}{Refer to the \boldcap{Container Inquiry: }\textsc{Using Container Inquiry for Troubleshooting} Documentation}.}
+
+\begin{quote}
+\newthought{In this example} the \textsc{Ser hCG Ql} cannot be resulted.\\
+
+\prettyimage{width=.8\textwidth}{graphics/not_in_lab}
+
+\begin{description}
+    \bolditem{Lytes Panel} Has a status of \textsc{Pending}. This \boldcap{can} be resulted.
+    \bolditem{Ser hCG Ql} Has a status of \textsc{Not In-Lab}. This \boldcap{cannot} be resulted.
+\end{description}
+\end{quote}
+
+
+\newthought{To fix this} the sample must be \textsc{Logged-in}. If you currently have the container, this can be done from within \gls{are}.
+
+\paragraph{Click} \btn{graphics/login_icon} from the \textsc{Tool Bar}.
+
+\paragraph{Log-in} the sample.\sidenote{For more information: \checkref{ch:login_accn}{\refptchapp{part:login}{ch:login_accn}{specimen_login}}{Refer to the \boldcap{Specimen Log-in Procedure}}.}
+
+
+\subsection{You're Still in Correction Mode}
+
+If you can see the \btn{graphics/correction_mode_icon} in the bottom left corner of \gls{are}, then you're currently in \textsc{Correction Mode}. New results cannot be entered if \gls{are} is in \textsc{Correction Mode}.
+
+\newthought{To Fix this} disable \textsc{Correction Mode}.
+
+\paragraph{Click} \boldcap{Mode} from the menu bar.
+
+\paragraph{Click} \boldcap{Correction}.\\
+
+\prettyimage{width=.5\textwidth}{graphics/leave_correction_mode}
+
+\newthought{The Correction Mode Icon} \btn{graphics/correction_mode_icon} should no longer be visible in the lower left corner of \gls{are}.

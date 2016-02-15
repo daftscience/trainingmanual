@@ -1,0 +1,183 @@
+\chapter{Introduction}\label{ch:ab_intro}
+
+The Cerner \gls{ab} is used to quickly access Millennium Applications. Each user can set up their \gls{ab}  differently based on their responsibilities with in the laboratory.\marginnote{Like snowflakes, each App-bar is unique.}
+
+This procedure will guide new users through the set up process and demonstrate how the \gls{ab} is used. As you become more familiar with Cerner and find the need to add additional applications, refer back to this guide.
+
+
+\chapter{Basic Settings}\label{ch:ab_settings}
+
+\paragraph{Launch} the \gls{ab}.\\
+
+\prettyimage{width=\textwidth}{graphics/appbar}
+
+\paragraph{Click} the menu button \appicon{app_bar} to open the \gls{ab} menu and select ``Customize...'' \begin{marginfigure}[8\baselineskip]
+    \prettyimage{width=\textwidth}{graphics/appbar_menu}
+\end{marginfigure}
+
+\newthought{The ``Customize Cerner \gls{ab}''} window will open with a few options.\\
+
+\prettyimage{width=.8\textwidth}{graphics/customize_menu}
+
+\newthought{Brief description} of these options:
+\begin{itemize}
+    \small
+    \bolditem{Always on top} will keep the \gls{ab} above other windows.
+    \bolditem{Allow Floating} allows the \gls{ab} to float anywhere on the screen.
+    \bolditem{Large Buttons} increases the size of the \gls{ab} Buttons.
+\end{itemize}
+
+\chapter{Adding Applications}\label{ch:ab_addapp}
+
+\paragraph{Click} the \boldcap{Buttons} tab from the Customize Cerner \gls{ab} window.\\
+
+\prettyimage{width=.8\textwidth}{graphics/customize_menu_buttons}
+
+\newthought{Select the following} applications:\\
+
+\begin{minipage}{.9\textwidth}
+    \begin{itemize}[label={-}]\small
+            \item \textsc{\gls{are}}
+            \item \textsc{Container Inquiry}
+            \item \textsc{\gls{doe}}
+            \item \textsc{Label Reprint}
+            \item \textsc{Modify Collections}
+            \item \textsc{\gls{orv}}
+            \item \textsc{\gls{pi}}
+            \item \textsc{Specimen Log-In}
+            \item \textsc{Transfer Specimen}
+    \end{itemize}
+\end{minipage}
+
+\paragraph{Click} \btn{graphics/ok_button} when finished.\\
+
+\newthought{The \gls{ab}} should now look like this:\\
+
+\prettyimage{width=\textwidth}{graphics/appbar_finished}
+
+\section{Sorting Applications}
+It may become useful to organize the applications within the \gls{ab}. This can be done by rearranging the buttons and the addition of \textbf{--Spaces--}
+
+\newthought{The following steps} will walk you through the process of organizing the applications.
+
+\paragraph{Click } the menu button \appicon{app_bar} to open the \gls{ab} menu.
+
+\paragraph{Select} ``Customize...''
+
+\paragraph{Click} the ``Buttons'' tab.\\
+
+\prettyimage{width=\textwidth}{graphics/customize_menu_buttons_added}
+\clearpage
+
+
+\paragraph{Select }Specimen Log-in from the list of applications.\marginnote[2\baselineskip]{\info{The applications selected from the previous section have moved to the top.}}\\
+
+\prettyimage{width=\textwidth}{graphics/spec_login_selected}
+\paragraph{Using} the arrows \btn{graphics/move_up} and \btn{graphics/move_down} move \textit{Specimen Log-in} to the top of the list.\\
+
+\prettyimage{width=\textwidth}{graphics/spec_login_top}\marginnote[-8\baselineskip]{\info{As you move the applications on this list, their position will also move on the \gls{ab}}}
+\clearpage
+
+\paragraph{Repeat the previous}step until the applications are in the following order:\\
+
+\prettyimage{width=\textwidth}{graphics/organized_app_list}
+
+\newthought{The \gls{ab}} will now look like this:\\
+
+\prettyimage{width=\textwidth}{graphics/organized_app_bar}
+
+\section{Grouping the Applications}
+\newthought{We can group} certain applications together by adding a \abspace between them.
+
+\paragraph{Select} \GLS{are} and \textit{Click} \btn{graphics/insert_space}\\
+
+\prettyimage{width=\textwidth}{graphics/app_bar_space}\marginnote[-2\baselineskip]{\note{There is now a small space between ``Modify Collections'' and ``Accession Result Entry''}}
+
+\newthought{To make the groupings} more prominent, we can add an additional \abspace.
+\paragraph{Select} ``Order Result Viewer" and \textit{Click} \btn{graphics/insert_space}\marginnote[-1\baselineskip]{\info{\gls{are} can't be selected because Cerner won't allow you to add a \abspace next to another \abspace.}}
+
+\paragraph{Select} the \textit{new} \abspace and move it so it's right below the original.\\
+
+\prettyimage{width=.9\textwidth}{graphics/app_list_doublespace}\\
+
+\prettyimage{width=\textwidth}{graphics/app_bar_space}\marginnote[-2\baselineskip]{\note{There is now a small space between ``Modify Collections'' and ``Accession Result Entry''}}
+
+
+\newthought{The applications} within the \gls{ab} are now organized.
+As more applications are added, you may find the need to reorganize them
+in a configuration that better fits your work flow.\\
+
+\prettyimage{width=\textwidth}{graphics/app_bar_doublespace}
+
+\chapter{Which apps do I need?}\label{ch:ab_whichappp}
+
+Great question! This section will cover some of the more common apps, and who will need them.
+
+Keep in mind that the job responsibilities vary between labs, and you may find that you need some applications which haven't been recommended.\\
+
+\glsresetall
+\section{Required for Everyone}
+\noindent
+    \begin{description}
+            \appitem{are}{are}\\ \glsdesc{gls-are}
+            \appitem{container_inquiry}{ci}\\ \glsdesc{ci}
+            \appitem{doe}{doe}\\ \glsdesc{gls-doe}
+            \appitem{label_reprint}{lrp}\\ \glsdesc{lrp}
+            \appitem{modify_collections}{mc}\\ \glsdesc{mc}
+            \appitem{orv}{orv}\\ \glsdesc{gls-orv}
+            \appitem{pending_inquiry}{pi}\\ \glsdesc{pi}
+            \appitem{specimen_login}{login}\\ \glsdesc{login}
+            \appitem{transfer_specimen}{trans}\\ \glsdesc{trans}
+    \end{description}
+
+\section{Microbiology Applications}
+\noindent
+    \begin{description}
+        \appitem{result_entry}{mre}\\ \glsdesc{mre}\footnote{Not to be confused with \gls{are}}
+        \appitem{media_label_reprint}{mlr}\\ \glsdesc{mlr}
+    \end{description}
+
+\section{Other Helpful Applications}
+\noindent
+    \begin{description}
+            \appitem{tat_monitor}{tatm}\\ \glsdesc{tatm}
+            \appitem{collections_inquiry}{colinq}\\ \glsdesc{colinq}
+            \appitem{collections_lists}{colist}\\ \glsdesc{colist}\sidenote{\info{This application is useful for laboratories which draw their patients.}}
+            \appitem{osm_roe}{osm_roe}\\ \glsdesc{osm_roe}
+            \appitem{label_preprint}{lpp}\\ \glsdesc{lpp}
+    \end{description}
+
+% \section{Blood Bank Applications}
+% \noindent
+% \begin{description}
+%     \bbappitem{bb_label_verify}
+%     \bbappitem{bb_modify_crossmatch}
+%     \bbappitem{bb_modify_products}
+%     \bbappitem{bb_order_inquiry}
+%     \bbappitem{bb_product_orders}
+%     \bbappitem{bb_patient_product_inquiry}
+%     \bbappitem{bb_product_history_review}
+%     \bbappitem{bb_quality_control_result_entry}
+%     \bbappitem{bb_qc_inquiry}
+%     \bbappitem{bb_quarantine_products}
+%     \bbappitem{bb_receive_products}
+%     \bbappitem{bb_correct_inventory}
+%     \bbappitem{bb_dispense_and_assign_products}
+%     \bbappitem{bb_final_disposition}
+%     \bbappitem{bb_generate_tags_and_labels}
+%     \bbappitem{bb_inventory_search}
+%     \bbappitem{bb_release_products}
+%     \bbappitem{bb_report_selection}
+%     \bbappitem{bb_result_entry}
+% \end{description}
+
+
+
+% \section{Other Applications}\label{sec:ab_otherapps}
+% \noindent
+%     \begin{description}
+%         \appitem{osm_roe}{osm_roe}\\ \glsdesc{osm_roe}
+%         \appitem{label_preprint}{lpp}\\ \glsdesc{lpp}
+%     \end{description}
+
+

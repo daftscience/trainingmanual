@@ -1,0 +1,117 @@
+\documentclass{exam}
+\setlength\answerskip{0ex}
+\setlength\answerlinelength{.8\textwidth}
+
+
+\usepackage{fontspec}
+
+
+
+% \newcommand{\fontset}{Lato}
+\newcommand{\fontset}{SourceSansPro}
+% \newcommand{\fontset}{Roboto}
+% \newcommand{\fontset}{Delicious}
+% \newcommand{\fontset}{FontinSans}
+% \newcommand{\fontset}{ArchivoNarrow}
+\newcommand{\fontfolder}{fonts/}
+
+\newcommand{\boldface}{-Bold}
+\newcommand{\italicface}{-Italic}
+\newcommand{\regularface}{-Regular}
+\newcommand{\bolditalicface}{-BoldItalic}
+\newcommand{\smallcapface}{-SmallCaps}
+
+\ifthenelse{\equal{\fontset}{SourceSansPro}}{
+    \renewcommand{\boldface}{-Semibold}
+    \renewcommand{\bolditalicface}{-SemiboldItalic}
+}{}
+
+\IfFileExists{\fontfolder\fontset/\fontset-Regular.ttf}{%
+}{%
+    \renewcommand{\fontfolder}{../fonts/}
+}
+\setmainfont{\fontset}[
+    Path = \fontfolder\fontset/ ,
+    UprightFont = *\regularface ,
+    ItalicFont = *\italicface ,
+    BoldFont = *\boldface ,
+    BoldItalicFont = *\bolditalicface ,
+    % SmallCapsFont = *\smallcapface,
+  ]
+\printanswers
+
+
+
+
+
+\newcommand{\quest}[2]{
+    \question #1
+    \ifprintanswers
+        \answerline[\textbf{#2}]
+    \fi
+    \fillwithlines{2\baselineskip}
+}
+
+\newcommand{\subquest}[2]{
+    \part #1
+    \ifprintanswers
+        \answerline[\textbf{#2}]
+    \fi
+\fillwithlines{2\baselineskip}
+}
+
+
+
+\begin{document}
+
+\section{Some Questions}
+\begin{questions}
+
+    \quest{Which application can simulate Power Charts?}{Order Result Viewer}
+
+    \begin{parts}
+        \subquest{What is the name of that mode?}{Flowsheet Mode}
+    \end{parts}
+
+    \quest{Which application is used to view the events of a collection?}{Container Inquiry}
+
+
+    \quest{Which applications can be used to cancel orders?}{Pending Inquiry, Order result Viewer}
+
+    \quest{Which application is used to view routing information on an order?}{Container Inquiry}
+
+    \quest{Which application allows you to view Blood Bank Products?}{Patient Product Inquiry}
+
+    \begin{parts}
+
+    \subquest{How can you quickly branch to that application?}{Pending Inquiry}
+
+    \end{parts}
+
+
+    \quest{A result has been corrected, which application would you use to view the original result?}{Order Result Viewer}
+
+    \question What \textsc{\textbf{Three}} hotkeys are needed to use comment templates?
+
+        \begin{parts}
+            \subquest{Hotkey 1}{F3}
+            \subquest{What does it do?}{}
+            \subquest{Hotkey 2}{F9}
+            \subquest{What does it do?}{}
+            \subquest{Hotkey 3}{F5}
+            \subquest{What does it do?}{}
+        \end{parts}
+
+    \quest{What is the difference between a comment and a note?}{Note is lab only, comment is charted}
+
+
+
+
+
+
+
+
+
+\end{questions}
+
+\end{document}

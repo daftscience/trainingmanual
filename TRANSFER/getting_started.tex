@@ -1,0 +1,84 @@
+This section will discuss the main window and how to read it.\\
+
+\noindent%draw top
+\begin{tikzpicture}
+    \node [anchor=west] (status) at (-1.5,4.0) {\scshape{Status}};
+    \node [anchor=west] (route) at (-1.5,3.0) {\scshape{Route}};
+    \node [anchor=west] (lists) at (-1.5,2.0) {\scshape{Lists}};
+    \node [anchor=west] (items) at (-1.5,1.0) {\scshape{Items}};
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.7\textwidth}{graphics/transfer_window_populated} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [-stealth, line width=3pt, teal400] (status) to[out=270, in=180] (0.02,0.78);
+            \draw [-stealth, line width=3pt, deeppurple400] (lists) to[out=0, in=230] (0.05,0.5);
+            \draw [-stealth, line width=3pt, indigo400] (items) to[out=0, in=270] (0.4,0.4);
+            \draw [-stealth, line width=3pt, deeporange400] (route) to[out=270, in=180] (0.02,0.65);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+
+\begin{description}
+    \bolditem{Status} changes which \textsc{Transfer Lists} are viewed.\sidenote{\textsc{Transfered} vs \textsc{Not Transfered}}
+    \bolditem{Route} is used to define the \textsc{Source}, \textsc{Destination} and \textsc{Date}.
+    \bolditem{Lists} shows the lists meeting the criteria set in \boldcap{Status} and \boldcap{Route.}
+    \bolditem{Items} shows the \textsc{Containers} on the selected \textsc{List}.
+\end{description}
+
+
+\section{Status}
+
+When a \textsc{Transfer List} is created, its state will be \textsc{Not Transfered}. The list can be modified or deleted.
+
+When the samples are picked up by the currier, the list needs to be \textsc{Transfered}. This will put it in a \textsc{Transfered} state.
+
+Finally, when the samples have been \textsc{Logged-in} to the destination the \textsc{Transfer List} will be cleared.
+
+\begin{table}
+    \begin{longtable}{p{.3\textwidth} p{.65\textwidth}}
+    \boldcap{\large States}          & \boldcap{\large What It Means}\\
+    \hline
+    \textsc{Not Transferred} & The samples are still at the original lab.  \\
+    \textsc{Transferred}     & The sample is in route to the destination.  \\
+    \textsc{Cleared}         & The samples have arrived at the destination.\\
+    \hline
+    \end{longtable}
+\caption{Transfer List States}\label{table:transfer_status}
+\end{table}
+
+\section{Route}
+
+When viewing \textsc{Transfer Lists}, these options are used to define which lists are displayed.
+
+\begin{description}
+    \bolditem{From} Your current location.\sidenote{Always choose the option beginning with \boldcap{From}.}
+    \bolditem{To} The destination.\sidenote{\eg{\textsc{To BH}, \textsc{To BH Micro}, \textsc{To BH Referrals}, \etc}}
+    \bolditem{Date} The date the \textsc{Transfer List} was \textsc{Created}.
+\end{description}
+
+\importantblock{The \boldcap{From} location is where you are sending the sample. \eg{If the test is performed by Arup, but needs to go to \textsc{BH Referrals} first, use \boldcap{BH referrals} as the \textsc{Destination}.}}
+
+% \section{Transfer Work Flow}
+
+% \begin{tikzpicture}[node distance = 2cm, auto]
+%     % Place nodes
+%     \node [cloud] (init) {Wait For Currier};
+%     % \node [cloud, left of=init] (expert) {Test ordered};
+%     % \node [cloud, right of=init] (system) {system};
+%     \node [decision, below of=newsample] (createnewlist) {Can it go on existing list?};
+%     \node [block, right of=newsample, node distance=3cm] (addtolist) {Add to Existing List};
+%     \node [block, left of=newsample, node distance=3cm] (createlist) {Create New List};
+
+%     % \node [block, below of=decide, node distance=3cm] (stop) {stop};
+%     % Draw edges
+%     \path [line] (init) -- (newsample);
+%     \path [line] (newsample) -- (createnewlist);
+%     \path [line] (createnewlist) -| node [near start] {yes} (addtolist);
+%     \path [line] (createnewlist) -| node [near start] {no} (createlist);
+%     \path [line, dashed] (addtolist) -- (init);
+%     \path [line, dashed] (createlist) -- (init);
+%     % \path [line] (update) |- (newsample);
+%     % \path [line] (decide) -- node {no}(stop);
+%     % \path [line,dashed] (expert) -- (init);
+%     % \path [line,dashed] (system) -- (init);
+%     % \path [line,dashed] (system) |- (evaluate);
+% \end{tikzpicture}

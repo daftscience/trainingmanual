@@ -1,0 +1,168 @@
+\contentsline {part}{List of Tables}{v}{chapter*.2}
+\contentsline {chapter}{Introduction}{1}{chapter*.3}
+\contentsline {section}{About this Procedure}{1}{section*.4}
+\contentsline {section}{Accession Result Entry Modes}{1}{section*.5}
+\contentsline {chapter}{Customizing Accession Result Entry}{3}{chapter*.6}
+\contentsline {section}{Setup Result View}{3}{section*.7}
+\contentsline {paragraph}{Open}{3}{paragraph*.8}
+\contentsline {paragraph}{Click}{3}{paragraph*.9}
+\contentsline {paragraph}{Click}{3}{paragraph*.10}
+\contentsline {paragraph}{Click}{3}{paragraph*.11}
+\contentsline {paragraph}{Check {{\FA \char "F046\relax }}}{3}{paragraph*.12}
+\contentsline {paragraph}{Check {{\FA \char "F046\relax }}}{3}{paragraph*.13}
+\contentsline {paragraph}{Un-Check {{\FA \char "F096\relax }}}{4}{paragraph*.14}
+\contentsline {section}{Assay Sorting}{4}{section*.15}
+\contentsline {paragraph}{Click}{4}{paragraph*.16}
+\contentsline {paragraph}{Click}{4}{paragraph*.17}
+\contentsline {paragraph}{Click}{4}{paragraph*.18}
+\contentsline {paragraph}{Click}{4}{paragraph*.19}
+\contentsline {chapter}{Customizing Demographics}{5}{chapter*.20}
+\contentsline {section}{Helpful Tips}{5}{section*.21}
+\contentsline {section}{Changing Demographics}{5}{section*.22}
+\contentsline {paragraph}{Click}{5}{paragraph*.23}
+\contentsline {paragraph}{Click}{5}{paragraph*.24}
+\contentsline {paragraph}{Click}{6}{paragraph*.25}
+\contentsline {paragraph}{Set}{6}{paragraph*.26}
+\contentsline {paragraph}{Click}{6}{paragraph*.27}
+\contentsline {paragraph}{Click}{8}{paragraph*.28}
+\contentsline {section}{Restore to Defaults}{8}{section*.29}
+\contentsline {chapter}{Entering Results}{9}{chapter*.30}
+\contentsline {section}{Manual Result Entry}{9}{section*.31}
+\contentsline {paragraph}{Open}{9}{paragraph*.32}
+\contentsline {paragraph}{Enter}{9}{paragraph*.33}
+\contentsline {paragraph}{Click}{9}{paragraph*.34}
+\contentsline {paragraph}{Click}{10}{paragraph*.35}
+\contentsline {paragraph}{Enter}{10}{paragraph*.36}
+\contentsline {paragraph}{Hit}{10}{paragraph*.37}
+\contentsline {paragraph}{Continue}{10}{paragraph*.38}
+\contentsline {section}{Result Types}{11}{section*.39}
+\contentsline {subsection}{Result Types}{11}{subsection*.40}
+\contentsline {subsection}{Changing Result Types}{11}{subsection*.41}
+\contentsline {paragraph}{Right Click}{11}{paragraph*.42}
+\contentsline {paragraph}{Select}{11}{paragraph*.43}
+\contentsline {paragraph}{Select}{11}{paragraph*.44}
+\contentsline {section}{Entering Comments}{11}{section*.45}
+\contentsline {paragraph}{Select}{12}{paragraph*.46}
+\contentsline {paragraph}{Click}{12}{paragraph*.47}
+\contentsline {chapter}{Interpreting Results}{13}{chapter*.48}
+\contentsline {section}{Flags}{13}{section*.49}
+\contentsline {section}{Review Range}{13}{section*.50}
+\contentsline {section}{Critical Results}{13}{section*.51}
+\contentsline {section}{Linearities}{14}{section*.52}
+\contentsline {subsection}{Linearities and Calculations}{14}{subsection*.53}
+\contentsline {paragraph}{Convert}{15}{paragraph*.54}
+\contentsline {paragraph}{Select}{15}{paragraph*.55}
+\contentsline {subsection}{Linearities and Delta Checks}{15}{subsection*.56}
+\contentsline {section}{Reference Ranges}{15}{section*.57}
+\contentsline {chapter}{Verifying Results}{17}{chapter*.58}
+\contentsline {paragraph}{Click}{17}{paragraph*.59}
+\contentsline {paragraph}{Click}{17}{paragraph*.60}
+\contentsline {section}{Verifying Critical Results}{17}{section*.61}
+\contentsline {chapter}{Differential Mode}{19}{chapter*.62}
+\contentsline {section}{Orders with Differentials}{19}{section*.63}
+\contentsline {section}{Body Fluid Differentials}{19}{section*.64}
+\contentsline {subsection}{Reflexing Manual Differentials}{20}{subsection*.65}
+\contentsline {paragraph}{Enter}{20}{paragraph*.66}
+\contentsline {paragraph}{Click}{20}{paragraph*.67}
+\contentsline {subsection}{Changing to Differential Mode}{20}{subsection*.68}
+\contentsline {paragraph}{Open}{20}{paragraph*.69}
+\contentsline {paragraph}{Click}{20}{paragraph*.70}
+\contentsline {paragraph}{Click}{21}{paragraph*.71}
+\contentsline {paragraph}{Click}{21}{paragraph*.72}
+\contentsline {paragraph}{Select}{21}{paragraph*.73}
+\contentsline {paragraph}{Click}{21}{paragraph*.74}
+\contentsline {paragraph}{Select}{21}{paragraph*.75}
+\contentsline {paragraph}{Click}{21}{paragraph*.76}
+\contentsline {subsection}{About Differential Mode}{22}{subsection*.77}
+\contentsline {subsection}{Performing the Differential}{23}{subsection*.78}
+\contentsline {paragraph}{Count}{23}{paragraph*.79}
+\contentsline {paragraph}{Click}{23}{paragraph*.80}
+\contentsline {subsection}{Finishing Up}{24}{subsection*.81}
+\contentsline {paragraph}{Click}{24}{paragraph*.82}
+\contentsline {paragraph}{Click}{24}{paragraph*.83}
+\contentsline {paragraph}{Enter}{24}{paragraph*.84}
+\contentsline {paragraph}{Click}{24}{paragraph*.85}
+\contentsline {section}{CBC Differentials}{24}{section*.86}
+\contentsline {subsection}{How CBCs Work}{24}{subsection*.87}
+\contentsline {subsection}{Manually Reflexing}{25}{subsection*.88}
+\contentsline {paragraph}{Select}{25}{paragraph*.89}
+\contentsline {paragraph}{Click}{25}{paragraph*.90}
+\contentsline {paragraph}{Click}{25}{paragraph*.91}
+\contentsline {paragraph}{Click}{26}{paragraph*.92}
+\contentsline {subsection}{Performing Manual Differentials}{26}{subsection*.93}
+\contentsline {paragraph}{Click}{26}{paragraph*.94}
+\contentsline {paragraph}{Click}{26}{paragraph*.95}
+\contentsline {paragraph}{Click}{26}{paragraph*.96}
+\contentsline {paragraph}{Select}{26}{paragraph*.97}
+\contentsline {paragraph}{Click}{26}{paragraph*.98}
+\contentsline {paragraph}{Select}{27}{paragraph*.99}
+\contentsline {paragraph}{Click}{27}{paragraph*.100}
+\contentsline {chapter}{Correction Mode}{29}{chapter*.101}
+\contentsline {paragraph}{Click}{29}{paragraph*.102}
+\contentsline {paragraph}{Click}{29}{paragraph*.103}
+\contentsline {section}{Correcting Results}{30}{section*.104}
+\contentsline {paragraph}{Select}{30}{paragraph*.105}
+\contentsline {paragraph}{Enter}{30}{paragraph*.106}
+\contentsline {paragraph}{Hit}{30}{paragraph*.107}
+\contentsline {paragraph}{Hit}{30}{paragraph*.108}
+\contentsline {paragraph}{Click}{30}{paragraph*.109}
+\contentsline {paragraph}{Click}{31}{paragraph*.110}
+\contentsline {paragraph}{Click}{31}{paragraph*.111}
+\contentsline {subsection}{Viewing Original Results}{31}{subsection*.112}
+\contentsline {paragraph}{Open}{31}{paragraph*.113}
+\contentsline {paragraph}{Double-Click}{31}{paragraph*.114}
+\contentsline {paragraph}{Select}{32}{paragraph*.115}
+\contentsline {paragraph}{Click}{32}{paragraph*.116}
+\contentsline {chapter}{Instrument Queue Mode}{33}{chapter*.117}
+\contentsline {section}{Opening Instrument Queue}{33}{section*.118}
+\contentsline {paragraph}{Open}{33}{paragraph*.119}
+\contentsline {paragraph}{Click}{33}{paragraph*.120}
+\contentsline {paragraph}{Select}{33}{paragraph*.121}
+\contentsline {section}{Cosmetic Differences}{34}{section*.122}
+\contentsline {section}{Using Instrument Queue}{34}{section*.123}
+\contentsline {paragraph}{Enter}{34}{paragraph*.124}
+\contentsline {paragraph}{Click}{34}{paragraph*.125}
+\contentsline {paragraph}{Review}{35}{paragraph*.126}
+\contentsline {paragraph}{Enter}{35}{paragraph*.127}
+\contentsline {paragraph}{Click}{35}{paragraph*.128}
+\contentsline {subsection}{Moving To the Next Result}{35}{subsection*.129}
+\contentsline {paragraph}{Click}{35}{paragraph*.130}
+\contentsline {subsection}{Go To the Start of the Queue}{35}{subsection*.131}
+\contentsline {paragraph}{Click}{35}{paragraph*.132}
+\contentsline {paragraph}{Click}{35}{paragraph*.133}
+\contentsline {subsection}{Canceling Orders}{36}{subsection*.134}
+\contentsline {chapter}{Additional Information}{37}{chapter*.135}
+\contentsline {section}{Getting Assay Information}{37}{section*.136}
+\contentsline {subsection}{Calculation Equations}{37}{subsection*.137}
+\contentsline {paragraph}{Select}{37}{paragraph*.138}
+\contentsline {subsection}{Procedure Information}{38}{subsection*.139}
+\contentsline {paragraph}{Select}{38}{paragraph*.140}
+\contentsline {section}{Previous Results}{38}{section*.141}
+\contentsline {subsection}{Multiple Previous}{39}{subsection*.142}
+\contentsline {paragraph}{Right Click}{39}{paragraph*.143}
+\contentsline {paragraph}{Click}{39}{paragraph*.144}
+\contentsline {chapter}{Troubleshooting}{41}{chapter*.145}
+\contentsline {section}{Too Many Digits}{41}{section*.146}
+\contentsline {section}{Decimals Not Allowed}{41}{section*.147}
+\contentsline {section}{Unable to Enter Results}{42}{section*.148}
+\contentsline {subsection}{The Sample Isn't In-Lab}{42}{subsection*.149}
+\contentsline {paragraph}{Click}{42}{paragraph*.150}
+\contentsline {paragraph}{Log-in}{42}{paragraph*.151}
+\contentsline {subsection}{You're Still in Correction Mode}{42}{subsection*.152}
+\contentsline {paragraph}{Click}{42}{paragraph*.153}
+\contentsline {paragraph}{Click}{43}{paragraph*.154}
+\contentsline {chapter}{Routing}{45}{chapter*.155}
+\contentsline {section}{What is Routing?}{45}{section*.156}
+\contentsline {section}{How Does It Work?}{45}{section*.157}
+\contentsline {subsection}{Instruments and Benches and Sections oh my!}{45}{subsection*.158}
+\contentsline {subsection}{All That To Say:}{45}{subsection*.159}
+\contentsline {section}{Brackenridge}{46}{section*.160}
+\contentsline {section}{Dell Children's}{47}{section*.161}
+\contentsline {section}{Edgar B. Davis}{48}{section*.162}
+\contentsline {section}{Hays}{49}{section*.163}
+\contentsline {section}{Highland Lakes}{50}{section*.164}
+\contentsline {section}{Northwest}{51}{section*.165}
+\contentsline {section}{Southwest}{52}{section*.166}
+\contentsline {section}{Williamson}{53}{section*.167}
+\contentsline {section}{Seton Medical Center}{54}{section*.168}
+\contentsfinish 

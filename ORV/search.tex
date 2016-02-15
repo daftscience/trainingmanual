@@ -1,0 +1,93 @@
+From the \textsc{Find Orders} window,\sidenote{Click the \btn{graphics/find_orders_button} icon from the toolbar to reopen the ``Find Orders'' window.} orders can be queried using a patient identifier,\sidenote[][1\baselineskip]{\ie{Name, \gls{mrn}, \gls{fin}, or Social Security Number}.} or \gls{accn}. The results can also be filtered by \textit{date range} or \textit{type of activity}.\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (cf) at (-2,8) {\scshape{Patient Identifier}};
+\node [anchor=west] (pif) at (-2,5) {\scshape{Find Accession}};
+\node [anchor=west] (ord) at (-2,2.6) {\scshape{Date Range}};
+\node [anchor=west] (sp) at (-2,1) {\scshape{Type of Activity}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.67\textwidth}{graphics/find_orders}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw [-stealth, line width=3pt, cyan500] (cf) to[out=0, in=90] (0.05,0.88);
+        \draw [-stealth, line width=3pt, deeporange500] (pif) to[out=0, in=-145] (0.03,0.82);
+        \draw [-stealth, line width=3pt, indigo500] (ord) to[out=0, in=-145] (0.03,0.55);
+        \draw [-stealth, line width=3pt, bluegrey500] (sp) to[out=0, in=-125] (0.01,0.2);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+\newthought{Here are the options} and their descriptions:
+
+\begin{description}
+    \bolditem{Patient Identifier} Search for orders using a patient Identifier.
+    \bolditem{Accession Number} Search for orders using an Accession Number. The orders displayed will be limited to those on the accession number.
+    \bolditem{Date Range} When \textsc{Orders Between} is \faCheckSquareO 'd, orders will be limited to the date range set.
+    \bolditem{Type of Activity} Select which types of orders are displayed. This is useful if too many unwanted orders are returned.
+\end{description}
+
+\section{Searching by Patient}
+
+Using a \textsc{Patient Identifier} to search for orders will pull up all orders for that patient.
+
+These results can be limited by Encounter, Activity Type, and Date Range. In most cases, it's not necessary to adjust the filters.
+
+\paragraph{Enter} the patient identifier in the \textsc{Find Person} field.\sidenote{%
+\info{You can \textit{temporarily} change the Find persons field.\\
+
+\noindent
+\textit{Click} {\faKeyboardO} \boldcap{Ctrl+Tab} to cycle through identifier types.\\
+
+Or\\
+
+
+\noindent
+\textit{Right-Click} on it. Then, select the desired search parameter.\\
+
+\prettyimage{width=\linewidth}{graphics/change_id.png}}}\\
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (cf) at (-2,7) {\scshape{Patient Identifier}};
+\node [anchor=west] (ord) at (-2,2.6) {\scshape{Date Range}};
+\node [anchor=west] (sp) at (-2,1) {\scshape{Type of Activity}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.67\textwidth}{graphics/find_orders}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        % \draw[amethyst,ultra thick,rounded corners] (0.01,0.73) rectangle (0.2,0.79);
+        \draw [-stealth, line width=3pt, cyan500] (cf) to[out=0, in=90] (0.05,0.88);
+        \draw [-stealth, line width=3pt, indigo500] (ord) to[out=0, in=-145] (0.03,0.55);
+        \draw [-stealth, line width=3pt, bluegrey500] (sp) to[out=0, in=-125] (0.01,0.2);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+
+
+\paragraph{Modify} the filters (\textit{date range} and \textit{type of activity}), \textbf{if needed}.\sidenote{In most cases this step is unnecessary as they can limit the results displayed.}
+
+\paragraph{Click} \btn{graphics/shiny_ok} to search for orders.\\
+
+\prettyimage{width=\textwidth}{graphics/search_by_patient.png}
+
+\section{Searching by Accession Number\label{sec:orv_find_accn}}
+Using an \gls{accn} to search for orders allows us to quickly view the orders on one specific \gls{accn}. This is especially useful when canceling orders.\sidenote{\refpt{ch:orv_cancel}.}\\
+
+\paragraph{Click} \textsc{Accession} option.\\
+
+
+\noindent
+\begin{tikzpicture}
+\node [anchor=west] (ord) at (-1.5,2.6) {\scshape{Accession}};
+\begin{scope}[xshift=1.5cm]
+    \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=0.7\textwidth}{graphics/search_by_accn}};
+    \begin{scope}[x={(image.south east)},y={(image.north west)}]
+        \draw [-stealth, line width=3pt, teal400] (ord) to[out=0, in=180] (0.03,0.53);
+    \end{scope}
+\end{scope}
+\end{tikzpicture}%
+\vspace{1em}
+\paragraph{Enter} the \gls{accn}.\accntip
+\paragraph{Click} \btn{graphics/shiny_ok} to search for orders.\\
+
+\prettyimage{width=\textwidth}{graphics/results_by_accn.png}

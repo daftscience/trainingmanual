@@ -1,0 +1,57 @@
+There are a few options within \gls{doe} which should be changed based on your location or workflow. Most of the options in this section will only need to be changed once.
+
+\section{Define Default Values\label{sec:doe_custom}}
+
+\paragraph{Click} \boldcap{Task} from the menu bar.
+
+\paragraph{Select} \boldcap{Define Default Values}
+
+\begin{marginfigure}[-4\baselineskip]
+\prettyimage{width=.8\textwidth}{graphics/doe_taskbar}
+\end{marginfigure}
+
+\newthought{Here is a list} of options that can be set.
+\begin{marginfigure}
+\prettyimage{width=\textwidth}{graphics/doe_default_window}
+\end{marginfigure}
+
+\begin{quote}
+    \begin{description}
+        \bolditem{Cursor Position} The starting position of the cursor when \gls{doe}  is first opened. {\color{deeporange900}``Patient Identifier Field''} is the recommended setting.
+        \bolditem{Client} Keep this set to \boldcap{\color{deeporange900}(None)}. Changing it will cause issues later on.
+        \bolditem{Label Printer} The location where labels on new orders will print. It's recommended to set this to the label printer used most often.
+        \bolditem{Aliquot Printer} The Label Printer used to print Aliquot Labels. It should be set to the same printer as Label Printer.
+        \bolditem{Media Label Printer} The label printer used to print Microbiology media labels. It should be set to the nearest Microbiology media label printer.
+        \bolditem{Request Id Label Printer} This is a mystery.
+    \end{description}
+\end{quote}
+
+\section{Modify Default Search Field}
+
+By default, \gls{doe} searches for patients by Name. This can be changed to search using: Medical Record Number, Social Security Number, or Financial Number.
+
+\infoblock{This option is \boldcap{Sticky}. This means the option you choose will be set until the next time it's changed.}
+
+\subsection{The Fast way}
+
+\newthought{To cycle through} the different options:\sidenote{Medical Record Number, Social Security Number, or Financial Number.}
+
+\paragraph{Click} on the \textsc{Patient Identifier Field.}\\
+
+\prettyimage{width=.4\textwidth}{graphics/patient_field_personname}
+
+\paragraph{Hit} {\faKeyboardO} \boldcap{Ctrl + Tab} on the keyboard.\\
+
+\prettyimage{width=.4\textwidth}{graphics/patient_field_mrn}
+
+\newthought{You'll notice that} the label above the field has changed from \textsc{Person Name} to \textsc{Medical Record Number.}
+
+\paragraph{Continue} to \textit{ { H i t } } {\faKeyboardO} \boldcap{Ctrl + Tab} until you land on the search method you're looking for.
+
+\subsection{The Other Fast Way}
+
+\paragraph{Right Click} on the \textsc{Patient Identifier} field.\\
+
+\prettyimage{width=.5\textwidth}{graphics/doe_temp_search}
+
+\paragraph{Select} the new search option.

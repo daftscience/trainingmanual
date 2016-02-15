@@ -1,0 +1,49 @@
+\input{../cerner_preamble.tex}
+\input{../terms.tex}
+\input{../material_colors}
+% \makeatletter\@openrightfalse
+%----------------------------------------------------------------------------------------
+%	BOOK META-INFORMATION
+%----------------------------------------------------------------------------------------
+
+
+\newsavebox{\titleimage}
+\savebox{\titleimage}{\includegraphics[height=7\baselineskip]{../graphics/seton/seton_Healthcarefamily_alt_cmyk.jpg}}
+
+\title{\fontset} % Title of the book
+% \title{Cerner App-Bar} % Title of the book
+
+\author{Cerner Training} % Author
+
+% \publisher{Publisher of This Book} % Publisher
+
+\publisher[Seton Medical Center]{%
+  \usebox{\titleimage}
+}
+
+
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\frontmatter
+
+\maketitle % Print the title page
+
+%----------------------------------------------------------------------------------------
+
+
+
+\mainmatter
+
+
+\part{This is a Part}
+\chapter{This is a Chapter}
+\section{Here is a section}
+\newthought{Newthought starts} \blindtext
+\paragraph{This} is a paragraph
+
+\end{document}

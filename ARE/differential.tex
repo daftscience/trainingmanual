@@ -1,0 +1,276 @@
+Resulting differentials in Cerner is much different than resulting anything else. For that reason, \acrlong{are} has a mode specifically for performing them.
+
+Differential mode will perform the normalization calculations and with CBC's it will calculate the absolute values.
+
+\importantblock{All manual differentials should be entered using differential mode!!!\sidenote{If I could make this statement flash I would.}}
+
+\section{Orders with Differentials}
+
+\begin{description}
+    \bolditem{CBCs} Manual differentials will be performed using WAM.\sidenote{If WAM is down: \checkref{part:downtime}{\refptch{part:downtime}}{Refer to the \boldcap{Downtime Procedure}} for information on adding Manual Differentials.}
+    \bolditem{Body Fluids} Differentials will be reflexed, as needed, after the body fluid counts have been \textsc{Verified}.
+\end{description}
+
+\newthought{Here is a list} of possible differential types:
+\begin{table}
+    \begin{tabular}{lll}
+        \boldcap{\large Fluid}&\boldcap{\large Differential Name}&\boldcap{\large Code}\\
+        \hline
+        \textsc{Body Fluid}        & Body Fluid Differential    & FLDIF  \\
+        \textsc{BAL Fluid}         & BAL Differential           & BALDIF \\
+        \textsc{CBC}               & Manual Differential        & MDIFF  \\
+        \textsc{CSF}               & CSF Differential           & CSFDIF \\
+        \textsc{Joint Fluid}       & Joint Fluid Differential   & JNTDIF \\
+        \textsc{Pericardial Fluid} & Pericardial Differential   & PCFDIF \\
+        \textsc{Peritoneal Fluid}  & Peritoneal Differential    & PERDIF \\
+        \textsc{Pleural Fluid}     & Pleural Fluid Differential & PLFDIF \\
+        \hline
+    \end{tabular}
+    \caption{Manual Differentials and Codes}
+    \label{table:diffs}
+\end{table}
+
+
+\newthought{How Cerner determines} if a \textsc{Manual Differential} is needed:
+
+\begin{description}
+    \bolditem{Body Fluids} The result of the \boldcap{WBC Count} is >5/µL.
+    \bolditem{CBC} The result of the \boldcap{Differential} assay.
+\end{description}
+
+\section{Body Fluid Differentials}
+
+In order for a manual differential reflex on a body fluid, the \textsc{Count} needs to be entered and \textsc{Verified}. This is done using \textsc{\gls{are} in Accession Mode}.
+
+\subsection{Reflexing Manual Differentials}
+
+\paragraph{Enter} the results for the body fluid count.\\
+
+\prettyimage{width=\textwidth}{graphics/bodyfluid_count}
+
+\paragraph{Click} \btn{graphics/verify} when finished.\sidenote{The Differential will not reflex until the results are \textsc{Verified}.}
+
+\newthought{If a Manual Differential} is added, Cerner will present a \boldcap{Discern Notification}.\\
+
+\prettyimage{width=.5\textwidth}{graphics/reflex_alert}
+
+\subsection{Changing to Differential Mode}
+
+\paragraph{Open} the \textsc{Accession Number} in \gls{are}.\sidenote{The differential components should now appear in the \gls{are} window.}\\
+
+\prettyimage{width=\textwidth, trim={0 100 0 150}, clip}{graphics/bodyfluid_reflexed}
+
+\importantblock{Do NOT enter the results here!}
+
+\paragraph{Click} \boldcap{Mode} from the menu bar.
+
+\paragraph{Click} \boldcap{Differential\ldots}\\
+
+\prettyimage{width=.5\textwidth}{graphics/mode_differential}
+
+\newthought{The Select Accession} box will display:\\
+
+\prettyimage{width=.4\textwidth}{graphics/select_accn}
+
+\paragraph{Click} the \btn{graphics/shiny_elips} button.
+
+\paragraph{Select} the \textsc{Differential Procedure} from the list.\sidenote{If a differential is not there, it means the count has not been \textsc{Verified}}\\
+
+\prettyimage{width=.3\textwidth}{graphics/procedure_select}
+
+\paragraph{Click} \btn{graphics/ok}
+
+\paragraph{Select} the \boldcap{Option} using the dropdown menu.\sidenote{There should only be one option here.}\\
+
+\prettyimage{width=.4\textwidth}{graphics/select_option}
+
+\paragraph{Click} \btn{graphics/pretty_ok}
+
+\newthought{The Differential} mode will open.\\
+
+\subsection{About Differential Mode}
+
+\noindent%draw top
+\begin{tikzpicture}
+    \node [anchor=west] (mor) at (0.6,6.5) {\scshape{Morphology Box}};
+    \node [anchor=west] (dif) at (0.3,6.0) {\scshape{Differential Box}};
+    \node [anchor=west] (sel) at (0,5.5) {\scshape{Selection Box}};
+    \begin{scope}
+        \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=\textwidth}{graphics/differential_mode} };
+        \begin{scope}[x={(image.south east)},y={(image.north west)}]
+            \draw [-stealth, line width=3pt, deeppurple400] (mor) to[out=0, in=100] (0.55,0.6);
+            \draw [-stealth, line width=3pt, teal400]       (dif) to[out=0, in=90] (0.45,0.6);
+            \draw [-stealth, line width=3pt, deeporange400] (sel) to[out=0, in=90] (0.3,0.8);
+        \end{scope}
+    \end{scope}
+\end{tikzpicture}%
+
+\begin{description}
+    \bolditem{Selection Box} Allows you to change the number of counting Cells.\sidenote{For body fluids this will default to 300 Cells.}\\
+
+    \prettyimage{width=.5\linewidth}{graphics/selection_box}
+    \bolditem{Differential Box} This displays the cells counted.\\
+        \begin{tikzpicture}
+            \begin{scope}
+            \node [anchor=west] (one) at (-3,3) {\scshape{Cells Counted}};
+            \node [anchor=west] (two) at (-3,2) {\scshape{{\faKeyboardO } Hotkey}};
+            \node [anchor=west] (three) at (-3,1) {\scshape{Procedure}};
+                \node[anchor=south west,inner sep=0] (image) at (0,0) {\prettyimage{width=.5\textwidth}{graphics/differential_sheet} };
+                \begin{scope}[x={(image.south east)},y={(image.north west)}]
+                    \draw [-stealth, line width=3pt, teal400] (one) to[out=0, in=90] (0.58,0.90);
+                    \draw [-stealth, line width=3pt, deeppurple400] (two) to[out=0, in=90] (0.4,0.8);
+                    \draw [-stealth, line width=3pt, deeporange400] (three) to[out=0, in=180] (0.0,0.20);
+                \end{scope}
+            \end{scope}
+        \end{tikzpicture}%
+        \begin{description}
+            \bolditem{Cells Counted} Displays the number of Cells counted. When finished, it will normalize the count to a percentage.
+            \bolditem{{\faKeyboardO } Hotkey} The Key used to add the cell type.
+            \bolditem{Procedure} A list of available cell types for the differential.
+        \end{description}
+\end{description}
+
+\subsection{Performing the Differential\label{sec:perform_differential}}
+
+The \textsc{Differentials} are performed using the 10-key pad.\sidenote{The {\faKeyboardO} keys for each cell can be found immediately to the right of its name \eg{Segs are 1}.}
+
+\paragraph{Count} the cells until you're finished.\\
+
+\prettyimage{width=.5\textwidth}{graphics/differential_raw}
+
+\infoblock{If you've run out of cells to count:
+
+\textit{C l i c k } the \textsc{Stop Counting} icon \btn{graphics/stop_counting} on the \textsc{Tool Bar}}
+
+\newthought{When the total cells} counted reaches the set value,\sidenote{In this case, it's 300.} an alert will appear.\\
+
+\prettyimage{width=.4\textwidth}{graphics/differential_finished}
+
+\paragraph{Click} \btn{graphics/pretty_ok} to acknowledge.\sidenote{This will normalize the differential.}\\
+
+\newthought{Notice that the cells} have been normalized.\\
+
+\prettyimage{width=.5\textwidth}{graphics/differential_normalized}
+
+\newthought{Optional:}
+\begin{description}
+    \paraitem{Click} \btn{graphics/perform} to save the results.\\
+\end{description}
+
+\subsection{Finishing Up}
+
+Before the results can be verified, the total number of cells counted needs to be entered.
+
+\infoblock{Unfortunately, Cerner is unable to keep track of this information.}
+
+\newthought{To do this,} \gls{are} needs to be in \textsc{Accession Mode}
+
+\paragraph{Click} \boldcap{Mode} from the menu bar.
+
+\paragraph{Click} \boldcap{Accession}.\\
+
+\prettyimage{width=.4\textwidth}{graphics/accession_mode_menu}
+
+\paragraph{Enter} the \textsc{Number of Cells Counted} in the \textsc{Total Cells Counted} result cell.\\
+
+\prettyimage{width=\textwidth}{graphics/total_cells_entered}
+
+\paragraph{Click} \btn{graphics/verify} to verify the results
+
+
+
+
+\section{CBC Differentials}
+
+\importantblock{CBC Differentials should be performed in WAM. The one exception is during \boldcap{WAM Downtimes}.}
+
+\subsection{How CBCs Work}
+
+In Cerner, the components of a CBC are treated as separate orders. Cerner and WAM will do all the {\faMagic}magic required to switch between \textsc{Manual} and \textsc{Automated Differentials.}\sidenote[][-2\baselineskip]{\info{The \textsc{Adiff} won't be added until the CBC is \textsc{Logged-in} to the laboratory.}}
+
+\begin{table}
+    \begin{tabular}{ll}
+        \boldcap{\large Order}&\boldcap{\large Description}\\
+        \hline
+        \textsc{Hemgrm}         & Hemogram \\
+        \textsc{CBC}            & Hemogram portion of CBC\\
+        \textsc{Adiff}          & Automated Differential \\
+        \textsc{Morphology}     & Slide Morphology \\
+        \textsc{Mdiff}          & Manual Differential and Morphology\\
+        \hline
+    \end{tabular}
+    \caption{CBC Orders}
+    \label{table:CBC_Orderables}
+\end{table}
+
+\subsection{Manually Reflexing\label{are:cbc_manual_reflex}}
+
+\importantblock{Again, this only needs to be done if WAM is down.}
+
+CBCs have a result called \boldcap{Differential?}. This is used to trigger the reflexing of \textsc{Morphology} or a \textsc{Manual Differential with Morphology}.\\
+
+\prettyimage{width=\textwidth}{graphics/cbc_differential_select}
+
+This table describes what happens with each of the \boldcap{Differential?} options.
+
+\begin{table}
+    \begin{tabular}{llll}
+        \boldcap{\large Selection}&\boldcap{\large Canceled}&\boldcap{\large Added}&\boldcap{\large Final Order}\\
+        \hline
+        \textsc{(Blank)}         &       -        &         -           & CBC, \textsc{Adiff}\\
+        \textsc{Auto+Morph}      &       -        & \textsc{Morphology} & CBC, \textsc{Adiff}, Morphology\\
+        \textsc{Manual}          & \textsc{Adiff} & \textsc{Mdiff}      & CBC, \textsc{Mdiff}\\
+        \hline
+    \end{tabular}
+    \caption{CBC Reflexing Rules}
+    \label{table:CBC_reflexing}
+\end{table}
+
+\paragraph{Select} the appropriate option.\sidenote{Leave Blank if it's an \textsc{Auto Differential} without morphology.}
+
+\paragraph{Click} \btn{graphics/perform}
+
+\newthought{This will trigger} the reflexing rules. However, we won't see the changes until \gls{are} is refreshed.
+
+\paragraph{Click} the \textsc{Accession Field}.\sidenote{\gls{are} will clear.}\\
+
+\prettyimage{width=.5\textwidth}{graphics/accession_field_clicked}
+
+\paragraph{Click} \btn{graphics/retrieve}
+
+\newthought{The results should} now reflect the changes.\sidenote{If they don't, try again. Sometimes it takes a few seconds for the changes to be made.}
+
+If an \textsc{Automated Differential + Morphology} was selected, the \textsc{Morphology} assays should appear.
+
+\subsection{Performing Manual Differentials\label{subsect:are_performing_manual_diff}}
+
+\paragraph{Click} \boldcap{Mode} from the menu bar.
+
+\paragraph{Click} \boldcap{Differential\ldots}\\
+
+\prettyimage{width=.5\textwidth}{graphics/mode_differential}
+
+\newthought{The Select Accession} box will display:\\
+
+\prettyimage{width=.5\textwidth}{graphics/select_accn_diff}
+
+\paragraph{Click} the \btn{graphics/ellipses}
+
+\paragraph{Select} \boldcap{Mdiff}\\
+
+\prettyimage{width=.5\textwidth, trim={0 180 0 0}, clip}{graphics/procedure_select_cbc}
+
+\paragraph{Click} \btn{graphics/ok}
+
+\paragraph{Select} the \boldcap{Option} using the drop down menu.\sidenote{There should only be one option here.}\\
+
+\prettyimage{width=.4\textwidth}{graphics/select_option_cbc}
+
+\paragraph{Click} \btn{graphics/ok}\\
+
+\prettyimage{width=\textwidth}{graphics/cbc_differential}
+
+\newthought{CBC Manual Differentials} are performed similarly to Body fluid Differentials. The keys are set up to match WAM.
+
+The right hand side has a list of morphology options; they can be entered using the \textsc{Drop Down} lists.
+

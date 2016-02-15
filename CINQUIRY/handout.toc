@@ -1,0 +1,32 @@
+\contentsline {chapter}{Introduction}{1}{chapter*.2}
+\contentsline {chapter}{Customizing Demographics}{3}{chapter*.3}
+\contentsline {section}{Helpful Tips}{3}{section*.4}
+\contentsline {section}{Changing Demographics}{3}{section*.5}
+\contentsline {paragraph}{Click}{3}{paragraph*.6}
+\contentsline {paragraph}{Click}{3}{paragraph*.7}
+\contentsline {paragraph}{Click}{4}{paragraph*.8}
+\contentsline {paragraph}{Set}{4}{paragraph*.9}
+\contentsline {paragraph}{Click}{4}{paragraph*.10}
+\contentsline {paragraph}{Click}{5}{paragraph*.11}
+\contentsline {section}{Restore to Defaults}{6}{section*.12}
+\contentsline {chapter}{Inquiring About Containers}{7}{chapter*.13}
+\contentsline {paragraph}{Enter}{7}{paragraph*.14}
+\contentsline {paragraph}{Click}{7}{paragraph*.15}
+\contentsline {section}{Container List}{7}{section*.16}
+\contentsline {section}{Event List}{8}{section*.17}
+\contentsline {subsection}{Dispatched Status}{8}{subsection*.18}
+\contentsline {subsection}{Transfered Statuses}{8}{subsection*.19}
+\contentsline {subsection}{Example}{9}{subsection*.20}
+\contentsline {section}{Routing}{9}{section*.21}
+\contentsline {paragraph}{Right Click}{9}{paragraph*.22}
+\contentsline {paragraph}{Click}{9}{paragraph*.23}
+\contentsline {chapter}{Using Container Inquiry to Troubleshoot}{11}{chapter*.24}
+\contentsline {section}{Log-in Location}{11}{section*.25}
+\contentsline {paragraph}{Open}{11}{paragraph*.26}
+\contentsline {paragraph}{Check}{11}{paragraph*.27}
+\contentsline {paragraph}{Check}{11}{paragraph*.28}
+\contentsline {section}{Finding Where Samples Need to Go}{12}{section*.29}
+\contentsline {paragraph}{Open}{12}{paragraph*.30}
+\contentsline {paragraph}{Right Click}{12}{paragraph*.31}
+\contentsline {paragraph}{Click}{12}{paragraph*.32}
+\contentsfinish 
